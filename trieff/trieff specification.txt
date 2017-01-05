@@ -1,0 +1,223 @@
+Version 0.6.0
+Created and maintained by Jozef Mikusinec.
+Have feedback or spotted an error? Contact me at mik.jozef+trieff@gmail.com
+For typos/grammatical mistakes please use mik.jozef+grammar@gmail.com
+
+Variables in this spec (written inside []):
+  [G]: the greatest node address in this document
+  [N]: number of node addresses in one node
+  [A]: length of node address in bytes
+  [D]: length of data address in bytes
+  [F]: length of allowed characters string in bytes
+  [min]: minimum query length
+  [max]: maximum query length
+
+  all nodes have the same number node of addresses,
+  all nodes have exactly one data address,
+  all node addresses have the same length;
+  all data addresses have the same length;
+
+TRIEFF is a file structure for representing tries (trie) with fixed degree
+of nodes. trieff = trie file format
+
+
+Node
+  Contains [N] [A]-byte node addresses and one [D]-byte data address without any
+  separator ([N]*[A] + [D] bytes alltogether). The data address is always last.
+  Node can't be its own ancestor, every node except the root node has exactly
+  one parent. No two nodes can have the same child.
+
+  Root node is the first node in the document. It has no parent.
+
+
+Node address
+  Value used to determine position of next node in the document. Address can't
+  refer to an ancestor or its own node. No two adresses in the same document can
+  be equal.
+
+  Value 0 means that this address is not set yet. Address with this value is
+  called an empty address.
+
+  Position = [address]*([N]*[A] + [D]) + [F] + 28
+  [N]*[A] + [D] is the number of bytes per one node
+  [F] + 28 is length of document head
+
+
+Data address
+  Data stored in under this node. How this data is used depends on particular
+  implementation/file. The data might be used as such, or as an address of data
+  stored in a different document. Address with a value 0 is not set (empty ad-
+  dress). Data address is the last address in every node.
+
+
+Allowed character
+  A UTF-8 character found in head of the document. Nth character is represented
+  by nth address of a node. Every allowed character must be unique. Number of
+  allowed characters is equal to [N]. If [F] is zero, numbers are used instead
+  to query the  document.
+
+
+Structure of the document
+  Head
+    32-bit value of [G]
+    32-bit value of [N]
+    32-bit value of [A]
+	  32-bit value of [D]
+    32-bit value of [F]
+    32-bit value of [min]
+    32-bit value of [max]
+    [F]-bit string containing all allowed characters encoded in UTF-8
+  Body
+    root node
+    other nodes
+
+
+Accessing and modifying .trieff files
+  An application using a .trieff file must first read head of the document;
+  storing the allowed characters so that their order can be retrieved. It can
+  then query the document with strings made of allowed characters, or arrays
+  of numbers if [F] == 0. This chapter provides sample algorithms (PseudoJava).
+  Note these algorithms have just informational purpose, they don't consider
+  special cases like failure during writing to a file.
+
+  Querying the document
+    One node represents one character of a query string, while every address
+    of that node (except the data address) represents one possible value of that
+    character (i.e one allowed character). Nth address of a node represents nth
+    allowed character as specified in head of the document. If the application
+    encunters an empty address, this means the query string is not stored in this
+    document. The application must check whether the querry conforms to the length
+    limits.
+
+      int[] query;
+      int address = 0;
+      Object qTemp = [query, either String or int[]];
+      String allowedChars =
+            [allowed characters in order as specified in head];
+
+      if (qTemp instanceof String) {
+        String s = (String) qTemp;
+        query = new int[s.length];
+
+        for (int f = 0; f < s.length; f++) {
+          query[f] = s.indexOf(qTemp.charAt(f));
+        }
+      } else {
+        query = (int[]) qTemp;
+      }
+
+      if (query.length < [min] || query.length > [max]) {
+        return 0; //doesn't exist
+      }
+
+      for (int f = 0; f < query.length; f++) {
+        if (query[f] < 0 || query[f] >= [N]) {
+          return 0;
+        }
+
+        address = [read [A] bytes at](address * ([N] * [A] + [D])
+              + [F] + 28 + query[f] * [A]);
+
+        if (address == 0) {
+          return 0; //not found
+        }
+      }
+
+      return [read [D] bytes at](address * ([N] * [A] + [D])
+            + [F] + 28 + [N] * [A]);
+    
+  Adding entry
+    When adding an entry the application first traverses the document as when
+    querying it. When it encounters an empty address, it starts creating the needed
+    nodes by appending them at the end of the document, provided that the value
+    to be written is different from 0. Head variable [G] must be updated accord-
+    ingly. The unused addresses in the newly created nodes must all be empty
+    addresses. The implementation below doesn't check whether [G] may overflow
+    (full document).
+    
+      int[] query;
+      int address = 0;
+      Object qTemp = [query, either String or int[]];
+      String allowedChars =
+            [allowed characters in order as specified in head];
+
+      if (qTemp instanceof String) {
+        String s = (String) qTemp;
+        query = new int[s.length];
+
+        for (int f = 0; f < s.length; f++) {
+          query[f] = s.indexOf(qTemp.charAt(f));
+        }
+      } else {
+        query = (int[]) qTemp;
+      }
+
+      if (query.length < [min] || query.length > [max]) {
+        return false; //not allowed
+      }
+
+      int f, lastAddress;
+      for (f = 0; f < query.length; f++) {
+        if (query[f] < 0 || query[f] >= [N]) {
+          return false; //invalid key
+        }
+
+        lastAddress = address;
+        address = [read [A] bytes at](address * ([N] * [A] + [D])
+              + [F] + 28 + query[f] * [A]);
+
+        if (address == 0) {
+          break;
+        }
+      }
+      
+      if (f == query.length) {
+        [write [D] bytes at](address * ([N] * [A] + [D])
+              + [F] + 28 + [N] * [A], [data]);
+      } else {
+        address = lastAddress;
+
+        for (; f < s.length; f++) {
+          address = address * ([N] * [A] + [D]) + [F] + 28 + query[f] * [A]
+
+          //link to addres that will be created
+          [write [A] bytes at](address, ++maxAddress);
+          
+          [write 32 bits at](0, maxAddress); //Update [G]
+          [write [N]*[A] + [D] bytes at](maxAddress * ([N] * [A] + [D])
+                + [F] + 28, 0); //create empty node
+          
+          address = maxAddress;
+        }
+      }
+
+      [write [D] bytes at](address * ([N] * [A] + [D]) + [N] * [A] + [F] + 28, [data]);
+
+
+  Deleting entry
+    Deleting is very similar to adding an an entry with a value 0, provided that
+    adding algorithm doesn't create new nodes for zero-value entries. This is
+    the recommended way of deleting entries.
+    
+    An attempt to delete the resulting empty nodes is complicated by the fact
+    that the space they occupy would be impossible to find and reallocate later.
+    In order to fill that space, all subsequent nodes would have to be moved
+    and addresses leading to them rewritten, which would be highly impractical.
+    
+    The application may wish to delete the empty nodes if they are the last nodes
+    in the document and update head accordingly. In that case, it should be checked
+    whether the previous node is also empty to possibly delete it, too.
+    
+    Note that it is not technically possible to truly delete an entry as 0 means
+    empty data address, so every undefined entry has a value 0 (even if the key
+    doesn't exist in the document, as long as it is valid).
+    
+    Recommendation: add entry with value 0 to delete entries, do not delete empty
+    nodes
+
+
+Creating .trieff files
+  The first thing an application must do is to specify the head of the document,
+  then create empty root node. Any other action the application can do is described
+  in "Accessing and modifying .trieff files". Except [G], head should never change
+  after being created.

@@ -1,0 +1,1150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ds>
+  <rs name="RS_Data">
+    <def>
+      <column name="Dlžník" col_id="col_0" type="V2" size="0" precision="0" null="true" />
+      <column name="Adresa dlžníka" col_id="col_1" type="V2" size="0" precision="0" null="true" />
+      <column name="Mesto" col_id="col_2" type="V2" size="0" precision="0" null="true" />
+      <column name="Suma daňových nedoplatkov" col_id="col_3" type="V2" size="0" precision="0" null="true" />
+      <column name="Mena" col_id="col_4" type="V2" size="0" precision="0" null="true" />
+    </def>
+    <data>
+      <row col_0="Detes Trade, a.s. v konkurze" col_1="Masarykova 2724/26" col_2="Prešov" col_3="  76 853,70" col_4="EUR" />
+      <row col_0="Agro-Šariš s.r.o. v konkurze" col_1="Sekčovská 1539/87" col_2="Prešov" col_3="  58 043,59" col_4="EUR" />
+      <row col_0="Kov.konštruk.-TTD  s.r.o. v konkurze" col_1="Strojnícka 2079/7" col_2="Prešov" col_3="  57 923,15" col_4="EUR" />
+      <row col_0="MRAZIARNE, a.s. v konkurze" col_1="Jilemnického 3575/1" col_2="Prešov" col_3="  53 407,67" col_4="EUR" />
+      <row col_0="OZKN a.s. v konkurze" col_1="Masarykova 2722/22" col_2="Prešov" col_3="  44 993,82" col_4="EUR" />
+      <row col_0="FRAGOPOLIS a.s. v konkurze" col_1="Protifašistických bojovníkov 3944/4" col_2="Prešov" col_3="  43 169,24" col_4="EUR" />
+      <row col_0="VIZOP, Šar. mäsopriemysel v konkurze" col_1="Budovateľská 3596/34" col_2="Prešov" col_3="  33 282,38" col_4="EUR" />
+      <row col_0="ROCANE, s.r.o." col_1="Čajakova 5" col_2="Košice-Staré Mesto" col_3="  29 070,32" col_4="EUR" />
+      <row col_0="Ján Sabol" col_1="Vodárenská 5990/9" col_2="Prešov" col_3="  25 890,10" col_4="EUR" />
+      <row col_0="HOREX, spoločnosť  s ručením obmedzeným Prešov" col_1="Hlavná 2967/50" col_2="Prešov" col_3="  24 961,43" col_4="EUR" />
+      <row col_0="KOFIN, s.r.o." col_1="Budovateľská 3596/34" col_2="Prešov" col_3="  24 838,85" col_4="EUR" />
+      <row col_0="SÚGAM Markovič Vladimír" col_1="" col_2="" col_3="  22 503,78" col_4="EUR" />
+      <row col_0="LANOFER, s.r.o." col_1="Jilemnického 3576/3" col_2="Prešov" col_3="  20 264,75" col_4="EUR" />
+      <row col_0="FALCO,spol. s r.o. v konkurze" col_1="Železničná 441" col_2="Veľký Šariš" col_3="  15 267,80" col_4="EUR" />
+      <row col_0="Jozef Andraščík" col_1="270" col_2="Kamenica" col_3="  13 478,65" col_4="EUR" />
+      <row col_0="BHR s.r.o.  v konkurze" col_1="Budovateľská 3630/63" col_2="Prešov" col_3="  13 272,41" col_4="EUR" />
+      <row col_0="Záhradníctvo S.S. J.L.V ." col_1="Športová 4133/5" col_2="Prešov" col_3="  12 251,97" col_4="EUR" />
+      <row col_0="HELP JOZEF HREHA, s.r.o." col_1="Fintická 2187/8" col_2="Prešov" col_3="  11 435,46" col_4="EUR" />
+      <row col_0="ALVA, družstvo" col_1="Kúpeľná 11320/1A" col_2="Prešov" col_3="  11 311,08" col_4="EUR" />
+      <row col_0="Stavoprojekt, akciová spoločnosť Prešov" col_1="Duchnovičovo námestie 3951/1" col_2="Prešov" col_3="  10 980,69" col_4="EUR" />
+      <row col_0="ANJUN s.r.o." col_1="Budovateľská 3596/34" col_2="Prešov" col_3="  10 753,99" col_4="EUR" />
+      <row col_0="PENCAND, s.r.o." col_1="Strojnícka 2081/11" col_2="Prešov" col_3="  10 340,74" col_4="EUR" />
+      <row col_0="Jaroslav Adamov" col_1="Tatranská 12506/27" col_2="Prešov" col_3="  10 078,93" col_4="EUR" />
+      <row col_0="ORION-plus, s.r.o." col_1="Masarykova 2721/20" col_2="Prešov" col_3="  9 550,31" col_4="EUR" />
+      <row col_0="AUTOMONT J. M., s.r.o." col_1="Počekanec 16/26" col_2="Hanušovce nad Topľou" col_3="  9 249,75" col_4="EUR" />
+      <row col_0="Ing. Ľubomír Girašek" col_1="Arm. gen. Svobodu 6460/34" col_2="Prešov" col_3="  8 926,05" col_4="EUR" />
+      <row col_0="Stanislav Kočiš" col_1="súp. č. 17" col_2="Marhaň" col_3="  8 248,06" col_4="EUR" />
+      <row col_0="Penzion **ELDORÁDO, spoločnosť s ručením obmedzeným Prešov" col_1="Nábrežná 4422/9" col_2="Prešov" col_3="  8 129,72" col_4="EUR" />
+      <row col_0="VÁHOSTAV - SK, a.s." col_1="Priemyselná 6" col_2="Bratislava" col_3="  7 371,26" col_4="EUR" />
+      <row col_0="Stanislav Bosák" col_1="" col_2="Prešov" col_3="  6 946,06" col_4="EUR" />
+      <row col_0="T.A.M. REAL,  s.r.o." col_1="Sabinovská 5048/1" col_2="Prešov" col_3="  6 479,14" col_4="EUR" />
+      <row col_0="Jozef Hreha" col_1="Zábrež súp. č. 178" col_2="Oravská Poruba" col_3="  6 478,88" col_4="EUR" />
+      <row col_0="SEMOS, spol. s r.o. Prešov" col_1="Budovateľská 3601/48" col_2="Prešov" col_3="  6 390,36" col_4="EUR" />
+      <row col_0="APARTMÁNY TORYSA s.r.o." col_1="Budovateľská 3601/48" col_2="Prešov" col_3="  6 387,72" col_4="EUR" />
+      <row col_0="CILIUS s.r.o." col_1="Budovateľská 3628/59" col_2="Prešov" col_3="  5 678,58" col_4="EUR" />
+      <row col_0="PS Generálny kontraktor v konkurze" col_1="Masarykova 2719/16" col_2="Prešov" col_3="  5 467,56" col_4="EUR" />
+      <row col_0="POZEMSTAV, a.s. v konkurze" col_1="Budovateľská 3628/59" col_2="Prešov" col_3="  5 112,08" col_4="EUR" />
+      <row col_0="ASPO Drienov s.r.o. v konkurze" col_1="súp. č. 146" col_2="Kendice" col_3="  4 979,24" col_4="EUR" />
+      <row col_0="HOGO FOGO s.r.o." col_1="Levočská 6124/12" col_2="Prešov" col_3="  3 833,40" col_4="EUR" />
+      <row col_0="STARBAU s.r.o." col_1="Jána Bottu 5013/1" col_2="Prešov" col_3="  3 797,41" col_4="EUR" />
+      <row col_0="STAVING, a.s. v konkurze" col_1="Jesenná 2691/18" col_2="Prešov" col_3="  3 745,28" col_4="EUR" />
+      <row col_0="BHKM, s.r.o." col_1="Hlavná 2906/71" col_2="Prešov" col_3="  3 680,67" col_4="EUR" />
+      <row col_0="Porcela Plus Prešov, s.r.o." col_1="Borovicová 1368" col_2="Bratislava" col_3="  3 661,83" col_4="EUR" />
+      <row col_0="Vlasta Judičáková" col_1="súp. č. 312" col_2="Šelpice" col_3="  3 565,59" col_4="EUR" />
+      <row col_0="Peter Šťastný" col_1="Mukačevská 4813/8" col_2="Prešov" col_3="  3 564,50" col_4="EUR" />
+      <row col_0="Harlekýn, s.r.o." col_1="Strojnícka 2078/5" col_2="Prešov" col_3="  3 216,91" col_4="EUR" />
+      <row col_0="MRAZIARNE Prešov, s.r.o. v konkurze" col_1="Jilemnického 3575/1" col_2="Prešov" col_3="  3 157,00" col_4="EUR" />
+      <row col_0="J a T inovation, s.r.o." col_1="Alejová 5" col_2="Košice" col_3="  2 914,04" col_4="EUR" />
+      <row col_0="Slovak Enterprise Agency, s.r.o." col_1="súp. č. 426" col_2="Tomášikovo" col_3="  2 610,82" col_4="EUR" />
+      <row col_0="Marián Puškár" col_1="Šebastovská 2531/7" col_2="Prešov" col_3="  2 551,42" col_4="EUR" />
+      <row col_0="MKB s.r.o." col_1="Kúpeľná 3913/3" col_2="Prešov" col_3="  2 512,71" col_4="EUR" />
+      <row col_0="Zuzana Eštočáková" col_1="" col_2="Prešov" col_3="  2 305,30" col_4="EUR" />
+      <row col_0="Jozef Petík" col_1="" col_2="Prešov" col_3="  2 285,01" col_4="EUR" />
+      <row col_0="Květa Gáborová" col_1="Pod Turňou 562/9" col_2="Prešov" col_3="  2 283,83" col_4="EUR" />
+      <row col_0="Miloš Marcin, M STUDIO" col_1="Jarková 3103/63" col_2="Prešov" col_3="  2 121,42" col_4="EUR" />
+      <row col_0="B.EST Prešov, s.r.o." col_1="Puškinova 5823/16" col_2="Prešov" col_3="  2 039,40" col_4="EUR" />
+      <row col_0="ROBOTEX s.r.o. v likvidácii" col_1="Budovateľská 3617/35" col_2="Prešov" col_3="  2 018,94" col_4="EUR" />
+      <row col_0="Emília Mensárová" col_1="K Okruhliaku 14057/27" col_2="Prešov" col_3="  2 000,00" col_4="EUR" />
+      <row col_0="VAP Prešov, s.r.o." col_1="súp. č. 1579" col_2="Detva" col_3="  1 997,93" col_4="EUR" />
+      <row col_0="Miloslav Makula" col_1="" col_2="Prešov" col_3="  1 958,71" col_4="EUR" />
+      <row col_0="Iveta Petiková" col_1="" col_2="Prešov" col_3="  1 920,08" col_4="EUR" />
+      <row col_0="Anna Pavlíková" col_1="" col_2="Prešov" col_3="  1 918,76" col_4="EUR" />
+      <row col_0="Július Baláž" col_1="Vodárenská 6015/39" col_2="Prešov" col_3="  1 914,06" col_4="EUR" />
+      <row col_0="Peter Jalč" col_1="Čapajevova 12531/63" col_2="Prešov" col_3="  1 899,68" col_4="EUR" />
+      <row col_0="Stanislav Dzurko" col_1="Čipkárska 576/8" col_2="Prešov" col_3="  1 880,61" col_4="EUR" />
+      <row col_0="Jozef Balog" col_1="" col_2="Prešov" col_3="  1 878,72" col_4="EUR" />
+      <row col_0="Zdenka Holubová" col_1="" col_2="Prešov" col_3="  1 867,07" col_4="EUR" />
+      <row col_0="Verona Pohlodková" col_1="" col_2="Prešov" col_3="  1 844,01" col_4="EUR" />
+      <row col_0="L.Y., s.r.o." col_1="Levočská 7299/7" col_2="Prešov" col_3="  1 830,40" col_4="EUR" />
+      <row col_0="PARA SEN, n.o." col_1="súp. č. 15" col_2="Varhaňovce" col_3="  1 828,75" col_4="EUR" />
+      <row col_0="Karin Prešov, s.r.o." col_1="Hlavná 2910/79" col_2="Prešov" col_3="  1 817,64" col_4="EUR" />
+      <row col_0="Božena Makuňová" col_1="" col_2="Prešov" col_3="  1 813,51" col_4="EUR" />
+      <row col_0="Ondrej Balog" col_1="" col_2="Prešov" col_3="  1 775,52" col_4="EUR" />
+      <row col_0="Ing. Sylvia Pavlíková Őzer" col_1="" col_2="Prešov" col_3="  1 772,90" col_4="EUR" />
+      <row col_0="Vizop s.r.o. OZ 02 v konkurze" col_1="Radničné námestie 20" col_2="Bardejov" col_3="  1 770,49" col_4="EUR" />
+      <row col_0="Kvetoslava Balogová" col_1="" col_2="Prešov" col_3="  1 750,68" col_4="EUR" />
+      <row col_0="Róbert Bandy" col_1="" col_2="Prešov" col_3="  1 736,40" col_4="EUR" />
+      <row col_0="AUTO EX, s.r.o." col_1="Hviezdna 6021/16" col_2="Prešov" col_3="  1 714,88" col_4="EUR" />
+      <row col_0="Ružena Lacková" col_1="" col_2="Prešov" col_3="  1 697,57" col_4="EUR" />
+      <row col_0="Juraj Hrabik" col_1="Volgogradská 4793/58" col_2="Prešov" col_3="  1 689,80" col_4="EUR" />
+      <row col_0="Anna Balážová" col_1="Važecká 6775/6" col_2="Prešov" col_3="  1 664,46" col_4="EUR" />
+      <row col_0="Rudolf Baláž" col_1="" col_2="Prešov" col_3="  1 646,16" col_4="EUR" />
+      <row col_0="Vladimír Godla" col_1="" col_2="Prešov" col_3="  1 641,30" col_4="EUR" />
+      <row col_0="Iveta Kažimírová" col_1="" col_2="Prešov" col_3="  1 640,39" col_4="EUR" />
+      <row col_0="Tibor Dužda" col_1="Mudroňova 4950/4" col_2="Prešov" col_3="  1 633,04" col_4="EUR" />
+      <row col_0="Daniela Makulová" col_1="K Starej tehelni 11500/5" col_2="Prešov" col_3="  1 628,68" col_4="EUR" />
+      <row col_0="Hana Balogová" col_1="" col_2="Prešov" col_3="  1 622,65" col_4="EUR" />
+      <row col_0="Monika Pohlodková" col_1="" col_2="Prešov" col_3="  1 618,66" col_4="EUR" />
+      <row col_0="Oľga Kalejová" col_1="" col_2="Prešov" col_3="  1 607,74" col_4="EUR" />
+      <row col_0="Dagmar Duždová" col_1="" col_2="Prešov" col_3="  1 596,42" col_4="EUR" />
+      <row col_0="Arpád Hricko" col_1="" col_2="Prešov" col_3="  1 587,79" col_4="EUR" />
+      <row col_0="Jozefína Makulová" col_1="" col_2="Prešov" col_3="  1 574,64" col_4="EUR" />
+      <row col_0="PaedDr. Igor Šafranko" col_1="Pod Vinicami 5462/10" col_2="Prešov" col_3="  1 563,20" col_4="EUR" />
+      <row col_0="Monika Makulová" col_1="Mukačevská 4807/45" col_2="Prešov" col_3="  1 548,30" col_4="EUR" />
+      <row col_0="Zlatica Balogová" col_1="" col_2="Prešov" col_3="  1 547,47" col_4="EUR" />
+      <row col_0="Dezider Balog" col_1="" col_2="Prešov" col_3="  1 528,19" col_4="EUR" />
+      <row col_0="Milan Tuleja" col_1="Sibírska 6959/22" col_2="Prešov" col_3="  1 518,89" col_4="EUR" />
+      <row col_0="Júlia Eštočáková" col_1="Tarasa Ševčenka 3930/25" col_2="Prešov" col_3="  1 515,31" col_4="EUR" />
+      <row col_0="Ľudovít Gregor" col_1="" col_2="Prešov" col_3="  1 514,63" col_4="EUR" />
+      <row col_0="Mária Eštočáková" col_1="" col_2="Prešov" col_3="  1 503,87" col_4="EUR" />
+      <row col_0="Jozef Miklič" col_1="Važecká 6793/14" col_2="Prešov" col_3="  1 498,16" col_4="EUR" />
+      <row col_0="Iveta Rajzová" col_1="K Starej tehelni 11500/7" col_2="Prešov" col_3="  1 480,22" col_4="EUR" />
+      <row col_0="Eva Makulová" col_1="" col_2="Prešov" col_3="  1 470,65" col_4="EUR" />
+      <row col_0="Monika Kantorová" col_1="" col_2="Prešov" col_3="  1 449,49" col_4="EUR" />
+      <row col_0="Milan Baláž" col_1="" col_2="Prešov" col_3="  1 421,86" col_4="EUR" />
+      <row col_0="Vincent Oračko" col_1="" col_2="Prešov" col_3="  1 408,58" col_4="EUR" />
+      <row col_0="Peter Adamčík" col_1="Hlavná 2915/89" col_2="Prešov" col_3="  1 400,94" col_4="EUR" />
+      <row col_0="Eva Výhonská" col_1="Požiarnická 3958/16" col_2="Prešov" col_3="  1 397,82" col_4="EUR" />
+      <row col_0="Ružena Bilá" col_1="Tarasa Ševčenka 3930/23" col_2="Prešov" col_3="  1 392,82" col_4="EUR" />
+      <row col_0="Eduard Červeňák" col_1="" col_2="Prešov" col_3="  1 380,50" col_4="EUR" />
+      <row col_0="Andrej Balog" col_1="Tarasa Ševčenka 3930/31" col_2="Prešov" col_3="  1 378,79" col_4="EUR" />
+      <row col_0="Rudolf Godla" col_1="" col_2="Prešov" col_3="  1 372,91" col_4="EUR" />
+      <row col_0="Iveta Tulejová" col_1="" col_2="Prešov" col_3="  1 369,37" col_4="EUR" />
+      <row col_0="Ladislav Dužda" col_1="Herlianska 2233/30" col_2="Prešov" col_3="  1 366,31" col_4="EUR" />
+      <row col_0="Rudolf Balog" col_1="" col_2="Prešov" col_3="  1 350,40" col_4="EUR" />
+      <row col_0="Erika Giňová" col_1="" col_2="Prešov" col_3="  1 335,97" col_4="EUR" />
+      <row col_0="Eva Duždová" col_1="Herlianska 2233/30" col_2="Prešov" col_3="  1 299,58" col_4="EUR" />
+      <row col_0="Oľga Štipáková" col_1="" col_2="Prešov" col_3="  1 295,08" col_4="EUR" />
+      <row col_0="Ľuboš Tancoš" col_1="Tarasa Ševčenka 3930/31" col_2="Prešov" col_3="  1 273,19" col_4="EUR" />
+      <row col_0="Vladimír Kaliňák" col_1="Pöschlova 6288/52" col_2="Prešov" col_3="  1 262,19" col_4="EUR" />
+      <row col_0="Eva Dudová" col_1="" col_2="Prešov" col_3="  1 260,48" col_4="EUR" />
+      <row col_0="Rudolf Balog" col_1="" col_2="Prešov" col_3="  1 240,92" col_4="EUR" />
+      <row col_0="Peter Rajz" col_1="" col_2="Prešov" col_3="  1 230,00" col_4="EUR" />
+      <row col_0="Arpád Hricko" col_1="" col_2="Prešov" col_3="  1 226,60" col_4="EUR" />
+      <row col_0="František Horváth" col_1="" col_2="Prešov" col_3="  1 226,60" col_4="EUR" />
+      <row col_0="Štefan Balog" col_1="" col_2="Prešov" col_3="  1 226,60" col_4="EUR" />
+      <row col_0="Vlasta Horváthová" col_1="Marka Čulena 4756/30" col_2="Prešov" col_3="  1 226,60" col_4="EUR" />
+      <row col_0="Erika Dzurková" col_1="" col_2="Prešov" col_3="  1 225,77" col_4="EUR" />
+      <row col_0="Ružena Balážová" col_1="" col_2="Prešov" col_3="  1 223,59" col_4="EUR" />
+      <row col_0="Milan Balog" col_1="" col_2="Prešov" col_3="  1 222,62" col_4="EUR" />
+      <row col_0="Róbert Bari" col_1="Ďumbierska 6885/23" col_2="Prešov" col_3="  1 222,62" col_4="EUR" />
+      <row col_0="Anna Hipiková" col_1="Obrancov mieru 4684/66" col_2="Prešov" col_3="  1 222,17" col_4="EUR" />
+      <row col_0="Darina Balogová" col_1="" col_2="Prešov" col_3="  1 221,97" col_4="EUR" />
+      <row col_0="Monika Karchňaková" col_1="súp. č. 16" col_2="Ruská Nová Ves" col_3="  1 215,23" col_4="EUR" />
+      <row col_0="Július Kalazdy" col_1="Ondavská 1009/29" col_2="Prešov" col_3="  1 214,20" col_4="EUR" />
+      <row col_0="Vojtech Holub" col_1="Tarasa Ševčenka 3930/31" col_2="Prešov" col_3="  1 212,55" col_4="EUR" />
+      <row col_0="Dagmar Bendíková" col_1="Budovateľská 3611/21" col_2="Prešov" col_3="  1 210,01" col_4="EUR" />
+      <row col_0="Michal Ondričko" col_1="Bažantia 1476/14" col_2="Prešov" col_3="  1 208,59" col_4="EUR" />
+      <row col_0="Naďa Gabčová" col_1="" col_2="Prešov" col_3="  1 208,53" col_4="EUR" />
+      <row col_0="Mária Slepčíková" col_1="" col_2="Prešov" col_3="  1 202,04" col_4="EUR" />
+      <row col_0="Lýdia Jakubiková" col_1="Jarková 3120/97" col_2="Prešov" col_3="  1 194,81" col_4="EUR" />
+      <row col_0="Iveta Eštočáková" col_1="Tarasa Ševčenka 3930/29" col_2="Prešov" col_3="  1 192,69" col_4="EUR" />
+      <row col_0="Miroslav Lacko" col_1="Vajanského 5701/55" col_2="Prešov" col_3="  1 188,15" col_4="EUR" />
+      <row col_0="Monika Horváthová" col_1="" col_2="Prešov" col_3="  1 174,82" col_4="EUR" />
+      <row col_0="Ľubomír Bednár" col_1="Mukačevská 4806/35" col_2="Prešov" col_3="  1 167,70" col_4="EUR" />
+      <row col_0="Roman Holub" col_1="Tarasa Ševčenka 3934/12" col_2="Prešov" col_3="  1 164,86" col_4="EUR" />
+      <row col_0="Pavol Mitra" col_1="Levočská 6163/124" col_2="Prešov" col_3="  1 164,19" col_4="EUR" />
+      <row col_0="Jozef Balog" col_1="Tarasa Ševčenka 3930/25" col_2="Prešov" col_3="  1 155,57" col_4="EUR" />
+      <row col_0="Júlia Kožuchová" col_1="Boženy Němcovej 552/14" col_2="Prešov" col_3="  1 154,90" col_4="EUR" />
+      <row col_0="Pavol Anderko" col_1="Lesnícka 1316/30" col_2="Prešov" col_3="  1 149,40" col_4="EUR" />
+      <row col_0="Anna Bakaľárová" col_1="Lomnická 6757/16" col_2="Prešov" col_3="  1 148,09" col_4="EUR" />
+      <row col_0="Zoltán Horváth" col_1="K Starej tehelni 11500/6" col_2="Prešov" col_3="  1 146,51" col_4="EUR" />
+      <row col_0="Rita Smiková" col_1="Janouškova 5011/11" col_2="Prešov" col_3="  1 140,93" col_4="EUR" />
+      <row col_0="Adam Jano" col_1="Tarasa Ševčenka 3930/27" col_2="Prešov" col_3="  1 134,05" col_4="EUR" />
+      <row col_0="Valentín Godla" col_1="Ďumbierska 6871/14" col_2="Prešov" col_3="  1 131,63" col_4="EUR" />
+      <row col_0="Biao Wei" col_1="Marka Čulena 4755/20" col_2="Prešov" col_3="  1 131,62" col_4="EUR" />
+      <row col_0="Dušan Bendík" col_1="Tarasa Ševčenka 3931/33" col_2="Prešov" col_3="  1 125,70" col_4="EUR" />
+      <row col_0="Božena Badová" col_1="Domoňa 209/39" col_2="Zatín" col_3="  1 121,48" col_4="EUR" />
+      <row col_0="Oľga Faltýnková" col_1="Veselá 6711/1" col_2="Prešov" col_3="  1 096,96" col_4="EUR" />
+      <row col_0="Daniela Gregorová" col_1="" col_2="Prešov" col_3="  1 094,59" col_4="EUR" />
+      <row col_0="Darina Kopčíková" col_1="Tarasa Ševčenka 3930/25" col_2="Prešov" col_3="  1 094,59" col_4="EUR" />
+      <row col_0="Eugen Hricko" col_1="" col_2="Prešov" col_3="  1 094,59" col_4="EUR" />
+      <row col_0="Jozef Bendík" col_1="Tarasa Ševčenka 3931/33" col_2="Prešov" col_3="  1 094,59" col_4="EUR" />
+      <row col_0="Ľubomír Gaži" col_1="L. Novomeského 6438/22" col_2="Prešov" col_3="  1 094,59" col_4="EUR" />
+      <row col_0="Mária Tarasovičová" col_1="" col_2="PRAHA 9" col_3="  1 089,40" col_4="EUR" />
+      <row col_0="Dušan Jančáry" col_1="3" col_2="Košice" col_3="  1 089,29" col_4="EUR" />
+      <row col_0="Roman Makula" col_1="" col_2="Prešov" col_3="  1 086,62" col_4="EUR" />
+      <row col_0="Eva Pohlodková" col_1="" col_2="Prešov" col_3="  1 084,25" col_4="EUR" />
+      <row col_0="Milan Rajz" col_1="" col_2="Prešov" col_3="  1 082,08" col_4="EUR" />
+      <row col_0="Věra Doktorová" col_1="" col_2="Prešov" col_3="  1 079,58" col_4="EUR" />
+      <row col_0="Marek Franko" col_1="Vydumanec 2667/61" col_2="Prešov" col_3="  1 078,86" col_4="EUR" />
+      <row col_0="Rudolf Gábor" col_1="Kúpeľná 3915/7" col_2="Prešov" col_3="  1 077,16" col_4="EUR" />
+      <row col_0="Milan Tuleja" col_1="Pavla Horova 6318/6" col_2="Prešov" col_3="  1 073,09" col_4="EUR" />
+      <row col_0="Monika Kotľárová" col_1="Tarasa Ševčenka 3930/25" col_2="Prešov" col_3="  1 071,04" col_4="EUR" />
+      <row col_0="Marek Tuleja" col_1="" col_2="Prešov" col_3="  1 060,07" col_4="EUR" />
+      <row col_0="Renáta Žigová" col_1="" col_2="Prešov" col_3="  1 060,07" col_4="EUR" />
+      <row col_0="Oľga Makulová" col_1="" col_2="Prešov" col_3="  1 055,69" col_4="EUR" />
+      <row col_0="Tibor Kuru" col_1="" col_2="Prešov" col_3="  1 052,00" col_4="EUR" />
+      <row col_0="Jozef Šejirman" col_1="Prostějovská 4821/5" col_2="Prešov" col_3="  1 051,72" col_4="EUR" />
+      <row col_0="Ján Makula" col_1="Pod Hrádkom 1147/24" col_2="Prešov" col_3="  1 050,11" col_4="EUR" />
+      <row col_0="Stanislav Kurta" col_1="" col_2="Prešov" col_3="  1 038,53" col_4="EUR" />
+      <row col_0="Eva Hricková" col_1="" col_2="Prešov" col_3="  1 035,99" col_4="EUR" />
+      <row col_0="Viera Slavíčková" col_1="Arm. gen. Svobodu 6445/26" col_2="Prešov" col_3="  1 034,75" col_4="EUR" />
+      <row col_0="Valéria Badová" col_1="Kúpeľná 3915/7" col_2="Prešov" col_3="  1 032,86" col_4="EUR" />
+      <row col_0="Štefan Jobko" col_1="Lomnická 6755/6" col_2="Prešov" col_3="  1 026,12" col_4="EUR" />
+      <row col_0="Mário Ugray" col_1="Vranovská 426/7" col_2="Kapušany" col_3="  1 020,80" col_4="EUR" />
+      <row col_0="Beáta Brincková" col_1="Švábska 6764/55" col_2="Prešov" col_3="  1 017,80" col_4="EUR" />
+      <row col_0="Igor Kaleja" col_1="" col_2="Prešov" col_3="  1 008,14" col_4="EUR" />
+      <row col_0="Marta Kalejová" col_1="Slanská 2499/34" col_2="Prešov" col_3="  1 005,80" col_4="EUR" />
+      <row col_0="Marián Bendík" col_1="Tarasa Ševčenka 3931/33" col_2="Prešov" col_3="  1 001,65" col_4="EUR" />
+      <row col_0="Rudolf Balog" col_1="Tarasa Ševčenka 3941/40" col_2="Prešov" col_3="   997,00" col_4="EUR" />
+      <row col_0="Pavol Gregor" col_1="" col_2="Prešov" col_3="   984,20" col_4="EUR" />
+      <row col_0="Mária Semencovová" col_1="Švábska 6801/70" col_2="Prešov" col_3="   983,13" col_4="EUR" />
+      <row col_0="Roman Hanušovský" col_1="Štúrova 3672/9" col_2="Prešov" col_3="   979,03" col_4="EUR" />
+      <row col_0="Ján Kováč" col_1="Gápľová 607/1" col_2="Prešov" col_3="   967,20" col_4="EUR" />
+      <row col_0="Magdaléna Belyová" col_1="" col_2="Prešov" col_3="   965,50" col_4="EUR" />
+      <row col_0="Libuša Miková" col_1="Medzinárodného dňa žien 7580/2" col_2="Prešov" col_3="   963,30" col_4="EUR" />
+      <row col_0="Jaroslav Ivan" col_1="Čergovská 7002/10" col_2="Prešov" col_3="   962,55" col_4="EUR" />
+      <row col_0="Ľudmila Kožušková" col_1="Matice slovenskej 4768/4" col_2="Prešov" col_3="   962,55" col_4="EUR" />
+      <row col_0="Mgr. Jozef Biščák" col_1="súp. č. 174" col_2="Podhorany" col_3="   962,55" col_4="EUR" />
+      <row col_0="Peter Pitlík" col_1="Karpatská 6597/11" col_2="Prešov" col_3="   962,55" col_4="EUR" />
+      <row col_0="Ružena Horváthová" col_1="Švábska 6774/63" col_2="Prešov" col_3="   962,55" col_4="EUR" />
+      <row col_0="Alžbeta Čapľová" col_1="" col_2="Prešov" col_3="   961,35" col_4="EUR" />
+      <row col_0="Katarína Cacciatore" col_1="Pavlovičovo námestie 3859/26" col_2="Prešov" col_3="   948,46" col_4="EUR" />
+      <row col_0="Milan Bíly" col_1="" col_2="Prešov" col_3="   946,55" col_4="EUR" />
+      <row col_0="Štefan Matlák" col_1="" col_2="Prešov" col_3="   944,17" col_4="EUR" />
+      <row col_0="Martin Skalský" col_1="Švábska 6806/50" col_2="Prešov" col_3="   942,63" col_4="EUR" />
+      <row col_0="MVDr. Milan Pribula" col_1="Jarková 3093/43" col_2="Prešov" col_3="   935,31" col_4="EUR" />
+      <row col_0="Gabriela Bolvanová" col_1="Tarasa Ševčenka 3942/46" col_2="Prešov" col_3="   933,69" col_4="EUR" />
+      <row col_0="Anna Konečná" col_1="Sibírska 6958/16" col_2="Prešov" col_3="   933,53" col_4="EUR" />
+      <row col_0="Margita Mikulová" col_1="" col_2="Prešov" col_3="   931,97" col_4="EUR" />
+      <row col_0="Róbert Čonka" col_1="Vihorlatská 7048/16" col_2="Prešov" col_3="   931,35" col_4="EUR" />
+      <row col_0="Iveta Bandyová" col_1="K Starej tehelni 11500/8" col_2="Prešov" col_3="   931,16" col_4="EUR" />
+      <row col_0="Rozália Badová" col_1="Tarasa Ševčenka 3928/15" col_2="Prešov" col_3="   926,96" col_4="EUR" />
+      <row col_0="Miroslav Kopaničák" col_1="" col_2="Prešov" col_3="   924,21" col_4="EUR" />
+      <row col_0="Arpád Tuleja" col_1="Tarasa Ševčenka 3931/33" col_2="Prešov" col_3="   920,06" col_4="EUR" />
+      <row col_0="Peter Mihala" col_1="Važecká 6775/6" col_2="Prešov" col_3="   920,06" col_4="EUR" />
+      <row col_0="Ján Rohaľ" col_1="Sibírska 6942/3" col_2="Prešov" col_3="   918,57" col_4="EUR" />
+      <row col_0="Silvia Taragošová" col_1="" col_2="Prešov" col_3="   918,57" col_4="EUR" />
+      <row col_0="Ružena Kokyová" col_1="" col_2="Prešov" col_3="   916,92" col_4="EUR" />
+      <row col_0="Peter Židzik" col_1="Kotrádova 5170/6" col_2="Prešov" col_3="   913,52" col_4="EUR" />
+      <row col_0="Milan Brehový" col_1="Tomášikova 4856/24" col_2="Prešov" col_3="   913,24" col_4="EUR" />
+      <row col_0="Júlia Lukáčová" col_1="" col_2="Prešov" col_3="   908,23" col_4="EUR" />
+      <row col_0="Marián Klus" col_1="" col_2="Prešov" col_3="   904,34" col_4="EUR" />
+      <row col_0="Peter Mendzif" col_1="Exnárova 6831/36" col_2="Prešov" col_3="   902,97" col_4="EUR" />
+      <row col_0="František Duda" col_1="" col_2="Prešov" col_3="   900,07" col_4="EUR" />
+      <row col_0="Renáta Petíková" col_1="súp. č. 155" col_2="Ražňany" col_3="   896,95" col_4="EUR" />
+      <row col_0="Jozef Balog" col_1="" col_2="Prešov" col_3="   896,70" col_4="EUR" />
+      <row col_0="Peter Griger" col_1="Tomášikova 4858/50" col_2="Prešov" col_3="   895,88" col_4="EUR" />
+      <row col_0="Lucia Sobotová" col_1="Prostějovská 4822/7" col_2="Prešov" col_3="   890,14" col_4="EUR" />
+      <row col_0="Pavol Penkov" col_1="Pod Hrádkom 1130/29" col_2="Prešov" col_3="   887,86" col_4="EUR" />
+      <row col_0="Milan Sládek" col_1="súp. č. 132" col_2="Červenica" col_3="   883,91" col_4="EUR" />
+      <row col_0="Mária Slivková" col_1="Marka Čulena 4754/12" col_2="Prešov" col_3="   882,28" col_4="EUR" />
+      <row col_0="Vlasta Kniesznerová" col_1="Arm. gen. Svobodu 6445/26" col_2="Prešov" col_3="   878,16" col_4="EUR" />
+      <row col_0="Božena Tulejová" col_1="Čergovská 7007/20" col_2="Prešov" col_3="   873,78" col_4="EUR" />
+      <row col_0="Vlasta Kalejová" col_1="" col_2="Prešov" col_3="   870,41" col_4="EUR" />
+      <row col_0="Slávka Spišáková" col_1="Kúpeľná 3912/1" col_2="Prešov" col_3="   863,12" col_4="EUR" />
+      <row col_0="Beáta Holomáňová" col_1="L. Novomeského 6467/10" col_2="Prešov" col_3="   861,39" col_4="EUR" />
+      <row col_0="Margita Dudová" col_1="" col_2="Prešov" col_3="   856,34" col_4="EUR" />
+      <row col_0="Peter Ľach" col_1="Važecká 6793/14" col_2="Prešov" col_3="   852,10" col_4="EUR" />
+      <row col_0="Jolana Gáborová" col_1="Vansovej 6530/7" col_2="Prešov" col_3="   846,55" col_4="EUR" />
+      <row col_0="Elena Godlová" col_1="" col_2="Prešov" col_3="   845,99" col_4="EUR" />
+      <row col_0="Magdaléna Švecová" col_1="Sibírska 7429/4" col_2="Prešov" col_3="   842,89" col_4="EUR" />
+      <row col_0="Ingrid Sárköziová" col_1="Matice slovenskej 4770/8" col_2="Prešov" col_3="   842,55" col_4="EUR" />
+      <row col_0="Mária Némethová" col_1="" col_2="Prešov" col_3="   841,64" col_4="EUR" />
+      <row col_0="Marián Balog" col_1="Tarasa Ševčenka 3931/33" col_2="Prešov" col_3="   839,99" col_4="EUR" />
+      <row col_0="Ján Pancurák" col_1="Magurská 7006/11" col_2="Prešov" col_3="   836,57" col_4="EUR" />
+      <row col_0="Žaneta Kyseľová" col_1="Tomášikova 4858/44" col_2="Prešov" col_3="   829,98" col_4="EUR" />
+      <row col_0="Beáta Balogová" col_1="súp. č. 152" col_2="Cejkov" col_3="   829,84" col_4="EUR" />
+      <row col_0="Vlasta Kalejová" col_1="" col_2="Prešov" col_3="   828,47" col_4="EUR" />
+      <row col_0="Igor Makula" col_1="Bernolákova 6521/1" col_2="Prešov" col_3="   827,65" col_4="EUR" />
+      <row col_0="Juraj Kostruch" col_1="Švábska 6806/48" col_2="Prešov" col_3="   827,12" col_4="EUR" />
+      <row col_0="Renáta Urbanová" col_1="Mukačevská 4801/5" col_2="Prešov" col_3="   827,12" col_4="EUR" />
+      <row col_0="Petronela Kolibábová" col_1="" col_2="Strážske" col_3="   826,07" col_4="EUR" />
+      <row col_0="Štefánia Fabianová" col_1="Sibírska 7429/4" col_2="Prešov" col_3="   824,20" col_4="EUR" />
+      <row col_0="František Mačupa" col_1="Volgogradská 4794/82" col_2="Prešov" col_3="   822,68" col_4="EUR" />
+      <row col_0="Antónia Beganiová" col_1="Kotrádova 5169/4" col_2="Prešov" col_3="   819,15" col_4="EUR" />
+      <row col_0="Božena Reinholdová" col_1="" col_2="Prešov" col_3="   817,72" col_4="EUR" />
+      <row col_0="Andrea Hamelová" col_1="Pavla Horova 6319/12" col_2="Prešov" col_3="   816,25" col_4="EUR" />
+      <row col_0="Ing. Miroslav Jurašek - JUREX" col_1="Jiráskova 1046/6" col_2="Prešov" col_3="   812,24" col_4="EUR" />
+      <row col_0="Emil Lehocký" col_1="" col_2="Prešov" col_3="   811,90" col_4="EUR" />
+      <row col_0="Ivan Fenyeš" col_1="" col_2="Prešov" col_3="   811,12" col_4="EUR" />
+      <row col_0="Emília Balážová" col_1="" col_2="Prešov" col_3="   809,26" col_4="EUR" />
+      <row col_0="Radko Pasternák" col_1="Sibírska 6948/31" col_2="Prešov" col_3="   808,90" col_4="EUR" />
+      <row col_0="Filip Rajz" col_1="Tarasa Ševčenka 3930/25" col_2="Prešov" col_3="   807,01" col_4="EUR" />
+      <row col_0="Oľga Mačová" col_1="" col_2="Prešov" col_3="   805,16" col_4="EUR" />
+      <row col_0="Vojtech Dužda" col_1="Tarasa Ševčenka 3941/42" col_2="Prešov" col_3="   803,70" col_4="EUR" />
+      <row col_0="Ivona Tulejová" col_1="Antona Prídavka 4849/22" col_2="Prešov" col_3="   801,38" col_4="EUR" />
+      <row col_0="Vladimír Baláž" col_1="" col_2="Prešov" col_3="   797,77" col_4="EUR" />
+      <row col_0="František Dyačovský" col_1="Októbrová 4732/57" col_2="Prešov" col_3="   796,13" col_4="EUR" />
+      <row col_0="Viera Rajzová" col_1="súp. č. 32" col_2="Kožany" col_3="   793,73" col_4="EUR" />
+      <row col_0="Pavol Talarovič" col_1="Jurkovičova 6576/1" col_2="Prešov" col_3="   790,94" col_4="EUR" />
+      <row col_0="Ľubica Stredňáková" col_1="Levočská 6118/19" col_2="Prešov" col_3="   788,48" col_4="EUR" />
+      <row col_0="Peter Dzuričko" col_1="Ďumbierska 6867/13" col_2="Prešov" col_3="   787,50" col_4="EUR" />
+      <row col_0="Tibor Duda" col_1="Ďumbierska 6866/9" col_2="Prešov" col_3="   786,80" col_4="EUR" />
+      <row col_0="Ema Slepčíková" col_1="" col_2="Prešov" col_3="   786,46" col_4="EUR" />
+      <row col_0="Monika Peková" col_1="Antona Prídavka 4849/22" col_2="Prešov" col_3="   785,44" col_4="EUR" />
+      <row col_0="Mária Šimková" col_1="Ďumbierska 6865/5" col_2="Prešov" col_3="   782,65" col_4="EUR" />
+      <row col_0="Dušan Dzuričko" col_1="Čergovská 7004/4" col_2="Prešov" col_3="   782,21" col_4="EUR" />
+      <row col_0="Milan Gregor" col_1="" col_2="Prešov" col_3="   781,97" col_4="EUR" />
+      <row col_0="Pavel Jakubčo" col_1="Štúrova 3672/13" col_2="Prešov" col_3="   780,03" col_4="EUR" />
+      <row col_0="Alena Fiedorová" col_1="Sibírska 6959/22" col_2="Prešov" col_3="   768,39" col_4="EUR" />
+      <row col_0="Daniel Poloha" col_1="Lesnícka 1316/30" col_2="Prešov" col_3="   766,70" col_4="EUR" />
+      <row col_0="Ing. arch. Peter Doričko" col_1="Botanická 11183/16" col_2="Prešov" col_3="   763,74" col_4="EUR" />
+      <row col_0="Zoltán Dužda" col_1="Štúrova 3672/15" col_2="Prešov" col_3="   759,64" col_4="EUR" />
+      <row col_0="Terézia Balážová" col_1="Na brehu 1105/56" col_2="Prešov" col_3="   759,31" col_4="EUR" />
+      <row col_0="Helena Balšaiová" col_1="Jánošíkova 5385/56" col_2="Prešov" col_3="   754,61" col_4="EUR" />
+      <row col_0="Želmíra Okruhľanská" col_1="" col_2="Prešov" col_3="   753,71" col_4="EUR" />
+      <row col_0="Zdeněk Stašek" col_1="Železničná 2416/39" col_2="Prešov" col_3="   753,27" col_4="EUR" />
+      <row col_0="Július Taragoš" col_1="Slovenská 3283/48" col_2="Prešov" col_3="   751,86" col_4="EUR" />
+      <row col_0="Mgr. Rastislav Vrškový, PhD." col_1="Kováčska 3356/1" col_2="Prešov" col_3="   744,81" col_4="EUR" />
+      <row col_0="Peter Pollák" col_1="Karpatská 6594/8" col_2="Prešov" col_3="   741,75" col_4="EUR" />
+      <row col_0="Zuzana Murcková" col_1="Sibírska 6962/38" col_2="Prešov" col_3="   741,75" col_4="EUR" />
+      <row col_0="Zdenka Németová Mikulová" col_1="" col_2="Prešov" col_3="   736,03" col_4="EUR" />
+      <row col_0="Martina Piateková" col_1="Magurská 6844/10" col_2="Prešov" col_3="   734,04" col_4="EUR" />
+      <row col_0="Alena Gabčová" col_1="" col_2="Prešov" col_3="   733,45" col_4="EUR" />
+      <row col_0="Michal Hopko" col_1="Jánošíkova 5339/35" col_2="Prešov" col_3="   732,89" col_4="EUR" />
+      <row col_0="Miloš Hric" col_1="Ďumbierska 6865/3" col_2="Prešov" col_3="   732,35" col_4="EUR" />
+      <row col_0="Marek Radačovský" col_1="Matice slovenskej 4772/22" col_2="Prešov" col_3="   730,39" col_4="EUR" />
+      <row col_0="Sylvia Ferková" col_1="" col_2="Prešov" col_3="   730,39" col_4="EUR" />
+      <row col_0="Marcela Slivková" col_1="" col_2="Prešov" col_3="   729,99" col_4="EUR" />
+      <row col_0="Imrich Hudák" col_1="Janovík súp. č. 74" col_2="Janovík" col_3="   729,13" col_4="EUR" />
+      <row col_0="Rudolf Horváth" col_1="Tarasa Ševčenka 3930/27" col_2="Prešov" col_3="   727,23" col_4="EUR" />
+      <row col_0="Marián Jankura" col_1="Vihorlatská 7059/4" col_2="Prešov" col_3="   726,35" col_4="EUR" />
+      <row col_0="Anna Ferková" col_1="Na brehu 1073/27B" col_2="Prešov" col_3="   725,74" col_4="EUR" />
+      <row col_0="Anna Gáborová" col_1="Gápľová 607/1" col_2="Prešov" col_3="   724,33" col_4="EUR" />
+      <row col_0="Anna Koľšovská" col_1="Lomnická 6755/4" col_2="Prešov" col_3="   723,71" col_4="EUR" />
+      <row col_0="Peter Horváth" col_1="" col_2="MARGATE" col_3="   722,28" col_4="EUR" />
+      <row col_0="Jana Marušarzová" col_1="Prostějovská 4839/24" col_2="Prešov" col_3="   721,43" col_4="EUR" />
+      <row col_0="Milan Červeňák" col_1="Zápotockého 4023/13" col_2="Prešov" col_3="   719,48" col_4="EUR" />
+      <row col_0="Ján Holub" col_1="Tarasa Ševčenka 3930/23" col_2="Prešov" col_3="   709,04" col_4="EUR" />
+      <row col_0="Vladislav Bendík" col_1="Bernolákova 6527/4" col_2="Prešov" col_3="   708,82" col_4="EUR" />
+      <row col_0="Eva Gašparová" col_1="Pavlovičovo námestie 3857/9" col_2="Prešov" col_3="   705,97" col_4="EUR" />
+      <row col_0="Jozef Kosior" col_1="Slanská 2488/10" col_2="Prešov" col_3="   705,24" col_4="EUR" />
+      <row col_0="Jana Šurimová" col_1="Prostějovská 4832/61" col_2="Prešov" col_3="   703,66" col_4="EUR" />
+      <row col_0="Marta Veseličová" col_1="Obrancov mieru 4682/48" col_2="Prešov" col_3="   703,66" col_4="EUR" />
+      <row col_0="Štefan Papp" col_1="" col_2="Prešov" col_3="   703,43" col_4="EUR" />
+      <row col_0="Magdaléna Broszková" col_1="Mirka Nešpora 4879/25" col_2="Prešov" col_3="   700,74" col_4="EUR" />
+      <row col_0="Eleonóra Baškovská" col_1="Sabinovská 5137/84" col_2="Prešov" col_3="   698,71" col_4="EUR" />
+      <row col_0="Rastislav Vajda" col_1="Bajkalská 4868/10" col_2="Prešov" col_3="   697,44" col_4="EUR" />
+      <row col_0="Miriam Kvietková" col_1="Sibírska 6945/15" col_2="Prešov" col_3="   693,38" col_4="EUR" />
+      <row col_0="Zuzana Brehová" col_1="Kpt. Jaroša 737/5" col_2="Veľký Šariš" col_3="   691,66" col_4="EUR" />
+      <row col_0="Adriana Višňanská" col_1="Švábska 6794/69" col_2="Prešov" col_3="   689,59" col_4="EUR" />
+      <row col_0="Daniel Trusa" col_1="Pod Kamennou baňou 4105/24" col_2="Prešov" col_3="   687,45" col_4="EUR" />
+      <row col_0="Vojtěch Červeňák" col_1="" col_2="Prešov" col_3="   681,36" col_4="EUR" />
+      <row col_0="Ľubica Slavošová" col_1="Magurská 7316/17" col_2="Prešov" col_3="   679,13" col_4="EUR" />
+      <row col_0="Natália Mitrová" col_1="" col_2="Prešov" col_3="   678,92" col_4="EUR" />
+      <row col_0="Jana Kopaňová" col_1="Magurská 13829/23" col_2="Prešov" col_3="   678,70" col_4="EUR" />
+      <row col_0="Richard Závacký" col_1="Záhradná 2174/9" col_2="Veľký Šariš" col_3="   673,19" col_4="EUR" />
+      <row col_0="Mária Kočiščáková" col_1="Švábska 6820/28" col_2="Prešov" col_3="   670,56" col_4="EUR" />
+      <row col_0="Eva Balážová" col_1="" col_2="Prešov" col_3="   670,44" col_4="EUR" />
+      <row col_0="Silvia Miková" col_1="" col_2="Prešov" col_3="   669,05" col_4="EUR" />
+      <row col_0="Veronika Palčová" col_1="" col_2="Prešov" col_3="   665,33" col_4="EUR" />
+      <row col_0="Jozef Žák" col_1="súp. č. 33" col_2="Korejovce" col_3="   664,40" col_4="EUR" />
+      <row col_0="René Jurašek" col_1="Royova 6763/4" col_2="Prešov" col_3="   661,14" col_4="EUR" />
+      <row col_0="Kristína Žižková" col_1="Švábska 6774/67" col_2="Prešov" col_3="   658,08" col_4="EUR" />
+      <row col_0="Katarína Petrušová" col_1="" col_2="Prešov" col_3="   657,80" col_4="EUR" />
+      <row col_0="Ing. Ján Švarc" col_1="Šrobárova 6563/2" col_2="Prešov" col_3="   657,66" col_4="EUR" />
+      <row col_0="Alena Hlodanová" col_1="Pavlovičovo námestie 3860/29" col_2="Prešov" col_3="   657,13" col_4="EUR" />
+      <row col_0="Peter Holub" col_1="" col_2="Prešov" col_3="   657,13" col_4="EUR" />
+      <row col_0="Anton Buch" col_1="Mukačevská 4806/31" col_2="Prešov" col_3="   655,60" col_4="EUR" />
+      <row col_0="Mária Čonková" col_1="Karpatská 6594/8" col_2="Prešov" col_3="   654,30" col_4="EUR" />
+      <row col_0="Alena Horváthová" col_1="Slovenská 3283/48" col_2="Prešov" col_3="   653,58" col_4="EUR" />
+      <row col_0="Jana Tormová - Vináreň Neptún" col_1="Volgogradská 11065/22" col_2="Prešov" col_3="   653,45" col_4="EUR" />
+      <row col_0="Peter Šimko" col_1="" col_2="Prešov" col_3="   651,72" col_4="EUR" />
+      <row col_0="Radoslav Futej" col_1="Švábska 6723/37" col_2="Prešov" col_3="   649,10" col_4="EUR" />
+      <row col_0="Helena Duždová" col_1="" col_2="Prešov" col_3="   644,57" col_4="EUR" />
+      <row col_0="Ján Balog" col_1="Tarasa Ševčenka 3941/42" col_2="Prešov" col_3="   640,60" col_4="EUR" />
+      <row col_0="Jarmila Pigová" col_1="Levočská 4702/83" col_2="Prešov" col_3="   640,60" col_4="EUR" />
+      <row col_0="Marek Germuška" col_1="Volgogradská 4794/70" col_2="Prešov" col_3="   639,42" col_4="EUR" />
+      <row col_0="Jozef Jecuško" col_1="Matice slovenskej 4771/14" col_2="Prešov" col_3="   638,27" col_4="EUR" />
+      <row col_0="Anna Ferková" col_1="Tarasa Ševčenka 3942/44" col_2="Prešov" col_3="   637,55" col_4="EUR" />
+      <row col_0="Marie Tulejová" col_1="Solivarská 1444/44" col_2="Prešov" col_3="   632,34" col_4="EUR" />
+      <row col_0="Bohumil Konečný" col_1="L. Novomeského 6440/16" col_2="Prešov" col_3="   631,96" col_4="EUR" />
+      <row col_0="Dušan Grega" col_1="Južná 2161/4" col_2="Veľký Šariš" col_3="   631,24" col_4="EUR" />
+      <row col_0="Jaroslav Duna" col_1="" col_2="Prešov" col_3="   630,66" col_4="EUR" />
+      <row col_0="Imrich Konkoľ" col_1="Mukačevská 4806/39" col_2="Prešov" col_3="   628,82" col_4="EUR" />
+      <row col_0="Vladimír Hyc" col_1="Jarková 223/14" col_2="Svinia" col_3="   628,11" col_4="EUR" />
+      <row col_0="Ingrid Hijazeenová" col_1="Antona Prídavka 4853/30" col_2="Prešov" col_3="   626,82" col_4="EUR" />
+      <row col_0="Július Chromý" col_1="Palárikova 1203/16" col_2="Prešov" col_3="   621,61" col_4="EUR" />
+      <row col_0="Ján Marcinčin" col_1="Prostějovská 4824/25" col_2="Prešov" col_3="   621,43" col_4="EUR" />
+      <row col_0="Ing. Zuzana Milovčíková" col_1="Šafárikova 5913/13" col_2="Prešov" col_3="   616,17" col_4="EUR" />
+      <row col_0="Věra Šajgalíková" col_1="Čergovská 7258/24" col_2="Prešov" col_3="   612,55" col_4="EUR" />
+      <row col_0="Milan Gereg" col_1="Vihorlatská 7229/20" col_2="Prešov" col_3="   611,11" col_4="EUR" />
+      <row col_0="Nadežda Dudová" col_1="Tarasa Ševčenka 3931/35" col_2="Prešov" col_3="   608,67" col_4="EUR" />
+      <row col_0="Róbert Makula" col_1="Mukačevská 4807/45" col_2="Prešov" col_3="   606,09" col_4="EUR" />
+      <row col_0="Alexej Ilkovič" col_1="Kukučínova 1781/2" col_2="Sabinov" col_3="   604,67" col_4="EUR" />
+      <row col_0="Erika Smoľáková" col_1="Janouškova 5010/1" col_2="Prešov" col_3="   601,04" col_4="EUR" />
+      <row col_0="Beáta Rabinská" col_1="súp. č. 143" col_2="Malý Šariš" col_3="   597,70" col_4="EUR" />
+      <row col_0="Vojtech Daňo" col_1="K Starej tehelni 11500/5" col_2="Prešov" col_3="   597,32" col_4="EUR" />
+      <row col_0="Marcel Červeňák" col_1="Tarasa Ševčenka 3936/20" col_2="Prešov" col_3="   597,17" col_4="EUR" />
+      <row col_0="Ondrej Vaščura" col_1="Prostějovská 4832/67" col_2="Prešov" col_3="   595,17" col_4="EUR" />
+      <row col_0="Renáta Rusňáková" col_1="Alexandra Matušku 6414/4" col_2="Prešov" col_3="   593,32" col_4="EUR" />
+      <row col_0="RNDr. Gabriel Vitovič" col_1="Ďumbierska 6882/17" col_2="Prešov" col_3="   590,60" col_4="EUR" />
+      <row col_0="Jana Balážová" col_1="Exnárova 6628/28" col_2="Prešov" col_3="   588,49" col_4="EUR" />
+      <row col_0="Peter Kundrát" col_1="Nezabudova 865/31" col_2="Sabinov" col_3="   587,68" col_4="EUR" />
+      <row col_0="Júlia Fecková" col_1="Lomnická 6754/2" col_2="Prešov" col_3="   585,56" col_4="EUR" />
+      <row col_0="Anna Petruňková" col_1="Justičná 6504/8" col_2="Prešov" col_3="   583,36" col_4="EUR" />
+      <row col_0="Ján Sedlák" col_1="" col_2="Prešov" col_3="   582,91" col_4="EUR" />
+      <row col_0="Viera Balogová" col_1="súp. č. 154" col_2="Rožkovany" col_3="   582,13" col_4="EUR" />
+      <row col_0="Adriana Buňatická" col_1="Vajanského 5701/55" col_2="Prešov" col_3="   581,12" col_4="EUR" />
+      <row col_0="Ingrid Holubová" col_1="Wolkerova 5025/13" col_2="Prešov" col_3="   580,69" col_4="EUR" />
+      <row col_0="Jozef Krišo" col_1="Mirka Nešpora 6476/73" col_2="Prešov" col_3="   579,97" col_4="EUR" />
+      <row col_0="Anna Dusová" col_1="" col_2="Prešov" col_3="   579,51" col_4="EUR" />
+      <row col_0="Ing. Peter Španiel" col_1="Lesnícka 1321/48" col_2="Prešov" col_3="   579,27" col_4="EUR" />
+      <row col_0="Valentín Hatala" col_1="Jurkovičova 6576/2" col_2="Prešov" col_3="   578,48" col_4="EUR" />
+      <row col_0="Rudolf Kuhajdík" col_1="Sládkovičova 5968/38" col_2="Prešov" col_3="   577,93" col_4="EUR" />
+      <row col_0="Gejza Sivák" col_1="" col_2="Prešov" col_3="   576,85" col_4="EUR" />
+      <row col_0="Ida Tulejová" col_1="" col_2="Prešov" col_3="   574,86" col_4="EUR" />
+      <row col_0="Norbert Tarkovič" col_1="Sabinovská 5050/13" col_2="Prešov" col_3="   574,55" col_4="EUR" />
+      <row col_0="Vlasta Pohlotková" col_1="Zápotockého 4025/19" col_2="Prešov" col_3="   574,51" col_4="EUR" />
+      <row col_0="Peter Kulik" col_1="Tarasa Ševčenka 3940/38" col_2="Prešov" col_3="   574,28" col_4="EUR" />
+      <row col_0="Alan Lakatoš" col_1="Tarasa Ševčenka 3941/40" col_2="Prešov" col_3="   573,18" col_4="EUR" />
+      <row col_0="Renáta Samková" col_1="Adlerova 835/4" col_2="Košice-Dargovských hrdinov" col_3="   572,00" col_4="EUR" />
+      <row col_0="Martin Pastír" col_1="Prostějovská 4828/39" col_2="Prešov" col_3="   570,53" col_4="EUR" />
+      <row col_0="Martina Gallová" col_1="Lomnická 6759/28" col_2="Prešov" col_3="   569,10" col_4="EUR" />
+      <row col_0="Alena Paločková" col_1="Levočská 6178/154" col_2="Prešov" col_3="   566,70" col_4="EUR" />
+      <row col_0="Katarína Macíková" col_1="Sibírska 6962/36" col_2="Prešov" col_3="   566,33" col_4="EUR" />
+      <row col_0="Daniel Poráč" col_1="Karpatská 6593/5" col_2="Prešov" col_3="   566,01" col_4="EUR" />
+      <row col_0="Emília Lejková" col_1="" col_2="Prešov" col_3="   564,37" col_4="EUR" />
+      <row col_0="Norbert Kováč" col_1="Ďumbierska 6865/3" col_2="Prešov" col_3="   564,28" col_4="EUR" />
+      <row col_0="Jozef Juričko" col_1="súp. č. 35" col_2="Hrabkov" col_3="   558,89" col_4="EUR" />
+      <row col_0="Daniela Knišová" col_1="Antona Prídavka 4848/20" col_2="Prešov" col_3="   557,47" col_4="EUR" />
+      <row col_0="Elemír Godla" col_1="Tarasa Ševčenka 3930/29" col_2="Prešov" col_3="   557,36" col_4="EUR" />
+      <row col_0="Mária Rabinská" col_1="súp. č. 143" col_2="Malý Šariš" col_3="   556,01" col_4="EUR" />
+      <row col_0="Tibor Tuleja" col_1="" col_2="Prešov" col_3="   552,80" col_4="EUR" />
+      <row col_0="Ladislav Horváth" col_1="Kastelburgstrasse 56" col_2="Mníchov" col_3="   552,49" col_4="EUR" />
+      <row col_0="Mária Horváthová" col_1="" col_2="Prešov" col_3="   550,37" col_4="EUR" />
+      <row col_0="Bartolomej Bandi" col_1="" col_2="Prešov" col_3="   549,71" col_4="EUR" />
+      <row col_0="Jozef Žák SARAH" col_1="17. novembra 3753/198" col_2="Prešov" col_3="   549,12" col_4="EUR" />
+      <row col_0="Andrej Balog" col_1="Močarmany súp. č. 156" col_2="Petrovany" col_3="   547,17" col_4="EUR" />
+      <row col_0="Mária Šoltisová" col_1="" col_2="Prešov" col_3="   546,06" col_4="EUR" />
+      <row col_0="Stela Žáková" col_1="Levočská 6133/30" col_2="Prešov" col_3="   544,71" col_4="EUR" />
+      <row col_0="Valéria Benčičová" col_1="Tarasa Ševčenka 3928/13" col_2="Prešov" col_3="   544,40" col_4="EUR" />
+      <row col_0="Peter Seman" col_1="Lomnická 6757/16" col_2="Prešov" col_3="   543,89" col_4="EUR" />
+      <row col_0="Richard Ličák" col_1="Bencúrova 784/9" col_2="Prešov" col_3="   543,64" col_4="EUR" />
+      <row col_0="Nataša Pohlodková" col_1="" col_2="Prešov" col_3="   542,54" col_4="EUR" />
+      <row col_0="Pavol Zuščák" col_1="Švábska 6797/74" col_2="Prešov" col_3="   542,53" col_4="EUR" />
+      <row col_0="Alena Čičková" col_1="Švábska 6807/44" col_2="Prešov" col_3="   542,37" col_4="EUR" />
+      <row col_0="Peter Kasák" col_1="Gabriela Kapyho 273/1" col_2="Kapušany" col_3="   537,39" col_4="EUR" />
+      <row col_0="Helena Štieberová" col_1="" col_2="Prešov" col_3="   537,30" col_4="EUR" />
+      <row col_0="Peter Zeleň" col_1="Exnárova 6622/10" col_2="Prešov" col_3="   532,60" col_4="EUR" />
+      <row col_0="Alena Kráľová" col_1="Sibírska 7087/10" col_2="Prešov" col_3="   532,56" col_4="EUR" />
+      <row col_0="Marta Čikalová" col_1="Justičná 6503/4" col_2="Prešov" col_3="   532,56" col_4="EUR" />
+      <row col_0="Ján Čarný" col_1="Medzinárodného dňa žien 7580/2" col_2="Prešov" col_3="   529,14" col_4="EUR" />
+      <row col_0="Katarína Čižíková" col_1="" col_2="Prešov" col_3="   527,62" col_4="EUR" />
+      <row col_0="Miroslav Babušák" col_1="" col_2="Prešov" col_3="   525,05" col_4="EUR" />
+      <row col_0="Nina Bašistová" col_1="Tomášikova 4858/44" col_2="Prešov" col_3="   522,80" col_4="EUR" />
+      <row col_0="Rozália Balogová" col_1="" col_2="Prešov" col_3="   517,38" col_4="EUR" />
+      <row col_0="Martin Kačmarík" col_1="Suvorovova 1162/12" col_2="Prešov" col_3="   515,93" col_4="EUR" />
+      <row col_0="Monika Jurišová" col_1="Prostějovská 6323/93" col_2="Prešov" col_3="   515,36" col_4="EUR" />
+      <row col_0="Vladimír Sivák" col_1="súp. č. 153" col_2="Abranovce" col_3="   515,09" col_4="EUR" />
+      <row col_0="Ľubica Ferková" col_1="" col_2="Prešov" col_3="   514,38" col_4="EUR" />
+      <row col_0="Peter Verešpej" col_1="" col_2="Prešov" col_3="   513,40" col_4="EUR" />
+      <row col_0="Miroslav Bašista" col_1="Prostějovská 4822/7" col_2="Prešov" col_3="   513,01" col_4="EUR" />
+      <row col_0="Ingrid Petiková" col_1="Tarasa Ševčenka 3930/31" col_2="Prešov" col_3="   512,38" col_4="EUR" />
+      <row col_0="Roman Balog" col_1="Močarmany súp. č. 156" col_2="Petrovany" col_3="   512,35" col_4="EUR" />
+      <row col_0="Peter Fedorko" col_1="Švábska 6765/59" col_2="Prešov" col_3="   510,58" col_4="EUR" />
+      <row col_0="František Ferenc" col_1="Holubia 14030/7" col_2="Prešov" col_3="   510,46" col_4="EUR" />
+      <row col_0="Galina Blizmanová" col_1="Moyzesova 5768/34" col_2="Prešov" col_3="   509,68" col_4="EUR" />
+      <row col_0="Blanka Mrvová" col_1="L. Novomeského 6438/24" col_2="Prešov" col_3="   509,26" col_4="EUR" />
+      <row col_0="Margita Hamborská" col_1="" col_2="Prešov" col_3="   508,74" col_4="EUR" />
+      <row col_0="Juraj Čolák" col_1="Antona Prídavka 4852/28" col_2="Prešov" col_3="   508,32" col_4="EUR" />
+      <row col_0="Magdaléna Sirotníková" col_1="" col_2="Prešov" col_3="   508,18" col_4="EUR" />
+      <row col_0="Peter Libič - LIXON" col_1="Nemčianska cesta 5" col_2="Nemce" col_3="   507,89" col_4="EUR" />
+      <row col_0="Daniela Zemanová" col_1="Prostějovská 6324/95" col_2="Prešov" col_3="   507,55" col_4="EUR" />
+      <row col_0="Andrea Šechná" col_1="Jurkovičova 6577/6" col_2="Prešov" col_3="   506,07" col_4="EUR" />
+      <row col_0="Vladimír Baránek" col_1="Šafárikova 5932/6" col_2="Prešov" col_3="   503,44" col_4="EUR" />
+      <row col_0="Janetta Macuráková" col_1="Višňová 6517/9" col_2="Prešov" col_3="   502,45" col_4="EUR" />
+      <row col_0="Mgr. Alexandra Jendrušová" col_1="Sabinovská 5070/79" col_2="Prešov" col_3="   501,69" col_4="EUR" />
+      <row col_0="Zuzana Horváthová" col_1="" col_2="Prešov" col_3="   500,32" col_4="EUR" />
+      <row col_0="Peter Cehelník" col_1="Janka Borodáča 3867/10" col_2="Prešov" col_3="   498,52" col_4="EUR" />
+      <row col_0="Jozef Németh" col_1="" col_2="Prešov" col_3="   498,26" col_4="EUR" />
+      <row col_0="Júlia Gregorová" col_1="" col_2="Prešov" col_3="   498,26" col_4="EUR" />
+      <row col_0="Monika Balogová" col_1="" col_2="Prešov" col_3="   498,26" col_4="EUR" />
+      <row col_0="Jana Ondasová" col_1="Antona Prídavka 4852/28" col_2="Prešov" col_3="   496,39" col_4="EUR" />
+      <row col_0="Ladislav Balog" col_1="K Starej tehelni 11500/5" col_2="Prešov" col_3="   489,23" col_4="EUR" />
+      <row col_0="Rudolf Godla" col_1="" col_2="Prešov" col_3="   489,23" col_4="EUR" />
+      <row col_0="Štefan Sopko" col_1="Exnárova 6624/19" col_2="Prešov" col_3="   489,23" col_4="EUR" />
+      <row col_0="Věra Brišková" col_1="" col_2="Prešov" col_3="   489,23" col_4="EUR" />
+      <row col_0="Andrej Valigurský" col_1="Šrobárova 6568/19" col_2="Prešov" col_3="   489,06" col_4="EUR" />
+      <row col_0="Jozef Okruhľanský" col_1="" col_2="Prešov" col_3="   488,97" col_4="EUR" />
+      <row col_0="Tibor Horváth" col_1="Višňová 6505/1" col_2="Prešov" col_3="   488,53" col_4="EUR" />
+      <row col_0="Ján Drusa" col_1="Kúpeľná 3912/1" col_2="Prešov" col_3="   488,36" col_4="EUR" />
+      <row col_0="Oľga Dajčová" col_1="Komenského 4978/13" col_2="Prešov" col_3="   488,36" col_4="EUR" />
+      <row col_0="Patrícia Hricová" col_1="Karpatská 6596/10" col_2="Prešov" col_3="   488,36" col_4="EUR" />
+      <row col_0="Pierre Marcel Dion" col_1="Krátka 5890/3" col_2="Prešov" col_3="   488,36" col_4="EUR" />
+      <row col_0="Erika Hanudeľová" col_1="Vansovej 6530/8" col_2="Prešov" col_3="   484,46" col_4="EUR" />
+      <row col_0="Jozef Duda" col_1="Vihorlatská 7228/17" col_2="Prešov" col_3="   484,46" col_4="EUR" />
+      <row col_0="Ján Sabol - ELEKTRO SAVEX" col_1="Slanská 2492/18" col_2="Prešov" col_3="   480,98" col_4="EUR" />
+      <row col_0="Mária Lešková" col_1="M. R. Štefánika 1835/32" col_2="Dolný Kubín" col_3="   479,77" col_4="EUR" />
+      <row col_0="Martin Mruz" col_1="Ďumbierska 6906/24" col_2="Prešov" col_3="   476,71" col_4="EUR" />
+      <row col_0="Libuša Bohatová" col_1="" col_2="Prešov" col_3="   474,60" col_4="EUR" />
+      <row col_0="Renáta Novotná" col_1="Lidická 605/20" col_2="Prešov" col_3="   471,16" col_4="EUR" />
+      <row col_0="Milan Bado" col_1="" col_2="Prešov" col_3="   470,52" col_4="EUR" />
+      <row col_0="Michaela Vitališová" col_1="Vlada Clementisa 7305/15" col_2="Prešov" col_3="   470,11" col_4="EUR" />
+      <row col_0="Anna Žolnerová" col_1="" col_2="Prešov" col_3="   468,45" col_4="EUR" />
+      <row col_0="Vladimír Dadej" col_1="Jánošíkova 5336/29" col_2="Prešov" col_3="   466,22" col_4="EUR" />
+      <row col_0="Marián Hvišč" col_1="Šrobárova 6563/2" col_2="Prešov" col_3="   465,87" col_4="EUR" />
+      <row col_0="Štefan Kiffer" col_1="Mukačevská 7920/19" col_2="Prešov" col_3="   465,30" col_4="EUR" />
+      <row col_0="Vladimír Kačmarík" col_1="Orechová 13922/9" col_2="Prešov" col_3="   465,04" col_4="EUR" />
+      <row col_0="Mária Pigová" col_1="" col_2="Prešov" col_3="   462,90" col_4="EUR" />
+      <row col_0="Ing. Juraj Sakala" col_1="Prostějovská 7025/111" col_2="Prešov" col_3="   462,72" col_4="EUR" />
+      <row col_0="Angelika Michňáková" col_1="Komenského 567/30" col_2="Bardejov" col_3="   462,30" col_4="EUR" />
+      <row col_0="Oliver Grich - JOMIR +" col_1="Mirka Nešpora 4875/5" col_2="Prešov" col_3="   462,00" col_4="EUR" />
+      <row col_0="Konštantín Poráč" col_1="Pavla Horova 6319/12" col_2="Prešov" col_3="   460,15" col_4="EUR" />
+      <row col_0="Mgr. Dalibor Herkeľ" col_1="Sabinovská 5050/15" col_2="Prešov" col_3="   460,02" col_4="EUR" />
+      <row col_0="Andrea Balogová" col_1="súp. č. 4" col_2="Pavlova Ves" col_3="   459,90" col_4="EUR" />
+      <row col_0="Dezider Balog" col_1="Tarasa Ševčenka 3941/40" col_2="Prešov" col_3="   459,90" col_4="EUR" />
+      <row col_0="Mária Plavcová" col_1="Jur súp. č. 121" col_2="Hubošovce" col_3="   459,90" col_4="EUR" />
+      <row col_0="Alena Kovaliková" col_1="Rákocziho 2012/7" col_2="Veľký Šariš" col_3="   458,94" col_4="EUR" />
+      <row col_0="Svetlana Kobyľanová - ASTÓRIA" col_1="Javorinská 5545/3" col_2="Prešov" col_3="   457,60" col_4="EUR" />
+      <row col_0="Peter Priester" col_1="súp. č. 65" col_2="Rokycany" col_3="   457,15" col_4="EUR" />
+      <row col_0="Monika Belyová" col_1="súp. č. 127" col_2="Úbrež" col_3="   456,85" col_4="EUR" />
+      <row col_0="Jozef Matej" col_1="Sekčovská 1562/48" col_2="Prešov" col_3="   456,57" col_4="EUR" />
+      <row col_0="Radko Pasternák" col_1="Sibírska 6948/31" col_2="Prešov" col_3="   456,56" col_4="EUR" />
+      <row col_0="Radoslav Fecko" col_1="Janouškova 5005/2" col_2="Prešov" col_3="   455,33" col_4="EUR" />
+      <row col_0="Ján Gavrun" col_1="súp. č. 436" col_2="Kendice" col_3="   454,85" col_4="EUR" />
+      <row col_0="Monika Kozárová" col_1="súp. č. 50" col_2="Nová Sedlica" col_3="   454,36" col_4="EUR" />
+      <row col_0="Rudolf Dužda" col_1="Herlianska 2234/31" col_2="Prešov" col_3="   454,33" col_4="EUR" />
+      <row col_0="Anton Kivader" col_1="" col_2="Prešov" col_3="   453,53" col_4="EUR" />
+      <row col_0="František Valenčík" col_1="Požiarnická 3956/10" col_2="Prešov" col_3="   453,12" col_4="EUR" />
+      <row col_0="Rudolf Daňo" col_1="" col_2="Prešov" col_3="   453,12" col_4="EUR" />
+      <row col_0="Mária Kamoďová" col_1="" col_2="Prešov" col_3="   452,89" col_4="EUR" />
+      <row col_0="Jozef Farkaš" col_1="súp. č. 121" col_2="Hubošovce" col_3="   452,86" col_4="EUR" />
+      <row col_0="Anton Marušarz" col_1="Prostějovská 4839/24" col_2="Prešov" col_3="   452,61" col_4="EUR" />
+      <row col_0="Janka Matyasová" col_1="Volgogradská 4793/60" col_2="Prešov" col_3="   446,82" col_4="EUR" />
+      <row col_0="Peter Mérten" col_1="Železničná 2416/39" col_2="Prešov" col_3="   444,80" col_4="EUR" />
+      <row col_0="Stanislav Obšut" col_1="Janouškova 5012/23" col_2="Prešov" col_3="   444,19" col_4="EUR" />
+      <row col_0="Peter Kaleja" col_1="" col_2="Prešov" col_3="   443,15" col_4="EUR" />
+      <row col_0="Sylvia Kováčová" col_1="Antona Prídavka 4852/28" col_2="Prešov" col_3="   442,99" col_4="EUR" />
+      <row col_0="Anna Petková" col_1="Mirka Nešpora 4883/39" col_2="Prešov" col_3="   440,60" col_4="EUR" />
+      <row col_0="Jana Kalejová" col_1="K Starej tehelni 11584/12" col_2="Prešov" col_3="   438,67" col_4="EUR" />
+      <row col_0="Anna Roguľová" col_1="Lesnícka 1314/20" col_2="Prešov" col_3="   438,27" col_4="EUR" />
+      <row col_0="Sylvia Wilgová" col_1="Moyzesova 5768/34" col_2="Prešov" col_3="   435,54" col_4="EUR" />
+      <row col_0="Ing. Anton Hrin" col_1="" col_2="Prešov" col_3="   434,53" col_4="EUR" />
+      <row col_0="Daša Gregorová" col_1="" col_2="Prešov" col_3="   433,55" col_4="EUR" />
+      <row col_0="František Dani" col_1="Krčméryho 1029/7" col_2="Košice-Luník IX" col_3="   432,83" col_4="EUR" />
+      <row col_0="Eduard Mihalič" col_1="Višňová 11606/13" col_2="Prešov" col_3="   432,08" col_4="EUR" />
+      <row col_0="Július Ťukot" col_1="Gápľová 655/52" col_2="Prešov" col_3="   431,49" col_4="EUR" />
+      <row col_0="Peter Richvalský" col_1="Mukačevská 4801/5" col_2="Prešov" col_3="   430,34" col_4="EUR" />
+      <row col_0="Róbert Hagyári" col_1="Mičurinova 3428/15" col_2="Prešov" col_3="   430,32" col_4="EUR" />
+      <row col_0="Amália Šaravská" col_1="Švábska 6722/35" col_2="Prešov" col_3="   430,13" col_4="EUR" />
+      <row col_0="Helena Tulejová" col_1="Tarasa Ševčenka 3941/40" col_2="Prešov" col_3="   430,00" col_4="EUR" />
+      <row col_0="Vlasta Poniková" col_1="Arm. gen. Svobodu 6445/26" col_2="Prešov" col_3="   429,13" col_4="EUR" />
+      <row col_0="Daša Adamová" col_1="Švábska 6820/30" col_2="Prešov" col_3="   427,95" col_4="EUR" />
+      <row col_0="Milan Lacko" col_1="" col_2="Prešov" col_3="   427,60" col_4="EUR" />
+      <row col_0="Tibor Galyas" col_1="Sabinovská 12509/35" col_2="Prešov" col_3="   427,59" col_4="EUR" />
+      <row col_0="Robert Lukačko" col_1="Levočská 4701/77" col_2="Prešov" col_3="   426,89" col_4="EUR" />
+      <row col_0="Andrea Pospíšilová" col_1="Mirka Nešpora 4879/23" col_2="Prešov" col_3="   426,57" col_4="EUR" />
+      <row col_0="Magdaléna Kocourková" col_1="Čipkárska 573/2" col_2="Prešov" col_3="   426,57" col_4="EUR" />
+      <row col_0="Terézia Kancírová" col_1="Volgogradská 11065/24" col_2="Prešov" col_3="   426,57" col_4="EUR" />
+      <row col_0="Anežka Belišová" col_1="Vihorlatská 7060/5" col_2="Prešov" col_3="   426,40" col_4="EUR" />
+      <row col_0="Milan Mudrák" col_1="Karpatská 6596/10" col_2="Prešov" col_3="   424,57" col_4="EUR" />
+      <row col_0="Mgr. Soňa Kučková" col_1="Mukačevská 4807/43" col_2="Prešov" col_3="   422,50" col_4="EUR" />
+      <row col_0="Pavol Molčan" col_1="" col_2="Prešov" col_3="   422,46" col_4="EUR" />
+      <row col_0="Daniela Suchá" col_1="Tomášikova 4858/52" col_2="Prešov" col_3="   422,36" col_4="EUR" />
+      <row col_0="Július Mihalič" col_1="Višňová 11606/13" col_2="Prešov" col_3="   422,00" col_4="EUR" />
+      <row col_0="Katarína Macejová" col_1="Tarasa Ševčenka 3941/40" col_2="Prešov" col_3="   420,52" col_4="EUR" />
+      <row col_0="Ing. Peter Adamčík" col_1="Pionierska 436/12" col_2="Prešov" col_3="   419,90" col_4="EUR" />
+      <row col_0="Jana Chlebovcová" col_1="Pavlovičovo námestie 3862/44" col_2="Prešov" col_3="   414,56" col_4="EUR" />
+      <row col_0="Jana Džačovská" col_1="" col_2="Prešov" col_3="   412,47" col_4="EUR" />
+      <row col_0="Hana Čonková" col_1="Jarková 8097/93A" col_2="Prešov" col_3="   412,44" col_4="EUR" />
+      <row col_0="Ladislav Balog" col_1="K Starej tehelni 11500/7" col_2="Prešov" col_3="   412,44" col_4="EUR" />
+      <row col_0="Martin Pažin" col_1="Vihorlatská 7281/22" col_2="Prešov" col_3="   412,44" col_4="EUR" />
+      <row col_0="Pavol Mižišin" col_1="" col_2="Prešov" col_3="   412,44" col_4="EUR" />
+      <row col_0="Zuzana Holecyová" col_1="Mukačevská 4806/35" col_2="Prešov" col_3="   412,44" col_4="EUR" />
+      <row col_0="Andrej Balog" col_1="" col_2="Prešov" col_3="   410,10" col_4="EUR" />
+      <row col_0="Zuzana Jackaninová" col_1="Vihorlatská 7048/14" col_2="Prešov" col_3="   410,05" col_4="EUR" />
+      <row col_0="Blažena Mitrovičová" col_1="Jurkovičova 6577/7" col_2="Prešov" col_3="   408,06" col_4="EUR" />
+      <row col_0="Vladimír Komňaťan" col_1="súp. č. 41" col_2="Klenov" col_3="   405,28" col_4="EUR" />
+      <row col_0="Oto Lohyňa" col_1="Fraňa Kráľa 4632/4" col_2="Prešov" col_3="   404,70" col_4="EUR" />
+      <row col_0="Juliana Gočová" col_1="Mirka Nešpora 4880/29" col_2="Prešov" col_3="   398,88" col_4="EUR" />
+      <row col_0="Ľuboš Pešta" col_1="Tarasa Ševčenka 3929/21" col_2="Prešov" col_3="   398,31" col_4="EUR" />
+      <row col_0="PaedDr. Július Merkovský-Krala" col_1="Tkáčska 3147/5" col_2="Prešov" col_3="   398,31" col_4="EUR" />
+      <row col_0="Ingrid Kočišová" col_1="17. novembra 8288/106" col_2="Prešov" col_3="   398,05" col_4="EUR" />
+      <row col_0="Mária Rigóová" col_1="Važecká 6793/16" col_2="Prešov" col_3="   397,67" col_4="EUR" />
+      <row col_0="Ingrid Liptáková" col_1="Strážnická 2617/33" col_2="Prešov" col_3="   396,99" col_4="EUR" />
+      <row col_0="Jaroslav Zákutný" col_1="" col_2="Prešov" col_3="   395,81" col_4="EUR" />
+      <row col_0="Vladimír Viťák" col_1="Urbánkova 4026/1" col_2="Prešov" col_3="   394,70" col_4="EUR" />
+      <row col_0="Ján Ferko" col_1="K Starej tehelni 11500/6" col_2="Prešov" col_3="   394,23" col_4="EUR" />
+      <row col_0="Marta Horvátová" col_1="Vihorlatská 7046/8" col_2="Prešov" col_3="   392,13" col_4="EUR" />
+      <row col_0="Eva Gašparová - CALDAEKO" col_1="Pavlovičovo námestie 3857/9" col_2="Prešov" col_3="   392,05" col_4="EUR" />
+      <row col_0="Peter Balun" col_1="Kamenná 12435/13A" col_2="Prešov" col_3="   391,61" col_4="EUR" />
+      <row col_0="Mária Hrabčáková" col_1="Vansovej 6533/12" col_2="Prešov" col_3="   390,02" col_4="EUR" />
+      <row col_0="Peter Baláž" col_1="Antona Prídavka 4851/26" col_2="Prešov" col_3="   387,52" col_4="EUR" />
+      <row col_0="Blanka Gladičová" col_1="Volgogradská 4783/2" col_2="Prešov" col_3="   385,60" col_4="EUR" />
+      <row col_0="Peter Mňahončák" col_1="Dubová 6486/1" col_2="Prešov" col_3="   383,90" col_4="EUR" />
+      <row col_0="Tibor Bažo" col_1="" col_2="Prešov" col_3="   380,96" col_4="EUR" />
+      <row col_0="Vladimír Varga" col_1="Vansovej 6531/9" col_2="Prešov" col_3="   380,69" col_4="EUR" />
+      <row col_0="František Janiga" col_1="Poros 489/13" col_2="Pusté Úľany" col_3="   380,00" col_4="EUR" />
+      <row col_0="Radoslav Sluťák" col_1="Ždiarska 1447/21" col_2="Košice-Nad Jazerom" col_3="   379,73" col_4="EUR" />
+      <row col_0="Danka Halušková" col_1="Matice slovenskej 4761/3" col_2="Prešov" col_3="   379,22" col_4="EUR" />
+      <row col_0="Iveta Balunová" col_1="Kamenná 12435/13A" col_2="Prešov" col_3="   379,08" col_4="EUR" />
+      <row col_0="Pavol Ferri" col_1="Tarasa Ševčenka 3931/35" col_2="Prešov" col_3="   374,53" col_4="EUR" />
+      <row col_0="Rastislav Filičko" col_1="Okružná 3030/29" col_2="Prešov" col_3="   373,33" col_4="EUR" />
+      <row col_0="Danka Adamčíková" col_1="Magurská 7005/1" col_2="Prešov" col_3="   371,53" col_4="EUR" />
+      <row col_0="Rudolf Baloga" col_1="L. Novomeského 6467/10" col_2="Prešov" col_3="   370,77" col_4="EUR" />
+      <row col_0="Eva Horváthová" col_1="Dubová 6484/6" col_2="Prešov" col_3="   370,43" col_4="EUR" />
+      <row col_0="Ľubomír Tomáš" col_1="Údenárska 5176/11" col_2="Prešov" col_3="   369,50" col_4="EUR" />
+      <row col_0="Cecília Blašková Poláková" col_1="" col_2="Prešov" col_3="   367,85" col_4="EUR" />
+      <row col_0="Igor Bujňák" col_1="Prostějovská 4822/7" col_2="Prešov" col_3="   367,32" col_4="EUR" />
+      <row col_0="Marek Cichý" col_1="Námestie osloboditeľov 454/13" col_2="Prešov" col_3="   367,19" col_4="EUR" />
+      <row col_0="Peter Baran" col_1="Sibírska 12851/26" col_2="Prešov" col_3="   365,33" col_4="EUR" />
+      <row col_0="Antónia Pastirčáková" col_1="Mirka Nešpora 4883/39" col_2="Prešov" col_3="   363,86" col_4="EUR" />
+      <row col_0="Mária Kaľavská" col_1="Októbrová 4714/36" col_2="Prešov" col_3="   363,07" col_4="EUR" />
+      <row col_0="Anna Douchová" col_1="Švábska 6807/40" col_2="Prešov" col_3="   362,22" col_4="EUR" />
+      <row col_0="Elena Pribulová" col_1="Čapajevova 4894/10" col_2="Prešov" col_3="   361,71" col_4="EUR" />
+      <row col_0="Beáta Karpátyová" col_1="Tarasa Ševčenka 3932/2" col_2="Prešov" col_3="   361,51" col_4="EUR" />
+      <row col_0="Peter Ševčík" col_1="" col_2="Prešov" col_3="   361,51" col_4="EUR" />
+      <row col_0="Slavomír Karpáty - KARSTAV" col_1="Matice slovenskej 4767/2" col_2="Prešov" col_3="   360,75" col_4="EUR" />
+      <row col_0="Štefan Tancoš" col_1="Medzinárodného dňa žien 7580/2" col_2="Prešov" col_3="   359,93" col_4="EUR" />
+      <row col_0="Oľga Holubová" col_1="Magurská 6845/6" col_2="Prešov" col_3="   357,39" col_4="EUR" />
+      <row col_0="Andrej Gall" col_1="Valkovská 728/11" col_2="Prešov" col_3="   355,58" col_4="EUR" />
+      <row col_0="Božena Holubová" col_1="Švábska 6774/65" col_2="Prešov" col_3="   353,98" col_4="EUR" />
+      <row col_0="Imrich Fedor" col_1="" col_2="Prešov" col_3="   353,31" col_4="EUR" />
+      <row col_0="Zuzana Halagová" col_1="Prostějovská 4823/19" col_2="Prešov" col_3="   352,38" col_4="EUR" />
+      <row col_0="Mikuláš Kapitančík" col_1="M.R.Štefánika 574/40" col_2="Veľký Šariš" col_3="   350,67" col_4="EUR" />
+      <row col_0="Roman Balog" col_1="Tarasa Ševčenka 3930/23" col_2="Prešov" col_3="   349,53" col_4="EUR" />
+      <row col_0="Eva Balogová" col_1="" col_2="Prešov" col_3="   348,77" col_4="EUR" />
+      <row col_0="Monika Nižnianská" col_1="Ďumbierska 6906/24" col_2="Prešov" col_3="   348,73" col_4="EUR" />
+      <row col_0="Anna Mikšíková" col_1="L. Novomeského 6438/22" col_2="Prešov" col_3="   348,19" col_4="EUR" />
+      <row col_0="Zdenka Madžová" col_1="Mukačevská 4809/55" col_2="Prešov" col_3="   347,12" col_4="EUR" />
+      <row col_0="Otokar Eliáš" col_1="Jurkovičova 6578/10" col_2="Prešov" col_3="   346,61" col_4="EUR" />
+      <row col_0="Magdaléna Pohlodková" col_1="" col_2="Prešov" col_3="   346,59" col_4="EUR" />
+      <row col_0="Helena Pribišová" col_1="Vansovej 6532/10" col_2="Prešov" col_3="   346,55" col_4="EUR" />
+      <row col_0="Silvia Jankovičová" col_1="" col_2="Prešov" col_3="   345,04" col_4="EUR" />
+      <row col_0="Alexander Galyas" col_1="K Starej tehelni 11584/12" col_2="Prešov" col_3="   344,91" col_4="EUR" />
+      <row col_0="Eva Pohlodková" col_1="Vihorlatská 7059/3" col_2="Prešov" col_3="   344,91" col_4="EUR" />
+      <row col_0="Iveta Kiňová" col_1="" col_2="Prešov" col_3="   344,91" col_4="EUR" />
+      <row col_0="Jozef Bado" col_1="Tarasa Ševčenka 3928/17" col_2="Prešov" col_3="   344,91" col_4="EUR" />
+      <row col_0="Mária Balogová" col_1="" col_2="Prešov" col_3="   344,91" col_4="EUR" />
+      <row col_0="Marta Barjaková-Malčeková" col_1="Sedliackeho povstania 3949/4" col_2="Prešov" col_3="   344,91" col_4="EUR" />
+      <row col_0="Slavomíra Kaščáková" col_1="Janouškova 5007/16" col_2="Prešov" col_3="   344,91" col_4="EUR" />
+      <row col_0="Ľudmila Kresťanková" col_1="33/33" col_2="Medzianky" col_3="   344,52" col_4="EUR" />
+      <row col_0="Jozef Baláž" col_1="" col_2="Prešov" col_3="   343,24" col_4="EUR" />
+      <row col_0="Ľuboš Jankura" col_1="Prostějovská 4830/43" col_2="Prešov" col_3="   342,19" col_4="EUR" />
+      <row col_0="Eva Makulová" col_1="" col_2="Prešov" col_3="   342,09" col_4="EUR" />
+      <row col_0="Jaroslav Sedlák" col_1="Plzenská 2840/29" col_2="Prešov" col_3="   341,82" col_4="EUR" />
+      <row col_0="Miloš Redaj" col_1="Sibírska 6942/3" col_2="Prešov" col_3="   341,42" col_4="EUR" />
+      <row col_0="Klaudia Geciová" col_1="súp. č. 73" col_2="Vyšná Šebastová" col_3="   340,65" col_4="EUR" />
+      <row col_0="Zuzana Judová" col_1="Jarková 3114/85" col_2="Prešov" col_3="   338,25" col_4="EUR" />
+      <row col_0="Ladislav Bella" col_1="Vihorlatská 7059/4" col_2="Prešov" col_3="   336,95" col_4="EUR" />
+      <row col_0="Alena Balogová" col_1="" col_2="Prešov" col_3="   336,52" col_4="EUR" />
+      <row col_0="Anna Holubová" col_1="K Starej tehelni 11500/6" col_2="Prešov" col_3="   336,52" col_4="EUR" />
+      <row col_0="Jana Kučerová" col_1="Prostějovská 4821/5" col_2="Prešov" col_3="   336,52" col_4="EUR" />
+      <row col_0="Žaneta Gabčová" col_1="" col_2="Prešov" col_3="   336,52" col_4="EUR" />
+      <row col_0="Ján Baranovský" col_1="" col_2="Prešov" col_3="   336,26" col_4="EUR" />
+      <row col_0="Ľubomír Pavlovič" col_1="Hviezdoslavova 6453/6" col_2="Prešov" col_3="   331,23" col_4="EUR" />
+      <row col_0="Marcela Mitrová" col_1="Levočská 6163/124" col_2="Prešov" col_3="   330,78" col_4="EUR" />
+      <row col_0="Tomáš Székely" col_1="Tkáčska 2696/3" col_2="Spišská Nová Ves" col_3="   330,00" col_4="EUR" />
+      <row col_0="Klaudia Gladičová" col_1="Na Rúrkach 6195/32" col_2="Prešov" col_3="   329,06" col_4="EUR" />
+      <row col_0="Juraj Marenčík" col_1="Prostějovská 4831/45" col_2="Prešov" col_3="   328,83" col_4="EUR" />
+      <row col_0="Viera Kasáková" col_1="Ďumbierska 6874/4" col_2="Prešov" col_3="   328,64" col_4="EUR" />
+      <row col_0="Peter Lehocký" col_1="Švábska 6725/43" col_2="Prešov" col_3="   328,40" col_4="EUR" />
+      <row col_0="Lucia Jánošíková" col_1="Wolkerova 5029/4" col_2="Prešov" col_3="   328,35" col_4="EUR" />
+      <row col_0="Mária Kleinová" col_1="" col_2="Prešov" col_3="   328,35" col_4="EUR" />
+      <row col_0="Ján Varga" col_1="Októbrová 4715/48" col_2="Prešov" col_3="   327,61" col_4="EUR" />
+      <row col_0="Renáta Balogová" col_1="Tarasa Ševčenka 3930/31" col_2="Prešov" col_3="   327,04" col_4="EUR" />
+      <row col_0="Anna Župová" col_1="Sibírska 6945/15" col_2="Prešov" col_3="   326,70" col_4="EUR" />
+      <row col_0="Rastislav Rachval" col_1="súp. č. 168" col_2="Tajov" col_3="   325,78" col_4="EUR" />
+      <row col_0="Pavol Balik - AZ-OTRYSKÁVANIE" col_1="Pavla Horova 6317/4" col_2="Prešov" col_3="   323,40" col_4="EUR" />
+      <row col_0="Kamil Vajda" col_1="Oravská 6434/4" col_2="Prešov" col_3="   322,35" col_4="EUR" />
+      <row col_0="Žaneta Balogová" col_1="" col_2="Prešov" col_3="   321,71" col_4="EUR" />
+      <row col_0="Ing. Viliam Luberda" col_1="Bajkalská 4859/1" col_2="Prešov" col_3="   321,08" col_4="EUR" />
+      <row col_0="Milan Jašš" col_1="Grešova 2862/2" col_2="Prešov" col_3="   320,58" col_4="EUR" />
+      <row col_0="Renáta Bellová" col_1="Vihorlatská 7059/4" col_2="Prešov" col_3="   320,00" col_4="EUR" />
+      <row col_0="Róbert Bandy" col_1="K Starej tehelni 11584/9" col_2="Prešov" col_3="   319,02" col_4="EUR" />
+      <row col_0="Jaroslav Ehrlich" col_1="" col_2="Prešov" col_3="   318,79" col_4="EUR" />
+      <row col_0="Marcela Kmecová" col_1="Švábska 6765/59" col_2="Prešov" col_3="   318,40" col_4="EUR" />
+      <row col_0="Oľga Dudová" col_1="Zimná 194/18" col_2="Čierna nad Tisou" col_3="   317,25" col_4="EUR" />
+      <row col_0="Vladimír Zrelák" col_1="" col_2="Prešov" col_3="   316,76" col_4="EUR" />
+      <row col_0="Mária Jakubčinová" col_1="Vihorlatská 7060/5" col_2="Prešov" col_3="   316,37" col_4="EUR" />
+      <row col_0="Marek Varga" col_1="Pavla Horova 6319/12" col_2="Prešov" col_3="   315,89" col_4="EUR" />
+      <row col_0="Simona Mikličová" col_1="Važecká 6793/14" col_2="Prešov" col_3="   315,00" col_4="EUR" />
+      <row col_0="Mgr. Daniela Kopolovcová" col_1="Javorinská 5550/13" col_2="Prešov" col_3="   313,06" col_4="EUR" />
+      <row col_0="Jozef Tlučko" col_1="Smetanova 1238/71" col_2="Prešov" col_3="   312,92" col_4="EUR" />
+      <row col_0="Helena Kalejová" col_1="Tarasa Ševčenka 3930/31" col_2="Prešov" col_3="   311,25" col_4="EUR" />
+      <row col_0="Blanka Vaňová" col_1="" col_2="Prešov" col_3="   311,06" col_4="EUR" />
+      <row col_0="Daniela Semančíková" col_1="Prostějovská 4832/57" col_2="Prešov" col_3="   311,06" col_4="EUR" />
+      <row col_0="Eva Maťašovská" col_1="" col_2="Pfullingen" col_3="   311,06" col_4="EUR" />
+      <row col_0="Ing. Miroslav Boháč" col_1="Sabinovská 5109/18" col_2="Prešov" col_3="   311,06" col_4="EUR" />
+      <row col_0="Miroslav Gajdoš" col_1="Federátov 6500/10" col_2="Prešov" col_3="   311,06" col_4="EUR" />
+      <row col_0="Milan Krivda" col_1="Sídlisko duklianskych hrdinov 3984/16" col_2="Prešov" col_3="   309,60" col_4="EUR" />
+      <row col_0="Jana Kay" col_1="Vodárenská 5990/9" col_2="Prešov" col_3="   307,22" col_4="EUR" />
+      <row col_0="Iveta Kiňová" col_1="" col_2="Prešov" col_3="   306,60" col_4="EUR" />
+      <row col_0="Zuzana Takáčová" col_1="" col_2="Prešov" col_3="   306,52" col_4="EUR" />
+      <row col_0="Ing. Rudolf Jozef Mario Bosák" col_1="súp. č. 38" col_2="Okrúhle" col_3="   305,43" col_4="EUR" />
+      <row col_0="Alena Šutáková" col_1="" col_2="Prešov" col_3="   305,27" col_4="EUR" />
+      <row col_0="Almir Gegič" col_1="Karpatská 6594/8" col_2="Prešov" col_3="   304,42" col_4="EUR" />
+      <row col_0="Ing. Gustáv Chrobák" col_1="súp. č. 232" col_2="Hybe" col_3="   303,97" col_4="EUR" />
+      <row col_0="Enzo Frugoni" col_1="Strojnícka 2094/20" col_2="Prešov" col_3="   303,79" col_4="EUR" />
+      <row col_0="Janka Kozárová" col_1="Vihorlatská 7047/11" col_2="Prešov" col_3="   301,77" col_4="EUR" />
+      <row col_0="Viliam Fecko" col_1="Prostějovská 4834/91" col_2="Prešov" col_3="   301,56" col_4="EUR" />
+      <row col_0="Rudolf Kaleja" col_1="Karpatská 6597/11" col_2="Prešov" col_3="   300,26" col_4="EUR" />
+      <row col_0="Ľudovít Kaleja" col_1="Vajanského 5664/12" col_2="Prešov" col_3="   299,70" col_4="EUR" />
+      <row col_0="Jaroslav Holinga" col_1="Prostějovská 6326/99" col_2="Prešov" col_3="   298,80" col_4="EUR" />
+      <row col_0="Miroslav Pitlík" col_1="Antona Prídavka 4849/22" col_2="Prešov" col_3="   297,00" col_4="EUR" />
+      <row col_0="Igor Kotľár" col_1="" col_2="Prešov" col_3="   294,86" col_4="EUR" />
+      <row col_0="Antónia Futášová" col_1="Sibírska 6945/19" col_2="Prešov" col_3="   294,48" col_4="EUR" />
+      <row col_0="Vladimír Čelovský" col_1="Oravská 6433/2" col_2="Prešov" col_3="   294,07" col_4="EUR" />
+      <row col_0="Karol Očipa" col_1="Lomnická 6759/24" col_2="Prešov" col_3="   293,13" col_4="EUR" />
+      <row col_0="Helena Hrubá" col_1="Janouškova 5011/7" col_2="Prešov" col_3="   292,82" col_4="EUR" />
+      <row col_0="Marta Muchová" col_1="Bernolákova 6524/15" col_2="Prešov" col_3="   292,09" col_4="EUR" />
+      <row col_0="Zdenka Madžová" col_1="Vlada Clementisa 4775/16" col_2="Prešov" col_3="   291,90" col_4="EUR" />
+      <row col_0="Ing. Ludvík Jaššo" col_1="Čergovská 7232/28" col_2="Prešov" col_3="   291,54" col_4="EUR" />
+      <row col_0="Lucia Krajňáková" col_1="súp. č. 86" col_2="Sokolovce" col_3="   290,55" col_4="EUR" />
+      <row col_0="Ing. Ivan Mikloš" col_1="Ďumbierska 6865/3" col_2="Prešov" col_3="   289,39" col_4="EUR" />
+      <row col_0="Jozef Remper" col_1="Prostějovská 4837/12" col_2="Prešov" col_3="   289,23" col_4="EUR" />
+      <row col_0="Jozef Banki" col_1="" col_2="Prešov" col_3="   288,93" col_4="EUR" />
+      <row col_0="Ľudmila Pos" col_1="Vlada Clementisa 4775/16" col_2="Prešov" col_3="   288,55" col_4="EUR" />
+      <row col_0="Agáta Barteková" col_1="Hložská 250/27" col_2="Svinia" col_3="   287,72" col_4="EUR" />
+      <row col_0="Dušan Jura" col_1="Lomnická 6755/8" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Filip Baláž" col_1="Vodárenská 6015/38" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Gertrúda Ontková" col_1="" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Helena Jakabová" col_1="súp. č. 18" col_2="Cigeľka" col_3="   287,43" col_4="EUR" />
+      <row col_0="Ing. Marián Dolinský" col_1="Švábska 6726/45" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Ivana Vozariková" col_1="Švábska 6728/51" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Mikuláš Janko" col_1="Ďumbierska 6897/22" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Monika Libová" col_1="" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Nataša Jankujová" col_1="" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Renáta Taragošová" col_1="Slovenská 3283/48" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Slavka Gallová" col_1="Ďumbierska 6872/10" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Stanislav Červeňák" col_1="Slovenská 3283/48" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Štefan Varga" col_1="Jesenského 3535/62" col_2="Prešov" col_3="   287,43" col_4="EUR" />
+      <row col_0="Vladislava Homiaková" col_1="Gápľová 640/22" col_2="Prešov" col_3="   286,97" col_4="EUR" />
+      <row col_0="Danka Sopková" col_1="Mukačevská 4802/7" col_2="Prešov" col_3="   286,52" col_4="EUR" />
+      <row col_0="Zuzana Horvátová" col_1="Magurská 6845/4" col_2="Prešov" col_3="   286,03" col_4="EUR" />
+      <row col_0="Alžbeta Živčáková" col_1="" col_2="Prešov" col_3="   285,30" col_4="EUR" />
+      <row col_0="Alena Starincová" col_1="Martina Benku 6442/3" col_2="Prešov" col_3="   284,87" col_4="EUR" />
+      <row col_0="Jerzy Kocur" col_1="17. novembra 8288/108" col_2="Prešov" col_3="   284,80" col_4="EUR" />
+      <row col_0="Jozef Sedlák" col_1="Sídlisko duklianskych hrdinov 3981/4" col_2="Prešov" col_3="   284,00" col_4="EUR" />
+      <row col_0="Maroš Kopaňa" col_1="Kúpeľná 3912/1" col_2="Prešov" col_3="   283,95" col_4="EUR" />
+      <row col_0="Pavol Verešpej" col_1="Važecká 6775/6" col_2="Prešov" col_3="   281,98" col_4="EUR" />
+      <row col_0="Zuzana Dolhá" col_1="Važecká 6793/16" col_2="Prešov" col_3="   280,03" col_4="EUR" />
+      <row col_0="Jarmila Sabová" col_1="súp. č. 19" col_2="Lada" col_3="   280,00" col_4="EUR" />
+      <row col_0="Marek Vaško" col_1="súp. č. 220" col_2="Fričovce" col_3="   279,46" col_4="EUR" />
+      <row col_0="Andrea Sarvašová" col_1="Jánošíkova 5388/62" col_2="Prešov" col_3="   277,91" col_4="EUR" />
+      <row col_0="Janka Sobeková" col_1="Prostějovská 4833/71" col_2="Prešov" col_3="   276,51" col_4="EUR" />
+      <row col_0="Jozef Dzurčanin - Underground Promotion Agency" col_1="Švábska 6807/44" col_2="Prešov" col_3="   276,21" col_4="EUR" />
+      <row col_0="Peter Šťastný" col_1="Mukačevská 4813/8" col_2="Prešov" col_3="   276,21" col_4="EUR" />
+      <row col_0="Cyril Grejtak" col_1="Exnárova 6624/17" col_2="Prešov" col_3="   275,81" col_4="EUR" />
+      <row col_0="Eva Kudryová" col_1="" col_2="Prešov" col_3="   272,61" col_4="EUR" />
+      <row col_0="Rudolf Mravčák" col_1="Bajkalská 4863/23" col_2="Prešov" col_3="   272,36" col_4="EUR" />
+      <row col_0="Iveta Tomčíková" col_1="" col_2="Prešov" col_3="   269,50" col_4="EUR" />
+      <row col_0="Ján Baláž" col_1="Pavlovičovo námestie 3859/22" col_2="Prešov" col_3="   268,26" col_4="EUR" />
+      <row col_0="Ľubica Sedláková" col_1="17. novembra 3739/92" col_2="Prešov" col_3="   268,26" col_4="EUR" />
+      <row col_0="Martin Tomko" col_1="" col_2="Prešov" col_3="   268,26" col_4="EUR" />
+      <row col_0="Anton Grohoľ" col_1="Trnková 6737/9" col_2="Prešov" col_3="   266,82" col_4="EUR" />
+      <row col_0="Mgr. Martina Vinjarová" col_1="Plzenská 2840/25" col_2="Prešov" col_3="   266,80" col_4="EUR" />
+      <row col_0="MVDr. Egon Kaminský" col_1="Antona Prídavka 4848/18" col_2="Prešov" col_3="   266,54" col_4="EUR" />
+      <row col_0="Marián Jozef" col_1="Magurská 7005/1" col_2="Prešov" col_3="   266,35" col_4="EUR" />
+      <row col_0="Štefan Vaľko" col_1="" col_2="Prešov" col_3="   266,20" col_4="EUR" />
+      <row col_0="Arpád Šivák" col_1="" col_2="Prešov" col_3="   265,97" col_4="EUR" />
+      <row col_0="Anna Priščaková" col_1="17. novembra 8288/106" col_2="Prešov" col_3="   265,87" col_4="EUR" />
+      <row col_0="Jaroslav Petrik" col_1="" col_2="Prešov" col_3="   265,74" col_4="EUR" />
+      <row col_0="Milan Výhonský" col_1="Požiarnická 3958/16" col_2="Prešov" col_3="   265,14" col_4="EUR" />
+      <row col_0="Helena Pancuráková" col_1="Magurská 7006/11" col_2="Prešov" col_3="   264,00" col_4="EUR" />
+      <row col_0="Slavomír Stredňák" col_1="Hapákova 2279/11" col_2="Ľubotice" col_3="   264,00" col_4="EUR" />
+      <row col_0="Zuzana Pavlovská" col_1="Pavlovičovo námestie 3860/28" col_2="Prešov" col_3="   264,00" col_4="EUR" />
+      <row col_0="Margita Godálová" col_1="" col_2="Prešov" col_3="   263,08" col_4="EUR" />
+      <row col_0="Mgr. Martin Vichrest" col_1="Medzinárodného dňa žien 7581/1" col_2="Prešov" col_3="   260,91" col_4="EUR" />
+      <row col_0="Ján Vozárik" col_1="Dubová 6485/10" col_2="Prešov" col_3="   259,84" col_4="EUR" />
+      <row col_0="Katarína Mazurová" col_1="Čergovská 7002/12" col_2="Prešov" col_3="   258,27" col_4="EUR" />
+      <row col_0="Zuzana Brehová" col_1="Levočská 4703/87" col_2="Prešov" col_3="   257,89" col_4="EUR" />
+      <row col_0="Vojtech Horvát" col_1="" col_2="Prešov" col_3="   257,72" col_4="EUR" />
+      <row col_0="Lucia Straková" col_1="Švábska 6728/51" col_2="Prešov" col_3="   256,22" col_4="EUR" />
+      <row col_0="Terézia Kehl" col_1="Trnková 2521/21" col_2="Veľký Šariš" col_3="   256,22" col_4="EUR" />
+      <row col_0="Radoslav Partila" col_1="Mirka Nešpora 4882/33" col_2="Prešov" col_3="   255,85" col_4="EUR" />
+      <row col_0="Pavel Ivanko" col_1="Pod Hrádkom 6544/27" col_2="Prešov" col_3="   254,52" col_4="EUR" />
+      <row col_0="Monika Bendiková" col_1="" col_2="Prešov" col_3="   254,29" col_4="EUR" />
+      <row col_0="Ľubomír Huľa" col_1="" col_2="Prešov" col_3="   253,43" col_4="EUR" />
+      <row col_0="Daša Drotárová" col_1="Pavlovičovo námestie 3857/6" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Gabriela Pribulová" col_1="" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Juraj Závacký" col_1="Magurská 8182/14" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Magdaléna Stredňáková" col_1="" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Marcel Kokinčák" col_1="Kamencová 7236/4" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Mária Lipjancová" col_1="Pri hati 704/53" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Michaela Šarišská" col_1="17. novembra 3748/172" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Sylvia Kollárová" col_1="Sabinovská 5052/33" col_2="Prešov" col_3="   253,39" col_4="EUR" />
+      <row col_0="Miroslav Soboľ" col_1="" col_2="" col_3="   253,03" col_4="EUR" />
+      <row col_0="Róbert Bechera" col_1="Ďumbierska 6872/12" col_2="Prešov" col_3="   251,01" col_4="EUR" />
+      <row col_0="Marek Pavlovský" col_1="" col_2="Prešov" col_3="   249,76" col_4="EUR" />
+      <row col_0="Anna Košičanová Vašková" col_1="Prostějovská 4835/101" col_2="Prešov" col_3="   249,46" col_4="EUR" />
+      <row col_0="Anna Hrušková" col_1="" col_2="Prešov" col_3="   249,13" col_4="EUR" />
+      <row col_0="Katarína Raševová" col_1="Tarasa Ševčenka 3932/4" col_2="Prešov" col_3="   249,13" col_4="EUR" />
+      <row col_0="Anna Drusová" col_1="Magurská 6845/4" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Ján Slávik" col_1="" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Ladislav Vanyó" col_1="Matice slovenskej 4760/1" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Martin Potočňák" col_1="Višňová 6517/9" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Milan Bandy" col_1="" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Peter Kosár" col_1="" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Radoslav Rapant" col_1="Vansovej 6530/7" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Sergej Zajcev" col_1="Tomášikova 4858/52" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Štefan Petruf" col_1="Zápotockého 4025/21" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Štefan Rychtárik" col_1="" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Tibor Dužda" col_1="Špitálska 3348/1" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Vladimír Hrušovský" col_1="" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Vladimír Špyrka" col_1="Šafárikova 5913/17" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Vladimír Voronin" col_1="" col_2="Prešov" col_3="   249,08" col_4="EUR" />
+      <row col_0="Maroš Servátka" col_1="Šafárikova 5933/8" col_2="Prešov" col_3="   248,88" col_4="EUR" />
+      <row col_0="Peter Hopko" col_1="Jur súp. č. 121" col_2="Hubošovce" col_3="   248,22" col_4="EUR" />
+      <row col_0="Ing. Ivan Mikluš" col_1="Jarková 2676/4" col_2="Ľubotice" col_3="   247,85" col_4="EUR" />
+      <row col_0="Jozef Rachval" col_1="" col_2="Prešov" col_3="   247,68" col_4="EUR" />
+      <row col_0="Justína Rovňáková" col_1="Exnárova 12659/36B" col_2="Prešov" col_3="   246,96" col_4="EUR" />
+      <row col_0="Roman Geret" col_1="Pavlovičovo námestie 3861/41" col_2="Prešov" col_3="   246,96" col_4="EUR" />
+      <row col_0="Patrik Suchý - Selecta" col_1="súp. č. 461" col_2="Kapušany" col_3="   246,75" col_4="EUR" />
+      <row col_0="Iveta Gáborová" col_1="Gápľová 607/1" col_2="Prešov" col_3="   246,38" col_4="EUR" />
+      <row col_0="Róbert Stephany" col_1="Sibírska 12850/24" col_2="Prešov" col_3="   246,20" col_4="EUR" />
+      <row col_0="Ján Tokarčík" col_1="Prostějovská 4821/5" col_2="Prešov" col_3="   244,16" col_4="EUR" />
+      <row col_0="Ing. František Kovalčík" col_1="Soľanková 11336/7" col_2="Prešov" col_3="   243,66" col_4="EUR" />
+      <row col_0="Zuzana Spišaková" col_1="Štúrova 3672/13" col_2="Prešov" col_3="   243,07" col_4="EUR" />
+      <row col_0="Agáta Pavličková" col_1="Železničná 6987/20" col_2="Prešov" col_3="   242,96" col_4="EUR" />
+      <row col_0="Monika Varholiková" col_1="Lúčna 987/6" col_2="Veľký Šariš" col_3="   242,24" col_4="EUR" />
+      <row col_0="Ivan Fecura" col_1="Bratislavská 6465/8" col_2="Prešov" col_3="   241,95" col_4="EUR" />
+      <row col_0="Mária Holubová" col_1="Tarasa Ševčenka 3933/6" col_2="Prešov" col_3="   241,59" col_4="EUR" />
+      <row col_0="Bohuslav Brendza" col_1="Sídlisko duklianskych hrdinov 3980/19" col_2="Prešov" col_3="   241,20" col_4="EUR" />
+      <row col_0="Jozef Olšavský" col_1="Mukačevská 4801/5" col_2="Prešov" col_3="   239,95" col_4="EUR" />
+      <row col_0="Daniela Bednárová" col_1="Janouškova 5006/6" col_2="Prešov" col_3="   237,80" col_4="EUR" />
+      <row col_0="Ján Petrík" col_1="Lesík delostrelcov 2808/6" col_2="Prešov" col_3="   237,80" col_4="EUR" />
+      <row col_0="Jaroslav Michňák" col_1="Sabinovská 5109/22" col_2="Prešov" col_3="   237,80" col_4="EUR" />
+      <row col_0="Ondrej Mruz" col_1="Matice slovenskej 4762/5" col_2="Prešov" col_3="   237,80" col_4="EUR" />
+      <row col_0="Róbert Maňkoš" col_1="Mukačevská 4803/13" col_2="Prešov" col_3="   237,80" col_4="EUR" />
+      <row col_0="Róbert Sopoliga" col_1="" col_2="Prešov" col_3="   237,80" col_4="EUR" />
+      <row col_0="Rudolf Dragoň" col_1="Vodárenská 5995/14" col_2="Prešov" col_3="   237,66" col_4="EUR" />
+      <row col_0="Janette Marcinová" col_1="Prostějovská 4822/7" col_2="Prešov" col_3="   237,43" col_4="EUR" />
+      <row col_0="Renáta Baranová" col_1="Engelsova 4641/9" col_2="Prešov" col_3="   237,43" col_4="EUR" />
+      <row col_0="Karol Slaninka" col_1="súp. č. 11" col_2="Hubošovce" col_3="   236,97" col_4="EUR" />
+      <row col_0="Ondrej Blaščák" col_1="Vansovej 6528/1" col_2="Prešov" col_3="   235,44" col_4="EUR" />
+      <row col_0="Tibor Cserhalmi" col_1="Dargovská 6432/5" col_2="Prešov" col_3="   234,44" col_4="EUR" />
+      <row col_0="Simona Kalejová" col_1="" col_2="Prešov" col_3="   234,36" col_4="EUR" />
+      <row col_0="Zlata Krížová" col_1="Na brehu 1094/32" col_2="Prešov" col_3="   233,90" col_4="EUR" />
+      <row col_0="Jaroslav Leško" col_1="" col_2="Prešov" col_3="   232,53" col_4="EUR" />
+      <row col_0="Ľubica Fečová" col_1="Ždiarska 1441/3" col_2="Košice-Nad Jazerom" col_3="   232,43" col_4="EUR" />
+      <row col_0="Jozef Bebko" col_1="Pod Hrádkom 6544/27" col_2="Prešov" col_3="   231,16" col_4="EUR" />
+      <row col_0="Pavol Balík" col_1="Pavla Horova 6317/4" col_2="Prešov" col_3="   230,66" col_4="EUR" />
+      <row col_0="Miroslav Stolárik" col_1="súp. č. 281" col_2="Brezovica" col_3="   230,62" col_4="EUR" />
+      <row col_0="Silvia Balogová" col_1="Tarasa Ševčenka 3941/40" col_2="Prešov" col_3="   230,23" col_4="EUR" />
+      <row col_0="Bibiána Petiková" col_1="" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Emília Martonová" col_1="súp. č. 111" col_2="Gregorovce" col_3="   229,95" col_4="EUR" />
+      <row col_0="Eva Holubová" col_1="Gápľová 607/1" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Eva Mihályová" col_1="Arm. gen. Svobodu 6314/4" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Igor Lacko" col_1="Bernolákova 6527/6" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Jana Maccarrone" col_1="Sibírska 6948/29" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Katarína Valešová" col_1="Sibírska 7087/8" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Ladislav Kušnír" col_1="Sibírska 6958/20" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Ladislav Vajdička" col_1="Grešova 2862/10" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Ľubomír Rijak" col_1="Matice slovenskej 4767/2" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Mariana Ivánová" col_1="Bernolákova 6527/2" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Miriam Hrubá" col_1="Antona Prídavka 4848/14" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Peter Horváth" col_1="" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Šarlota Pohlodková" col_1="" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Terezie Lamyová" col_1="Magurská 7316/17" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Tomáš Kalina" col_1="Švábska 6774/67" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Vladimír Lenárt" col_1="" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Vlasta Balogová" col_1="" col_2="Prešov" col_3="   229,95" col_4="EUR" />
+      <row col_0="Pavol Sivák" col_1="" col_2="Prešov" col_3="   229,94" col_4="EUR" />
+      <row col_0="Stanislav Harčár" col_1="Švábska 6796/78" col_2="Prešov" col_3="   229,94" col_4="EUR" />
+      <row col_0="Vladimír Blaščák" col_1="Prostějovská 4829/41" col_2="Prešov" col_3="   229,94" col_4="EUR" />
+      <row col_0="Richard Strýčko" col_1="" col_2="Prešov" col_3="   229,49" col_4="EUR" />
+      <row col_0="Mária Rajchová" col_1="" col_2="Prešov" col_3="   229,42" col_4="EUR" />
+      <row col_0="Jozef Petik" col_1="" col_2="Prešov" col_3="   229,39" col_4="EUR" />
+      <row col_0="Peter Vaško" col_1="súp. č. 10" col_2="Drienovská Nová Ves" col_3="   228,21" col_4="EUR" />
+      <row col_0="Lenka Lachkovičová" col_1="Záhradná 70/6" col_2="Záhradné" col_3="   228,10" col_4="EUR" />
+      <row col_0="Richard Varga - KATRICHS" col_1="Mirka Nešpora 4882/33" col_2="Prešov" col_3="   228,08" col_4="EUR" />
+      <row col_0="Marián Olekšák" col_1="Exnárova 6621/5" col_2="Prešov" col_3="   227,37" col_4="EUR" />
+      <row col_0="Radoslav Sukeľ" col_1="Antona Prídavka 4851/26" col_2="Prešov" col_3="   227,31" col_4="EUR" />
+      <row col_0="Ján Korkobec" col_1="Sídlisko duklianskych hrdinov 3982/8" col_2="Prešov" col_3="   226,51" col_4="EUR" />
+      <row col_0="Marián Seman" col_1="" col_2="Prešov" col_3="   226,51" col_4="EUR" />
+      <row col_0="Martin Lacko" col_1="Vansovej 6533/11" col_2="Prešov" col_3="   226,51" col_4="EUR" />
+      <row col_0="Michal Krpčar" col_1="Plzenská 2840/31" col_2="Prešov" col_3="   226,51" col_4="EUR" />
+      <row col_0="Vladimír Adamčák" col_1="Vansovej 6528/1" col_2="Prešov" col_3="   226,51" col_4="EUR" />
+      <row col_0="Zdenka Timková" col_1="" col_2="Prešov" col_3="   226,51" col_4="EUR" />
+      <row col_0="Jozef Balčák" col_1="Čergovská 7007/18" col_2="Prešov" col_3="   225,13" col_4="EUR" />
+      <row col_0="Štefánia Cmarová" col_1="Padlých hrdinov 11961/1A" col_2="Prešov" col_3="   224,76" col_4="EUR" />
+      <row col_0="Igor Takáč" col_1="Marka Čulena 4757/38" col_2="Prešov" col_3="   224,40" col_4="EUR" />
+      <row col_0="Ing. Peter Miščík" col_1="súp. č. 319" col_2="Vyšná Šebastová" col_3="   224,40" col_4="EUR" />
+      <row col_0="Anna Gašpárová" col_1="Jurkovičova 6579/12" col_2="Prešov" col_3="   224,12" col_4="EUR" />
+      <row col_0="Tatiana Gaľová" col_1="Klimkovičova 8" col_2="Košice-Sídlisko KVP" col_3="   224,06" col_4="EUR" />
+      <row col_0="Eva Kotosová" col_1="Prostějovská 4819/1" col_2="Prešov" col_3="   223,96" col_4="EUR" />
+      <row col_0="Terézia Voitová" col_1="Važecká 6793/14" col_2="Prešov" col_3="   223,30" col_4="EUR" />
+      <row col_0="Kamil Takáč" col_1="Valkovská 739/33" col_2="Prešov" col_3="   223,05" col_4="EUR" />
+      <row col_0="Dalibor Hudok" col_1="Važecká 6775/6" col_2="Prešov" col_3="   222,84" col_4="EUR" />
+      <row col_0="Patrik Baloga" col_1="Smreková 6479/3" col_2="Prešov" col_3="   222,22" col_4="EUR" />
+      <row col_0="Peter Ragan" col_1="" col_2="Prešov" col_3="   221,24" col_4="EUR" />
+      <row col_0="Štefan Jendruš" col_1="Murárska 7318/13" col_2="Prešov" col_3="   220,84" col_4="EUR" />
+      <row col_0="Krzysztof Jaroslaw Chmielak" col_1="Tarasa Ševčenka 3928/15" col_2="Prešov" col_3="   220,44" col_4="EUR" />
+      <row col_0="Vincent Šipoš" col_1="Hlavná 111/28" col_2="Čierna nad Tisou" col_3="   220,40" col_4="EUR" />
+      <row col_0="Alexander Lech" col_1="Mirka Nešpora 6392/63" col_2="Prešov" col_3="   220,10" col_4="EUR" />
+      <row col_0="Marián Záhorák" col_1="Odborárska 4655/25" col_2="Prešov" col_3="   219,97" col_4="EUR" />
+      <row col_0="Slavomíra Tramitová" col_1="Mukačevská 7301/17" col_2="Prešov" col_3="   219,49" col_4="EUR" />
+      <row col_0="Jolana Ptáčková" col_1="Švábska 6801/64" col_2="Prešov" col_3="   219,04" col_4="EUR" />
+      <row col_0="Ing. arch. Pavel Mochnacký" col_1="Dr. Goldbergera 376/4" col_2="Svidník" col_3="   218,64" col_4="EUR" />
+      <row col_0="MVDr. Vladimír Vargečko" col_1="" col_2="Prešov" col_3="   218,64" col_4="EUR" />
+      <row col_0="Irena Imrichová" col_1="Šafárikova 5911/3" col_2="Prešov" col_3="   218,21" col_4="EUR" />
+      <row col_0="Mgr. Vladimír Mikluš" col_1="" col_2="Prešov" col_3="   218,09" col_4="EUR" />
+      <row col_0="Petr Možíšek" col_1="Prostějovská 4835/101" col_2="Prešov" col_3="   218,09" col_4="EUR" />
+      <row col_0="Vladimír Dzivý-Balucha" col_1="Tokajícka 761/3" col_2="Prešov" col_3="   217,54" col_4="EUR" />
+      <row col_0="Monika Mikličová" col_1="" col_2="Prešov" col_3="   216,56" col_4="EUR" />
+      <row col_0="Lucia Šoltisová" col_1="Mukačevská 4815/12" col_2="Prešov" col_3="   216,32" col_4="EUR" />
+      <row col_0="Daniela Frajtová" col_1="Čergovská 7003/8" col_2="Prešov" col_3="   215,55" col_4="EUR" />
+      <row col_0="Ing. Slavomír Horský" col_1="Magurská 7316/15" col_2="Prešov" col_3="   215,07" col_4="EUR" />
+      <row col_0="Ing. Viktor Džugan" col_1="Nová 182/21" col_2="Mučín" col_3="   215,02" col_4="EUR" />
+      <row col_0="Radko Timko" col_1="Mudroňova 4952/8" col_2="Prešov" col_3="   214,06" col_4="EUR" />
+      <row col_0="Tibor Stredňák" col_1="Levočská 4698/53" col_2="Prešov" col_3="   213,60" col_4="EUR" />
+      <row col_0="Miroslav Barabas" col_1="Orgovánová 5479/1" col_2="Prešov" col_3="   213,50" col_4="EUR" />
+      <row col_0="Adela Bialková" col_1="Budovateľská 3600/46" col_2="Prešov" col_3="   213,40" col_4="EUR" />
+      <row col_0="Ivana Vaxmanská" col_1="Mirka Nešpora 4875/1" col_2="Prešov" col_3="   213,39" col_4="EUR" />
+      <row col_0="Mária Verčimáková" col_1="Lomnická 6757/16" col_2="Prešov" col_3="   213,39" col_4="EUR" />
+      <row col_0="Ivan Dopirák" col_1="Karpatská 6594/8" col_2="Prešov" col_3="   213,24" col_4="EUR" />
+      <row col_0="Jozef Vaško" col_1="Arm. gen. Svobodu 6460/30" col_2="Prešov" col_3="   213,24" col_4="EUR" />
+      <row col_0="Miroslav Mikšík" col_1="L. Novomeského 6438/22" col_2="Prešov" col_3="   213,24" col_4="EUR" />
+      <row col_0="Peter Hnat" col_1="Antona Prídavka 4847/8" col_2="Prešov" col_3="   213,23" col_4="EUR" />
+      <row col_0="Pavol Klabník" col_1="Martina Benku 6471/5" col_2="Prešov" col_3="   213,20" col_4="EUR" />
+      <row col_0="Imrich Verešpej" col_1="Federátov 6498/9" col_2="Prešov" col_3="   212,72" col_4="EUR" />
+      <row col_0="Imrich Lipták" col_1="Vydumanec 2665/57" col_2="Prešov" col_3="   212,43" col_4="EUR" />
+      <row col_0="Peter Rozenberg" col_1="Prostějovská 4832/57" col_2="Prešov" col_3="   212,38" col_4="EUR" />
+      <row col_0="Jozef Pavlík" col_1="Okružná 3056/22" col_2="Prešov" col_3="   212,28" col_4="EUR" />
+      <row col_0="Eliška Bohuslavová" col_1="" col_2="Prešov" col_3="   211,86" col_4="EUR" />
+      <row col_0="Ladislav Uličný" col_1="Exnárova 6626/22" col_2="Prešov" col_3="   211,57" col_4="EUR" />
+      <row col_0="Peter Priester" col_1="súp. č. 65" col_2="Rokycany" col_3="   211,20" col_4="EUR" />
+      <row col_0="Marta Dudová" col_1="" col_2="Prešov" col_3="   210,78" col_4="EUR" />
+      <row col_0="Miroslav Petrík" col_1="L. Novomeského 6467/10" col_2="Prešov" col_3="   210,78" col_4="EUR" />
+      <row col_0="Pavol Bendík" col_1="Tarasa Ševčenka 3942/46" col_2="Prešov" col_3="   210,78" col_4="EUR" />
+      <row col_0="Silvia Lukáčová" col_1="Magurská 6845/4" col_2="Prešov" col_3="   210,78" col_4="EUR" />
+      <row col_0="Alojz Horváth" col_1="Justičná 6504/8" col_2="Prešov" col_3="   210,58" col_4="EUR" />
+      <row col_0="Mária Oľhová" col_1="Vajanského 5688/29" col_2="Prešov" col_3="   210,12" col_4="EUR" />
+      <row col_0="Zuzana Nižníková" col_1="Višňová 6505/1" col_2="Prešov" col_3="   209,97" col_4="EUR" />
+      <row col_0="Katarína Sedláková" col_1="" col_2="Bratislava-Ružinov" col_3="   209,84" col_4="EUR" />
+      <row col_0="Andrea Rybárová" col_1="Levočská 4705/105" col_2="Prešov" col_3="   209,71" col_4="EUR" />
+      <row col_0="Anna Appelová" col_1="Tarasa Ševčenka 3941/42" col_2="Prešov" col_3="   209,71" col_4="EUR" />
+      <row col_0="Antónia Sokolová" col_1="Dukelská 59" col_2="Giraltovce" col_3="   209,71" col_4="EUR" />
+      <row col_0="Helena Korčeková" col_1="" col_2="Prešov" col_3="   209,71" col_4="EUR" />
+      <row col_0="Iveta Petrovčínová" col_1="Vlada Clementisa 4775/16" col_2="Prešov" col_3="   209,71" col_4="EUR" />
+      <row col_0="JUDr. Štefan Homza Sinai" col_1="" col_2="Prešov" col_3="   209,71" col_4="EUR" />
+      <row col_0="Katarína Mydlarčíková" col_1="Federátov 6500/10" col_2="Prešov" col_3="   209,71" col_4="EUR" />
+      <row col_0="Mária Ivanová" col_1="Prostějovská 6323/93" col_2="Prešov" col_3="   209,71" col_4="EUR" />
+      <row col_0="Svetlana Kobyľanová" col_1="Hviezdoslavova 446/2" col_2="Giraltovce" col_3="   209,71" col_4="EUR" />
+      <row col_0="Marek Dyačovský" col_1="Kúpeľná 3912/1" col_2="Prešov" col_3="   209,15" col_4="EUR" />
+      <row col_0="Ladislav Varga" col_1="Vansovej 6531/9" col_2="Prešov" col_3="   209,04" col_4="EUR" />
+      <row col_0="Ing. Štefan Čorej" col_1="" col_2="Prešov" col_3="   208,85" col_4="EUR" />
+      <row col_0="Milan Mäsiar" col_1="Požiarnická 3958/16" col_2="Prešov" col_3="   208,64" col_4="EUR" />
+      <row col_0="Jana Hurková" col_1="" col_2="Prešov" col_3="   208,51" col_4="EUR" />
+      <row col_0="Marcel Michalec" col_1="" col_2="Prešov" col_3="   206,63" col_4="EUR" />
+      <row col_0="Margita Janigová" col_1="Fučíkova 4564/2" col_2="Prešov" col_3="   205,97" col_4="EUR" />
+      <row col_0="Isaiah Narcis" col_1="160" col_2="Vyšný Slavkov" col_3="   205,92" col_4="EUR" />
+      <row col_0="Kvetoslava Jakubčová - RÝCHLE OBČERSTVENIE KEŤA" col_1="Štúrova 3672/13" col_2="Prešov" col_3="   205,92" col_4="EUR" />
+      <row col_0="Natália Mitrová" col_1="Višňová 6517/10" col_2="Prešov" col_3="   205,32" col_4="EUR" />
+      <row col_0="Patricia Minár Baronová" col_1="Kutuzovova 6473/27" col_2="Prešov" col_3="   204,22" col_4="EUR" />
+      <row col_0="Ing. Ľubica Berková" col_1="Bernolákova 6524/15" col_2="Prešov" col_3="   203,99" col_4="EUR" />
+      <row col_0="Jaroslav Sochovič" col_1="súp. č. 49" col_2="Medzany" col_3="   203,86" col_4="EUR" />
+      <row col_0="Pavol Godla" col_1="" col_2="Prešov" col_3="   203,78" col_4="EUR" />
+      <row col_0="Ľudmila Sopčáková" col_1="Mirka Nešpora 4880/29" col_2="Prešov" col_3="   203,02" col_4="EUR" />
+      <row col_0="Róbert Dallio" col_1="" col_2="Prešov" col_3="   202,33" col_4="EUR" />
+      <row col_0="Róbert Ondruššek" col_1="Bernolákova 6521/7" col_2="Prešov" col_3="   201,61" col_4="EUR" />
+      <row col_0="Monika Kalejová" col_1="Janouškova 5011/15" col_2="Prešov" col_3="   201,60" col_4="EUR" />
+      <row col_0="Oľga Šimová" col_1="Pavlovičovo námestie 3859/23" col_2="Prešov" col_3="   200,10" col_4="EUR" />
+      <row col_0="Eva Gregorová" col_1="Marka Čulena 4758/46" col_2="Prešov" col_3="   199,80" col_4="EUR" />
+      <row col_0="Ľudmila Buchalová" col_1="Važecká 6776/4" col_2="Prešov" col_3="   199,06" col_4="EUR" />
+      <row col_0="Janka Ridilová" col_1="Pavlovičovo námestie 3857/6" col_2="Prešov" col_3="   199,01" col_4="EUR" />
+      <row col_0="Agáta Ščepitová" col_1="súp. č. 9" col_2="Chminianske Jakubovany" col_3="   198,82" col_4="EUR" />
+      <row col_0="Anton Kobulský" col_1="9. mája 747/22" col_2="Sabinov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Branislav Podracký" col_1="Alexandra Matušku 6321/5" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Eva Cifrová" col_1="" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Eva Gregorová" col_1="K Starej tehelni 11584/12" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Jozef Búdik" col_1="Textilná 3054/1" col_2="Levice" col_3="   198,00" col_4="EUR" />
+      <row col_0="Jozef Hažlinský" col_1="Pod Hrádkom 1130/29" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Juliána Bouchalová" col_1="Mukačevská 4815/12" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Juraj Ondrejka" col_1="Bajkalská 4868/8" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Kamil Kozma" col_1="" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Lívia Kačmarčíková" col_1="Plzenská 2840/25" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Marek Hrubý" col_1="Antona Prídavka 4848/14" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Mária Bendíková" col_1="Bernolákova 6527/4" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Miroslav Žolner" col_1="" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Monika Wisniovská" col_1="Vihorlatská 7060/5" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Pavel Rigó" col_1="Važecká 6793/16" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Peter Berecký" col_1="Sibírska 6962/38" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Slavka Cajgovičová" col_1="Obrancov mieru 4684/66" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Slavomír Briško" col_1="" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Veronika Holecyová" col_1="Mukačevská 4806/35" col_2="Prešov" col_3="   198,00" col_4="EUR" />
+      <row col_0="Pavol Sivák" col_1="Pod Hrádkom 1124/17" col_2="Prešov" col_3="   197,39" col_4="EUR" />
+      <row col_0="Andrej Kačala" col_1="" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="Dávid Evan Vrbovský" col_1="" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="Dušan Kuka" col_1="Mukačevská 4806/31" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="Emil Porembský" col_1="" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="František Sajdák" col_1="" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="Pavol Greš" col_1="Sídlisko duklianskych hrdinov 3981/2" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="Peter Makula" col_1="súp. č. 196" col_2="Smolník" col_3="   197,30" col_4="EUR" />
+      <row col_0="Tomáš Vrabeľ" col_1="Ďumbierska 6865/5" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="Viliam Vaľovský" col_1="" col_2="Prešov" col_3="   197,30" col_4="EUR" />
+      <row col_0="Ľudmila Pribulová" col_1="Sídlisko duklianskych hrdinov 3982/6" col_2="Prešov" col_3="   196,83" col_4="EUR" />
+      <row col_0="Marián Werner" col_1="" col_2="Prešov" col_3="   196,50" col_4="EUR" />
+      <row col_0="Pavel Rigo" col_1="Važecká 6793/16" col_2="Prešov" col_3="   196,38" col_4="EUR" />
+      <row col_0="Miroslava Mihaliková" col_1="Átriová 12961/3" col_2="Prešov" col_3="   195,94" col_4="EUR" />
+      <row col_0="Vlastimil Milovčík" col_1="Šafárikova 5913/13" col_2="Prešov" col_3="   194,92" col_4="EUR" />
+      <row col_0="Jana Rychvalská" col_1="" col_2="London" col_3="   194,08" col_4="EUR" />
+      <row col_0="Mária Giňová" col_1="" col_2="Prešov" col_3="   193,79" col_4="EUR" />
+      <row col_0="Ľubomír Kvartek" col_1="súp. č. 130" col_2="Tulčík" col_3="   192,55" col_4="EUR" />
+      <row col_0="Slavka Smolenová" col_1="" col_2="Prešov" col_3="   192,29" col_4="EUR" />
+      <row col_0="Pavel Sekanina" col_1="Čerešňová 6860/16" col_2="Prešov" col_3="   191,88" col_4="EUR" />
+      <row col_0="Eva Eštočaková" col_1="K Starej tehelni 11500/8" col_2="Prešov" col_3="   191,71" col_4="EUR" />
+      <row col_0="Alena Bandyová" col_1="" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Danka Cicoňová" col_1="Lomnická 6727/12" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Iveta Majerová" col_1="Švábska 6764/55" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Jozef Lejko" col_1="Royova 6764/2" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Ľudovít Kováč" col_1="Ďumbierska 6882/17" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Marcela Makulová" col_1="Zápotockého 4025/20" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Mária Medzanská" col_1="" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Martina Ferková" col_1="K Starej tehelni 11500/5" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Pavol Kamenický" col_1="Bernolákova 6523/13" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Slávka Jakubková" col_1="Alexandra Matušku 6414/12" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Viera Guľašová" col_1="Bajkalská 4859/3" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Viera Vavreková" col_1="Magurská 6845/6" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Zuzana Remperová" col_1="Prostějovská 4837/12" col_2="Prešov" col_3="   191,62" col_4="EUR" />
+      <row col_0="Jana Pohlodková" col_1="K Starej tehelni 11584/12" col_2="Prešov" col_3="   191,61" col_4="EUR" />
+      <row col_0="Zděnka Kseňaková" col_1="" col_2="Prešov" col_3="   191,61" col_4="EUR" />
+      <row col_0="Marta Irchová" col_1="Pavla Horova 6318/6" col_2="Prešov" col_3="   191,57" col_4="EUR" />
+      <row col_0="Peter Javorský" col_1="súp. č. 416" col_2="Vyšná Šebastová" col_3="   191,43" col_4="EUR" />
+      <row col_0="František Makula" col_1="Zápotockého 4025/20" col_2="Prešov" col_3="   191,30" col_4="EUR" />
+      <row col_0="Linda Lechová" col_1="Rumanova 5736/11" col_2="Prešov" col_3="   190,87" col_4="EUR" />
+      <row col_0="Zdenko Klégr" col_1="Októbrová 4730/41" col_2="Prešov" col_3="   190,25" col_4="EUR" />
+      <row col_0="Rudolf Adamčík" col_1="Pionierska 436/12" col_2="Prešov" col_3="   190,17" col_4="EUR" />
+      <row col_0="Patrik Kuchár" col_1="Solivarská 6477/67" col_2="Prešov" col_3="   190,04" col_4="EUR" />
+      <row col_0="Norbert Bari" col_1="Mukačevská 4802/7" col_2="Prešov" col_3="   188,64" col_4="EUR" />
+      <row col_0="Martin Potocký" col_1="Strážnická 2608/42" col_2="Prešov" col_3="   188,22" col_4="EUR" />
+      <row col_0="Jozef Petrovský" col_1="17. novembra 3739/86" col_2="Prešov" col_3="   187,84" col_4="EUR" />
+      <row col_0="Ľubomír Nižník" col_1="Višňová 6505/1" col_2="Prešov" col_3="   187,77" col_4="EUR" />
+      <row col_0="František Spišak" col_1="Dubová 6485/8" col_2="Prešov" col_3="   187,17" col_4="EUR" />
+      <row col_0="Matúš Kotulič" col_1="Mukačevská 4812/6" col_2="Prešov" col_3="   187,00" col_4="EUR" />
+      <row col_0="Damián Uličný" col_1="Prostějovská 4830/43" col_2="Prešov" col_3="   186,90" col_4="EUR" />
+      <row col_0="Stanislav Anderko" col_1="Rybárska 2357/5" col_2="Prešov" col_3="   186,47" col_4="EUR" />
+      <row col_0="Stanislav Hajžušin" col_1="Matice slovenskej 4761/3" col_2="Prešov" col_3="   185,70" col_4="EUR" />
+      <row col_0="Jozef Sedlák" col_1="Strážnická 13612/30A" col_2="Prešov" col_3="   184,93" col_4="EUR" />
+      <row col_0="Ľubomír Dačo" col_1="Bernolákova 6527/8" col_2="Prešov" col_3="   184,14" col_4="EUR" />
+      <row col_0="Marián Vizdal" col_1="Švábska 6815/32" col_2="Prešov" col_3="   184,13" col_4="EUR" />
+      <row col_0="Stefano Rossi" col_1="C. da Caselunghe 203" col_2="Penna San Giovanni" col_3="   184,02" col_4="EUR" />
+      <row col_0="Roman Baláž" col_1="Vodárenská 6015/38" col_2="Prešov" col_3="   182,49" col_4="EUR" />
+      <row col_0="Ing. Róbert Prečuch" col_1="Mirka Nešpora 4883/35" col_2="Prešov" col_3="   181,23" col_4="EUR" />
+      <row col_0="Bartolomej Tuleja" col_1="Vihorlatská 7047/13" col_2="Prešov" col_3="   180,92" col_4="EUR" />
+      <row col_0="Marián Juda" col_1="Jarková 3114/85" col_2="Prešov" col_3="   180,80" col_4="EUR" />
+      <row col_0="Otília Richterová" col_1="Matice slovenskej 4771/14" col_2="Prešov" col_3="   180,80" col_4="EUR" />
+      <row col_0="Dušan Gregor" col_1="Októbrová 4716/52" col_2="Prešov" col_3="   180,79" col_4="EUR" />
+      <row col_0="Igor Németh" col_1="" col_2="Prešov" col_3="   180,78" col_4="EUR" />
+      <row col_0="Adela Bíleková" col_1="" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Albín Hrib" col_1="" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Jozef Soták" col_1="Kukučínova 868/49" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Mária Sekerecová" col_1="Októbrová 4716/56" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Michal Fialka" col_1="Magurská 6845/4" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Miroslav Jurčenko" col_1="" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Peter Mathia" col_1="" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Tomáš Brendza" col_1="Prostějovská 4845/70" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Václav Hurtuk" col_1="Baštová 3185/38" col_2="Prešov" col_3="   180,71" col_4="EUR" />
+      <row col_0="Igor Dreveňák" col_1="" col_2="Prešov" col_3="   180,70" col_4="EUR" />
+      <row col_0="Mária Balunová" col_1="" col_2="Prešov" col_3="   179,50" col_4="EUR" />
+      <row col_0="Ján Carík" col_1="Kamenná 7372/6" col_2="Prešov" col_3="   179,40" col_4="EUR" />
+      <row col_0="Dušan Kuropčák" col_1="" col_2="Prešov" col_3="   179,31" col_4="EUR" />
+      <row col_0="Mariana Kavuličová" col_1="Švábska 6725/43" col_2="Prešov" col_3="   178,96" col_4="EUR" />
+      <row col_0="PhDr. Michaela Balážová Gumanová" col_1="Jána Hollého 5897/8" col_2="Prešov" col_3="   177,96" col_4="EUR" />
+      <row col_0="Martina Kalejová" col_1="" col_2="Prešov" col_3="   177,85" col_4="EUR" />
+      <row col_0="Peter Rozman" col_1="Zimná 6415/4" col_2="Prešov" col_3="   177,42" col_4="EUR" />
+      <row col_0="Tatiana Pružinská" col_1="Karpatská 6593/7" col_2="Prešov" col_3="   177,23" col_4="EUR" />
+      <row col_0="Peter Hadbávny" col_1="Maybaumova 3658/17" col_2="Prešov" col_3="   176,89" col_4="EUR" />
+      <row col_0="Ján Hendrichovský" col_1="súp. č. 159" col_2="Chminianska Nová Ves" col_3="   176,13" col_4="EUR" />
+      <row col_0="Mária Stankovičová" col_1="" col_2="Prešov" col_3="   176,13" col_4="EUR" />
+      <row col_0="Michael Balun" col_1="Kamenná 12435/13A" col_2="Prešov" col_3="   175,16" col_4="EUR" />
+      <row col_0="Ing. Andrej Biačko" col_1="Magurská 7316/13" col_2="Prešov" col_3="   174,97" col_4="EUR" />
+      <row col_0="Emil Merčák" col_1="súp. č. 61" col_2="Radvanovce" col_3="   174,51" col_4="EUR" />
+      <row col_0="Jana Andreanská - ANDREAS" col_1="Antona Prídavka 4849/22" col_2="Prešov" col_3="   173,25" col_4="EUR" />
+      <row col_0="Mária Greššaková" col_1="Volgogradská 4787/14" col_2="Prešov" col_3="   173,19" col_4="EUR" />
+      <row col_0="PaedDr. Štefan Leitmann" col_1="Mirka Nešpora 6476/77" col_2="Prešov" col_3="   172,56" col_4="EUR" />
+      <row col_0="Janka Godlová" col_1="Bodice súp. č. 96" col_2="Liptovský Mikuláš" col_3="   172,49" col_4="EUR" />
+      <row col_0="Janka Grešová" col_1="Mirka Nešpora 4886/59" col_2="Prešov" col_3="   172,46" col_4="EUR" />
+      <row col_0="Abdurazag Hamouda" col_1="Pavla Horova 6319/12" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Bibiana Englerová" col_1="Prostějovská 4820/3" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Eduard Kuruc" col_1="Bernolákova 6523/13" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Erika Richtariková" col_1="súp. č. 137" col_2="Oľdza" col_3="   172,44" col_4="EUR" />
+      <row col_0="Eva Kudryová" col_1="" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Gabriela Cvancigerová" col_1="súp. č. 41" col_2="Lada" col_3="   172,44" col_4="EUR" />
+      <row col_0="Ing. Mária Marušáková" col_1="Pavlovičovo námestie 3859/26" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Ivana Makulová" col_1="" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Ivana Štieberová" col_1="" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Ján Fabian" col_1="Dargovská 6431/2" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Ján Kochanský" col_1="Československej armády 4692/27" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Jana Lakatošová" col_1="Janouškova 5006/6" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Janka Vyhonská" col_1="Čapajevova 4894/12" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Lenka Demeterová" col_1="Gápľová 607/1" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Ľudmila Hrdlovičová" col_1="" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Mária Balogová" col_1="Tarasa Ševčenka 3932/4" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Martina Kováčová" col_1="Gápľová 607/1" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Mgr. Roxana Čerevková" col_1="Wolkerova 5023/7" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Peter Jurčišin" col_1="Antona Prídavka 4850/24" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Rudolf Pončák" col_1="Tarasa Ševčenka 3932/2" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Slávka Townson" col_1="Dovecote Lane 5" col_2="Somerton" col_3="   172,44" col_4="EUR" />
+      <row col_0="Stanislav Pčolinský" col_1="Jurkovičova 6579/13" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Zdenek Šišovský" col_1="" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Zdenka Onderčová" col_1="Matice slovenskej 4762/5" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Zuzana Petiková" col_1="" col_2="Prešov" col_3="   172,44" col_4="EUR" />
+      <row col_0="Pavol Majirský" col_1="Mateja Murgaša 13798/8" col_2="Prešov" col_3="   171,16" col_4="EUR" />
+      <row col_0="Marián Slanina" col_1="Obrancov mieru 4687/17" col_2="Prešov" col_3="   170,32" col_4="EUR" />
+      <row col_0="Silvia Kaščáková" col_1="L. Novomeského 6438/22" col_2="Prešov" col_3="   170,32" col_4="EUR" />
+      <row col_0="Alena Semanová" col_1="súp. č. 38" col_2="Malý Slivník" col_3="   170,29" col_4="EUR" />
+      <row col_0="Anna Boriszová" col_1="" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Daniela Čonková" col_1="Tarasa Ševčenka 3931/33" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Eduard Klein" col_1="Požiarnická 3958/16" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Iveta Ridillová" col_1="súp. č. 38" col_2="Malý Slivník" col_3="   170,29" col_4="EUR" />
+      <row col_0="Martina Šupalová" col_1="" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Radovan Balík" col_1="Tarasa Ševčenka 3937/22" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Tomáš Kamenský" col_1="Royova 6763/4" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Veronika Timkaničová" col_1="Kotrádova 5170/6" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Viera Maťašová" col_1="Sibírska 6949/33" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Zuzana Stredňáková" col_1="" col_2="Prešov" col_3="   170,29" col_4="EUR" />
+      <row col_0="Mgr. Nikola Oravcová" col_1="Šafárikova 5913/15" col_2="Prešov" col_3="   170,10" col_4="EUR" />
+      <row col_0="Mario Huba" col_1="Matice slovenskej 4768/4" col_2="Prešov" col_3="   169,61" col_4="EUR" />
+      <row col_0="Štefan Jaško" col_1="Bernolákova 6521/3" col_2="Prešov" col_3="   169,51" col_4="EUR" />
+      <row col_0="Marián Fortuna" col_1="Štúrova 3693/36" col_2="Prešov" col_3="   168,74" col_4="EUR" />
+      <row col_0="Oliver Straka" col_1="" col_2="Prešov" col_3="   168,70" col_4="EUR" />
+      <row col_0="Stanislav Mikča" col_1="Levočská 6119/27" col_2="Prešov" col_3="   168,33" col_4="EUR" />
+      <row col_0="Miroslav Pitlanič" col_1="Šrobárova 6563/2" col_2="Prešov" col_3="   167,79" col_4="EUR" />
+      <row col_0="Mária Ďuricová" col_1="Važecká 6776/2" col_2="Prešov" col_3="   166,98" col_4="EUR" />
+      <row col_0="Rudolf Bilený" col_1="Kúpeľná 3915/9" col_2="Prešov" col_3="   165,73" col_4="EUR" />
+      <row col_0="Bibiána Sepešiová" col_1="" col_2="Prešov" col_3="   165,30" col_4="EUR" />
+      <row col_0="Marek Gernát" col_1="súp. č. 32" col_2="Fulianka" col_3="   165,30" col_4="EUR" />
+      <row col_0="Emília Stephanyová" col_1="Sibírska 12850/24" col_2="Prešov" col_3="   165,19" col_4="EUR" />
+      <row col_0="Ladislav Makula" col_1="Švábska 6774/65" col_2="Prešov" col_3="   164,64" col_4="EUR" />
+      <row col_0="Klaudia Kováčová" col_1="Karpatská 6592/1" col_2="Prešov" col_3="   164,21" col_4="EUR" />
+      <row col_0="Michael Kováč" col_1="Karpatská 6592/1" col_2="Prešov" col_3="   164,21" col_4="EUR" />
+      <row col_0="Anton Dužda" col_1="Tarasa Ševčenka 3936/18" col_2="Prešov" col_3="   164,19" col_4="EUR" />
+      <row col_0="Zachariáš Hubáček" col_1="Októbrová 4716/52" col_2="Prešov" col_3="   164,16" col_4="EUR" />
+      <row col_0="Anna Sotáková" col_1="Švábska 6807/42" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Imrich Weber" col_1="" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Katarína Augel" col_1="Prostějovská 4824/25" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Ľubomír Lacko" col_1="" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Ľuboslav Šeminský" col_1="Sibírska 6946/21" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Maroš Koch" col_1="Prostějovská 4835/101" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Martin Musil" col_1="Pavlovičovo námestie 3861/39" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Martina Youensová" col_1="Ďumbierska 6897/20" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Milan Laci" col_1="Budovateľská 3611/21" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Pavol Kočiščák" col_1="Švábska 6774/67" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Peter Kuzmiak" col_1="Marka Čulena 4754/16" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Peter Palko" col_1="Levočská 4700/67" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Rüdiger Neuhaus" col_1="Soľanková 11365/1" col_2="Prešov" col_3="   164,15" col_4="EUR" />
+      <row col_0="Ľuboslav Straka" col_1="Sibírska 6946/23" col_2="Prešov" col_3="   164,08" col_4="EUR" />
+      <row col_0="Kamil Skalský" col_1="Ruské Pekľany súp. č. 46" col_2="Ľubovec" col_3="   163,66" col_4="EUR" />
+      <row col_0="Peter Komka" col_1="Gagarinova 2506/26A" col_2="Ľubotice" col_3="   163,60" col_4="EUR" />
+      <row col_0="Dagmara Verešpejová" col_1="Björnsonova 5031/2" col_2="Prešov" col_3="   163,31" col_4="EUR" />
+      <row col_0="Radovan Stoják" col_1="Smreková 6479/3" col_2="Prešov" col_3="   163,05" col_4="EUR" />
+      <row col_0="Renáta Helmeczyová" col_1="Pavlovičovo námestie 3862/42" col_2="Prešov" col_3="   162,88" col_4="EUR" />
+      <row col_0="David Prachař" col_1="Kostolianska 265/14" col_2="Sokoľ" col_3="   162,52" col_4="EUR" />
+      <row col_0="Hana Pancuráková" col_1="Šoltésovej 6534/1" col_2="Prešov" col_3="   161,81" col_4="EUR" />
+      <row col_0="Petra Vašaničová" col_1="Švábska 6796/76" col_2="Prešov" col_3="   161,59" col_4="EUR" />
+      <row col_0="Lila Smreková" col_1="" col_2="Prešov" col_3="   161,51" col_4="EUR" />
+      <row col_0="Jaroslav Lipjanec" col_1="Mirka Nešpora 4882/33" col_2="Prešov" col_3="   161,16" col_4="EUR" />
+      <row col_0="Marián Tatran" col_1="" col_2="Prešov" col_3="   161,06" col_4="EUR" />
+      <row col_0="Anna Meňovská" col_1="Rožňavská 641/26" col_2="Moldava nad Bodvou" col_3="   161,03" col_4="EUR" />
+      <row col_0="Martin Poklemba" col_1="Matice slovenskej 4769/6" col_2="Prešov" col_3="   161,00" col_4="EUR" />
+      <row col_0="Jana Sabolová" col_1="Sabinovská 5160/130" col_2="Prešov" col_3="   160,59" col_4="EUR" />
+    </data>
+  </rs>
+</ds>

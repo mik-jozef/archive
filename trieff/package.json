@@ -1,0 +1,23 @@
+{
+  "name": "trieff",
+  "version": "1.0.4",
+  "description": "Trie file format - use as a trie, save to disk. Tool for manipulating .trieff files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mik-jozef/trieff"
+  },
+  "bugs": {
+    "url": "https://github.com/mik-jozef/trieff/issues"
+  },
+  "keywords": [
+    "trie",
+    "file",
+    "trieff"
+  ],
+  "author": "Jozef Mikusinec <mik.jozef@gmail.com>",
+  "license": "MIT"
+}
