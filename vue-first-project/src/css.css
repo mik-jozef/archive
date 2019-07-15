@@ -1,0 +1,131 @@
+html, body {
+  margin: 0;
+}
+
+div, textarea {
+  box-sizing: border-box;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.app {
+  height: 100vh;
+}
+
+.fs {
+  background-color: #EEE;
+  border-right: 2px solid #aaa;
+  width: 400px;
+  min-height: 100vh;
+  padding-top: 0.1px;
+  padding-left: 20px;
+  float: left;
+}
+
+.fs-folder-name {
+  float: left;
+}
+
+.fs-icons {
+  float: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.fs-folder-top:hover .fs-icons {
+  visibility: visible;
+}
+
+.fs-folder-entries {
+  padding-left: 15px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-editor-dialog {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 20vh;
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.text-editor-dialog-background {
+  position: absolute;
+  left:0;
+  right:0;
+  height: 100vh;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dialog-error {
+  color: red;
+  font-size: 0.85em;
+}
+
+.tabs {
+  float: left;
+  padding-top: 0.1px;
+  position: relative;
+}
+
+.tabs-empty-message {
+  margin-left: 10px;
+}
+
+.tabs-panel {
+  height: 40px;
+  background-color: #eee;
+  border-bottom: 1px solid #aaa;
+  width: calc(100vw - 400px);
+}
+
+.tabs-tab {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #aaa;
+}
+
+.tabs-tab-selected {
+  border-top: 4px solid #0f8;
+  line-height: 32px;
+}
+
+.tabs-tab-unsaved {
+  border-top: 4px solid #fb2;
+  line-height: 32px;
+}
+
+.tab-close-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.tabs-textarea {
+  border: 0;
+  padding: 8px;
+  outline: 0;
+  resize:none;
+  width: 100%;
+  height: calc(100vh - 44px);
+}
+
+.tabs-autosave-p {
+  float: right;
+  margin: 0 15px;
+  line-height: 40px;
+  text-decoration: underline;
+  cursor: pointer;
+}
