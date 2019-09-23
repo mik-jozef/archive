@@ -12,7 +12,7 @@ const colors = (() => {
   return colors;
 })();
 
-const c = 3; // Speed of light in px.
+const c = 9; // Speed of light in px.
 const canvasSize = 400;
 
 const field = [];
@@ -26,6 +26,8 @@ function initField() {
   
   for (let y = 1; y < canvasSize; y++) {
     field.push(nextRow(field[field.length - 1]));
+    
+    console.log("y", y);
   }
 }
 
@@ -33,7 +35,6 @@ function nextRow(row) {
   const changes = row.map(a => 0);
   
   row.forEach((r, i) => {
-    console.log(sum(row, i, c), r * (2 * c + 1))
     changes[i] += sum(row, i, c) >= r * (2 * c + 1) ? -1 : 1;
   });
   
@@ -56,12 +57,14 @@ function setup() {
   initField();
   
   createCanvas(canvasSize, canvasSize);
+  
+  noLoop();
 }
 
 function draw() {
-  for (let x = 0; x < canvasSize; x++) {
-    for (let y = 0; y < canvasSize; y++) {
-      stroke(...colors[field[x][y]]);
+  for (let y = 0; y < canvasSize; y++) {
+    for (let x = 0; x < canvasSize; x++) {
+      stroke(...colors[field[y][x]]);
       point(x, y);
     }
   }
