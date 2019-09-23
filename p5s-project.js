@@ -1,7 +1,7 @@
 const valMax = 100;
 
 const low = [ 20, 20, 45 ];
-const high = [ 35, 35, 75 ];
+const high = [ 135, 35, 75 ];
 
 const colors = (() => {
   const colors = [];
@@ -33,14 +33,19 @@ function nextRow(row) {
   const changes = row.map(a => 0);
   
   row.forEach((r, i) => {
-    changes[i] += sum(row, i, c) > r * (2 * c + 1) ? -1 : 1;
+    console.log(sum(row, i, c), r * (2 * c + 1))
+    changes[i] += sum(row, i, c) >= r * (2 * c + 1) ? -1 : 1;
+  });
+  
+  return row.map((a, i) => {
+    return Math.min(100, Math.max(0, a + changes[i]));
   });
 }
 
 function sum(row, i, c) {
   let s = 0;
   
-  for (let x = i - row; x <= i + row; x++) {
+  for (let x = i - c; x <= i + c; x++) {
     s += row[(x + row.length) % row.length];
   }
   
@@ -56,7 +61,7 @@ function setup() {
 function draw() {
   for (let x = 0; x < canvasSize; x++) {
     for (let y = 0; y < canvasSize; y++) {
-      stroke(...colors[field[0][x][y]]);
+      stroke(...colors[field[x][y]]);
       point(x, y);
     }
   }
