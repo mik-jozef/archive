@@ -16,18 +16,15 @@ const canvasSize = 400;
 const field = [];
 
 function initField() {
-  const fieldTmp = [];
+  field.push([]);
   
   for (let x = 0; x < canvasSize; x++) {
-    fieldTmp[x] = [];
-    
-    for (let y = 0; y < canvasSize; y++) {
-      fieldTmp[x][y] = 10;
-    }
+    field[0].push(10 + random([ 0, 0, 0, 1, 1, 2, 3 ]));
   }
   
-  field[0] = deepCopy(fieldTmp);
-  field[1] = deepCopy(fieldTmp);
+  for (let y = 1; y < canvasSize; y++) {
+    field.push([]);
+  }
 }
 
 function setup() {
@@ -39,14 +36,10 @@ function setup() {
 function draw() {
   for (let x = 0; x < canvasSize; x++) {
     for (let y = 0; y < canvasSize; y++) {
-      fill(...colors[field[0][x][y]]);
-      line(x, y, x, y);
+      stroke(...colors[field[0][x][y]]);
+      point(x, y);
     }
   }
-}
-
-function deepCopy(x) {
-  if (x.length) return x.map(a=> deepCopy(a));
   
-  return x;
+  console.log("draw")
 }
