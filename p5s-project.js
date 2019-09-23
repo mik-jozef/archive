@@ -2,6 +2,7 @@ const valMax = 100;
 
 const low = [ 20, 20, 45 ];
 const high = [ 35, 35, 75 ];
+
 const colors = (() => {
   const colors = [];
   for (let x = 0; x < valMax; x++) colors.push(
@@ -11,6 +12,7 @@ const colors = (() => {
   return colors;
 })();
 
+const c = 3; // Speed of light in px.
 const canvasSize = 400;
 
 const field = [];
@@ -23,8 +25,26 @@ function initField() {
   }
   
   for (let y = 1; y < canvasSize; y++) {
-    field.push([]);
+    field.push(nextRow(field[field.length - 1]));
   }
+}
+
+function nextRow(row) {
+  const changes = row.map(a => 0);
+  
+  row.forEach((r, i) => {
+    changes[i] += sum(row, i, c) > r * (2 * c + 1) ? -1 : 1;
+  });
+}
+
+function sum(row, i, c) {
+  let s = 0;
+  
+  for (let x = i - row; x <= i + row; x++) {
+    s += row[(x + row.length) % row.length];
+  }
+  
+  return s;
 }
 
 function setup() {
