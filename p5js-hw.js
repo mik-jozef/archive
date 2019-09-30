@@ -33,5 +33,5 @@ function addCircleRay(x, y, diffX, diffY, multSize, color0, color1) {
 }
 
 function randColor() {
-  return "green";
+  return color(random(255), random(255), random(255));
 }
