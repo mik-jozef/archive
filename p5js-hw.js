@@ -1,4 +1,4 @@
-const canvasMax = 400;
+const canvasMax = 600;
 
 function setup() {
   createCanvas(canvasMax, canvasMax);
@@ -19,7 +19,7 @@ function draw() {
 }
 
 function addCircleRay(x, y, diffX, diffY, multSize, color0, color1) {
-  if (x < -100 || y < -100 || x > 500 || y > 500) return;
+  if (x < -100 || y < -100 || x > canvasMax + 100 || y > canvasMax + 100) return;
   if (diffX + diffY < 1) return;
   
   fill(color0);
