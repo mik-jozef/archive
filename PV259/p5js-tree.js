@@ -15,6 +15,8 @@ const sizeChangeMax = 8;
 
 const timeTreshold = 70;
 
+const canvasSize = 500;
+
 function rand(min, max) {
   if (max === undefined) [ min, max ] = [ 0, min ];
   
@@ -62,6 +64,8 @@ class Tree {
     
     this.dirX = dirX;
     this.dirY = dirY;
+    
+    if (this.x < 0 || this.x > canvasSize)
   }
   
   growBranch(x, y, c = color(...baseColor), size, dX, dY) {
@@ -102,9 +106,9 @@ class Tree {
 let root;
 
 function setup() {
-  root = new Tree(rand(0, 400), rand(0, 400), color(...baseColor));
+  root = new Tree(rand(0, canvasSize), rand(0, canvasSize), color(...baseColor));
   
-  createCanvas(400, 400);
+  createCanvas(canvasSize, canvasSize);
 }
 
 function draw() {
