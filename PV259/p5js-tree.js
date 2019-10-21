@@ -10,9 +10,16 @@ const sizeMax = 50;
 const baseColor = [ 170, 150, 180 ];
 
 const extraBranchChance = 0.05;
+const branchDirChangeMax = 4;
 
 function rand(min, max) {
+  if (max === undefined) [ min, max ] = [ 0, max ];
+  
   return min + Math.floor(Math.random() * (max - min));
+}
+
+function randS(n) {
+  return rand(-n, n);
 }
 
 class Tree {
@@ -40,10 +47,17 @@ class Tree {
   tick(delta, mouseX, mouseY) {
     this.children.forEach(a => a.tick(delta, mouseX, mouseY));
     
-    if (this.children.length = 0) {
+    if (this.children.length === 0) {
       growBranch(this.x + this.dirX, this.y + this.dirY, color(...baseColor));
       
-      if (Math.random() < extraBranchChance) growBranch();
+      if (Math.random() < extraBranchChance) {
+        const size = this.size - rand();
+        const dirX = this.dirX + randS(branchDirChangeMax);
+        const dirY = this.dirY + randS(branchDirChangeMax);
+        // TODO maybe modify this.dir[X|Y]?
+        
+        growBranch(this.x, this.y, color(...baseColor), size, dirX, dirY);
+      }
     }
     
     return this;
