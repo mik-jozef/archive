@@ -22,6 +22,25 @@ function randS(n) {
   return rand(-n, n);
 }
 
+class Timer {
+  constructor(treshold) {
+    this.time = 0;
+    this.treshold = treshold;
+  }
+  
+  add(time) {
+    this.time += time;
+    
+    if (this.time > this.treshold) {
+      this.time -= treshold;
+      
+      return true;
+    }
+    
+    return false;
+  }
+}
+
 class Tree {
   constructor(x, y, color,
     size = rand(sizeMin, sizeMax),
