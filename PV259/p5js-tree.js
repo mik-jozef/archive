@@ -25,14 +25,16 @@ class Tree {
     
     this.x = x;
     this.y = y;
+    
     this.color = color;
     this.size = size;
+    
     this.dirX = dirX;
     this.dirY = dirY;
   }
   
-  growBranch(x, y) {
-    this.children.push(new Tree(x, y, color(...baseColor)));
+  growBranch(x, y, c = color(...baseColor), size, dX, dY) {
+    this.children.push(new Tree(x, y, c, size, dX, dY));
   }
   
   tick(delta, mouseX, mouseY) {
