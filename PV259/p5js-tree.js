@@ -9,11 +9,14 @@ const sizeMax = 50;
 
 const baseColor = [ 170, 150, 180 ];
 
-const extraBranchChance = 0.05;
+const extraBranchChance = 0.1;
 const branchDirChangeMax = 4;
+const sizeChangeMax = 8;
+
+const timeTreshold = 70;
 
 function rand(min, max) {
-  if (max === undefined) [ min, max ] = [ 0, max ];
+  if (max === undefined) [ min, max ] = [ 0, min ];
   
   return min + Math.floor(Math.random() * (max - min));
 }
@@ -32,7 +35,7 @@ class Timer {
     this.time += time;
     
     if (this.time > this.treshold) {
-      this.time -= treshold;
+      this.time -= this.treshold;
       
       return true;
     }
@@ -40,6 +43,8 @@ class Timer {
     return false;
   }
 }
+
+const timer = new Timer(timeTreshold);
 
 class Tree {
   constructor(x, y, color,
@@ -60,19 +65,21 @@ class Tree {
   }
   
   growBranch(x, y, c = color(...baseColor), size, dX, dY) {
-    this.children.push(new Tree(x, y, c, size, dX, dY));
+    size > 0 && this.children.push(new Tree(x, y, c, size, dX, dY));
   }
   
   tick(delta, mouseX, mouseY) {
     this.children.forEach(a => a.tick(delta, mouseX, mouseY));
     
     if (this.children.length === 0) {
-      this.growBranch(this.x + this.dirX, this.y + this.dirY, color(...baseColor));
+      this.growBranch(this.x + this.dirX, this.y + this.dirY,
+        color(...baseColor), this.size, this.dirX, this.dirY);
       
       if (Math.random() < extraBranchChance) {
-        const size = this.size - rand();
+        const size = this.size - rand(sizeChangeMax);
         const dirX = this.dirX + randS(branchDirChangeMax);
         const dirY = this.dirY + randS(branchDirChangeMax);
+        
         // TODO maybe modify this.dir[X|Y]?
         
         this.growBranch(this.x, this.y, color(...baseColor), size, dirX, dirY);
@@ -103,5 +110,7 @@ function setup() {
 function draw() {
   background(255);
   
-  root.tick(deltaTime, mouseX, mouseY).draw(circle, stroke, fill);
+  timer.add(deltaTime) && root.tick(deltaTime, mouseX, mouseY);
+  
+  root.draw(circle, stroke, fill);
 }
