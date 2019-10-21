@@ -27,35 +27,21 @@ function randS(n) {
   return rand(-n, n);
 }
 
-class Timer {
-  constructor(treshold) {
-    this.time = 0;
-    this.treshold = treshold;
-  }
-  
+const timer = {
+  time: 0,
   add(time) {
     this.time += time;
     
-    if (this.time > this.treshold) {
-      this.time -= this.treshold;
-      
-      return true;
-    }
-    
-    return false;
+    return this.time > timeTreshold && ((this.time -= timeTreshold), true);
   }
-}
+};
 
-const timer = new Timer(timeTreshold);
-
-class Tree {
+class Circle {
   constructor(x, y, color,
     size = rand(sizeMin, sizeMax),
     dirX = rand(dirXMin, dirXMax),
     dirY = rand(dirYMin, dirYMax),
   ) {
-    this.children = [];
-    
     this.x = x;
     this.y = y;
     
@@ -64,49 +50,19 @@ class Tree {
     
     this.dirX = dirX;
     this.dirY = dirY;
-    
-    if (this.x < 0 || this.x > canvasSize)
   }
   
-  growBranch(x, y, c = color(...baseColor), size, dX, dY) {
-    size > 0 && this.children.push(new Tree(x, y, c, size, dX, dY));
-  }
-  
-  tick(delta, mouseX, mouseY) {
-    this.children.forEach(a => a.tick(delta, mouseX, mouseY));
-    
-    if (this.children.length === 0) {
-      this.growBranch(this.x + this.dirX, this.y + this.dirY,
-        color(...baseColor), this.size, this.dirX, this.dirY);
-      
-      if (Math.random() < extraBranchChance) {
-        const size = this.size - rand(sizeChangeMax);
-        const dirX = this.dirX + randS(branchDirChangeMax);
-        const dirY = this.dirY + randS(branchDirChangeMax);
-        
-        // TODO maybe modify this.dir[X|Y]?
-        
-        this.growBranch(this.x, this.y, color(...baseColor), size, dirX, dirY);
-      }
-    }
-    
-    return this;
-  }
-  
-  draw(circle, stroke, fill) {
-    fill(this.color);
-    stroke(this.color);
-    
-    circle(this.x, this.y, this.size);
-    
-    this.children.forEach(a => a.draw(circle, stroke, fill));
-  }
 }
 
-let root;
+let circles;
+let cNew;
 
 function setup() {
-  root = new Tree(rand(0, canvasSize), rand(0, canvasSize), color(...baseColor));
+  circles = [
+    new Circle(rand(0, canvasSize), rand(0, canvasSize), color(...baseColor)),
+  ];
+  
+  cNew = [ circles[0] ];
   
   createCanvas(canvasSize, canvasSize);
 }
@@ -114,7 +70,46 @@ function setup() {
 function draw() {
   background(255);
   
-  timer.add(deltaTime) && root.tick(deltaTime, mouseX, mouseY);
+  function growBranch(x, y, c = color(...baseColor), size, dX, dY) {console.log(size)
+    if (size > 0) {
+      const circle = new Circle(x, y, c, size, dX, dY);
+      
+      circles.push(circle);
+      cNew.push(circle);
+    }
+  }
   
-  root.draw(circle, stroke, fill);
+  function tick() {
+    const oldNew = cNew;
+    
+    cNew = [];
+    console.log(oldNew)
+    oldNew.forEach(c => {console.log(c)
+      growBranch(c.x + c.dirX, c.y + c.dirY,
+        color(...baseColor), c.size, c.dirX, c.dirY);
+      
+      if (Math.random() < extraBranchChance) {
+        const size = c.size - rand(sizeChangeMax);
+        const dirX = c.dirX + randS(branchDirChangeMax);
+        const dirY = c.dirY + randS(branchDirChangeMax);
+        
+        // TODO maybe modify this.dir[X|Y]?
+        
+        growBranch(c.x, c.y, color(...baseColor), size, dirX, dirY);
+      }
+    });
+  }
+  
+  function draw() {
+    circles.forEach(c => {
+      fill(c.color);
+      stroke(c.color);
+      
+      circle(c.x, c.y, c.size);
+    });
+  }
+  
+  timer.add(deltaTime) && tick();
+  
+  draw();
 }
