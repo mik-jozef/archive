@@ -41,10 +41,10 @@ function detectClosestCollision() {
   let i = null;
   let j = null;
   
-  for (let [ a0, iMaybe ] of asteroids.entries()) {
-    for (let [ a1, jMaybe ] of asteroids.entries()) {
+  for (let [ iMaybe, a0 ] of asteroids.entries()) {
+    for (let [ jMaybe, a1 ] of asteroids.entries()) {
       if (a0 === a1) break;
-      
+      console.log(a0, a1, asteroids)
       const pos = minus(a0.position, a1.position)
       const vel = minus(a0.velocity, a1.velocity);
       
@@ -103,7 +103,7 @@ class Asteroid {
     const collision = detectClosestCollision();
     
     if (collision.time < time) {
-      for (let [ asteroid, i ] of asteroids.entries()) {
+      for (let [ i, asteroid ] of asteroids.entries()) {
         if (i === collision.i || i === collision.j) {
           // TODO handle collision
         }
