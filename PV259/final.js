@@ -139,7 +139,7 @@ function draw() {
     circle(
       asteroid.position[0],
       asteroid.position[1],
-      asteroid.radius,
+      asteroid.radius * 2,
       color(100, 100, 100),
     );
     
