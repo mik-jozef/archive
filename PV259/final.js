@@ -4,13 +4,13 @@ const breakChangeSpontaneous = 0.01;
 
 const dimensions = 2; // 2 or 3
 
-function randN(min, max) {
+function randNum(min, max) {
   max === undefined && ([ min, max] = [ 0, min ]);
   
   return min + Math.floor(Math.random() * (max - min));
 }
 
-function randNS(bound) {
+function randNumS(bound) {
   return rand(1 - bound, bound);
 }
 
@@ -26,7 +26,7 @@ function randHelper(f) {
   }
 }
 
-const [ rand, randS ] = [ randN, randNS ].map(randHelper);
+const [ rand, randS ] = [ randNum, randNumS ].map(randHelper);
 
 const asteroids = [];
 
@@ -92,11 +92,11 @@ class Asteroid {
 function setup() {
   createCanvas(400, 400);
   
-  for (let i = randN(10) + 2; i > 0; i--) {
+  for (let i = randNum(2, 10); i > 0; i--) {
     asteroids.push(new Asteroid(
       rand(canvas),
       randS(10),
-      randN(15, 35),
+      randNum(15, 35),
     ));
   }
 }
