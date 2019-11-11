@@ -1,5 +1,3 @@
-const debug = true;
-
 // Settings
 const canvas = 400;
 
@@ -49,7 +47,7 @@ function detectClosestCollision() {
   for (let [ iMaybe, a0 ] of asteroids.entries()) {
     for (let [ jMaybe, a1 ] of asteroids.entries()) {
       if (a0 === a1) break;
-      console.log(a0, a1, asteroids)
+      
       const pos = minus(a0.position, a1.position)
       const vel = minus(a0.velocity, a1.velocity);
       
@@ -138,12 +136,10 @@ function setup() {
 }
 
 function draw() {
-  if (debug && Math.random() < 0.95) return;
-  
   background(220);
   
   for (let asteroid of asteroids) {
-    console.log(asteroid.position[0], asteroid.position[1])
+    
     circle(
       asteroid.position[0],
       asteroid.position[1],
