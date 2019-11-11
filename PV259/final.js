@@ -1,7 +1,12 @@
+const debug = true;
+
 // Settings
 const canvas = 400;
+
 const breakChange = 0.1;
 const breakChangeSpontaneous = 0.01;
+
+const startSpeedMax = 20; // In pixels per millisecond
 
 const dimensions = 2; // 2 or 3
 
@@ -13,7 +18,7 @@ function randNum(min, max) {
 }
 
 function randNumS(bound) {
-  return rand(1 - bound, bound);
+  return randNum(1 - bound, bound);
 }
 
 function randHelper(f) {
@@ -126,23 +131,26 @@ function setup() {
   for (let i = randNum(2, 10); i > 0; i--) {
     asteroids.push(new Asteroid(
       rand(canvas),
-      randS(10),
+      randS(startSpeedMax),
       randNum(15, 35),
     ));
   }
 }
 
 function draw() {
+  if (debug && Math.random() < 0.95) return;
+  
   background(220);
   
   for (let asteroid of asteroids) {
+    console.log(asteroid.position[0], asteroid.position[1])
     circle(
       asteroid.position[0],
       asteroid.position[1],
       asteroid.radius,
-      color(100, 100, 100)
+      color(100, 100, 100),
     );
     
-    asteroid.tick(deltaTime);
+    asteroid.tick(deltaTime / 1000);
   }
 }
