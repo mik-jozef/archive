@@ -65,11 +65,11 @@ function detectClosestCollision() {
       if (colTime < 0 || colTime > time) break;
       
       time = colTime;
-      indexI = iMaybe;
-      indexJ = jMaybe;
+      i = iMaybe;
+      j = jMaybe;
     }
   }
-  
+  console.log("Time: " + time, i, j)
   return { time, i, j };
 }
 
