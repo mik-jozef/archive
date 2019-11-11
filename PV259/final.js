@@ -10,14 +10,12 @@ const dimensions = 2; // 2 or 3
 
 // Utils
 function randNum(min, max) {
-  max === undefined && ([ min, max] = [ 0, min ]);
+  max === undefined && ([ min, max ] = [ 0, min ]);
   
   return min + Math.floor(Math.random() * (max - min));
 }
 
-function randNumS(bound) {
-  return randNum(1 - bound, bound);
-}
+function randNumS(bound) { return randNum(1 - bound, bound); }
 
 function randHelper(f) {
   return (...args) => {
@@ -48,29 +46,35 @@ function detectClosestCollision() {
     for (let [ jMaybe, a1 ] of asteroids.entries()) {
       if (a0 === a1) break;
       
-      const pos = minus(a0.position, a1.position)
-      const vel = minus(a0.velocity, a1.velocity);
+      const colTime = detectCollision(a0, a1);
       
-      const a = vel.reduce((a, c) => a + c ** 2);
-      const b = 2 * (pos.reduce((a, c) => a + c) + vel.reduce((a, c) => a + c));
-      const c = pos.reduce((a, c) => a + c ** 2)
-        - (a0.radius + a1.radius) ** 2;
-      
-      const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
-      
-      if (isNaN(discriminant)) break;
-      
-      const colTime = -(b + discriminant) / 2 / a;
-      
-      if (colTime < 0 || colTime > time) break;
-      
-      time = colTime;
-      i = iMaybe;
-      j = jMaybe;
+      if (colTime !== null && colTime < time) {
+        time = colTime;
+        i = iMaybe;
+        j = jMaybe;
+      }
     }
   }
-  console.log("Time: " + time, i, j)
+  
   return { time, i, j };
+}
+
+function detectCollision(a0, a1) {
+  const pos = minus(a0.position, a1.position)
+  const vel = minus(a0.velocity, a1.velocity);
+  
+  const a = vel.reduce((a, c) => a + c ** 2);
+  const b = 2 * (pos.reduce((a, c) => a + c) + vel.reduce((a, c) => a + c));
+  const c = pos.reduce((a, c) => a + c ** 2) -
+    (a0.radius + a1.radius) ** 2;
+  
+  const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
+  
+  if (isNaN(discriminant)) return null;
+  
+  const colTime = -(b + discriminant) / 2 / a;
+  
+  return colTime < 0 ? null : colTime;
 }
 
 class Asteroid {
@@ -104,24 +108,15 @@ class Asteroid {
   
   tick(time) {
     const collision = detectClosestCollision();
+    const moveTime = Math.min(collision.time, time);
+    
+    for (let asteroid of asteroids) asteroid.move(moveTime);
     
     if (collision.time < time) {
-      for (let [ i, asteroid ] of asteroids.entries()) {
-        if (i === collision.i || i === collision.j) {
-          // TODO handle collision
-          
-          continue;
-        }
-        
-        asteroids[i].move(collision.time);
-      }
+      // TODO change direction of asteroids at collision.[ij]
       
       this.tick(time - collision.time);
-      
-      return;
     }
-    
-    for (let asteroid of asteroids) asteroid.move(time);
   }
 }
 
@@ -141,7 +136,6 @@ function draw() {
   background(220);
   
   for (let asteroid of asteroids) {
-    
     circle(
       asteroid.position[0],
       asteroid.position[1],
