@@ -4,7 +4,7 @@ const canvas = 400;
 const breakChange = 0.1;
 const breakChangeSpontaneous = 0.01;
 
-const startSpeedMax = 20; // In pixels per millisecond
+const startSpeedMax = 20; // In pixels per second
 
 const dimensions = 2; // 2 or 3
 
