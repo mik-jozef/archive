@@ -4,7 +4,7 @@ const canvas = 400;
 const breakChange = 0.1;
 const breakChangeSpontaneous = 0.01;
 
-const startSpeedMax = 20; // In pixels per second
+const startSpeedMax = 10; // In pixels per second
 
 const dimensions = 2; // 2 or 3
 
@@ -109,9 +109,11 @@ class Asteroid {
       for (let [ i, asteroid ] of asteroids.entries()) {
         if (i === collision.i || i === collision.j) {
           // TODO handle collision
+          
+          continue;
         }
         
-        asteroids[i0].move(collision.time);
+        asteroids[i].move(collision.time);
       }
       
       this.tick(time - collision.time);
