@@ -138,10 +138,12 @@ function setup() {
   createCanvas(400, 400);
   
   for (let i = randNum(2, 10); i > 0; i--) {
+    const radius = randNum(5, 25);
+    
     asteroids.push(new Asteroid(
-      rand(canvas),
+      rand(radius, canvas - radius),
       randS(startSpeedMax),
-      randNum(15, 35),
+      radius,
     ));
   }
 }
