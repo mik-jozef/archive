@@ -34,6 +34,12 @@ const [ rand, randS ] = [ randNum, randNumS ].map(randHelper);
 function plus(arr0, arr1) { return arr0.map((a, i) => a + arr1[i]) }
 function minus(arr0, arr1) { return arr0.map((a, i) => a - arr1[i]) }
 
+function velocityAfterCollision(m0, m1, v0, v1) {
+  const m = m0 + m1;
+  
+  return [ ((m0 - m1) * v0 + 2 * m1 * v1) / m, (2 * m1 * v0 + (m1 - m0) * v1) / m ];
+}
+
 // Program
 const asteroids = [];
 
@@ -89,7 +95,7 @@ class Asteroid {
   }
   
   mass() {
-    switch (dimension) {
+    switch (dimensions) {
       case 2: return Math.PI * this.radius ** 2;
       case 3: return Math.PI * this.radius ** 3 * 4 / 3;
       default: throw new Error("Dimension must be 2 or 3");
@@ -113,7 +119,15 @@ class Asteroid {
     for (let asteroid of asteroids) asteroid.move(moveTime);
     
     if (collision.time < time) {
-      // TODO change direction of asteroids at collision.[ij]
+      const a = asteroids[collision.i];
+      const b = asteroids[collision.j];
+      
+      const aVel = a.velocity;
+      const bVel = b.velocity;
+      
+      for (let i = 0; i < dimensions; i++) {
+        [ a.velocity[i], b.velocity[i] ] = velocityAfterCollision(a.mass(), b.mass(), a.velocity[i], b.velocity[i])
+      }
       
       this.tick(time - collision.time);
     }
