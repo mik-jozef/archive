@@ -63,9 +63,9 @@ function detectCollision(a0, a1) {
   const pos = minus(a0.position, a1.position)
   const vel = minus(a0.velocity, a1.velocity);
   
-  const a = vel.reduce((a, c) => a + c ** 2);
-  const b = 2 * (pos.reduce((a, c) => a + c) + vel.reduce((a, c) => a + c));
-  const c = pos.reduce((a, c) => a + c ** 2) -
+  const a = vel.reduce((a, c) => a + c ** 2, 0);
+  const b = 2 * pos.reduce((a, c, i) => a + c * vel[i], 0);
+  const c = pos.reduce((a, c) => a + c ** 2, 0) -
     (a0.radius + a1.radius) ** 2;
   
   const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
