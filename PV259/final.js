@@ -81,7 +81,7 @@ class Asteroid {
   constructor(p, v, r) {
     this.position = p;
     this.velocity = v;
-    this.radius = 10;
+    this.radius = r;
   }
   
   velocityAbs() {
