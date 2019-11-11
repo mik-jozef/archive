@@ -70,10 +70,6 @@ function detectClosestCollision() {
   return { time, i, j };
 }
 
-function detectCollision(a, b) {
-
-}
-
 class Asteroid {
   constructor(p, v, r) {
     this.position = p;
@@ -97,33 +93,6 @@ class Asteroid {
     return this.mass() * this.velocityAbs();
   }
   
-  detectCollision(maxTime, collision) {
-    for (let [ asteroid, i ] of asteroids.entries()) {
-      if (this === asteroid) return false;
-      
-      const pos = minus(asteroid.position, this.position)
-      const vel = minus(asteroid.velocity, this.velocity);
-      
-      const a = vel.reduce((a, c) => a + c ** 2);
-      const b = 2 * (pos.reduce((a, c) => a + c) + vel.reduce((a, c) => a + c));
-      const c = pos.reduce((a, c) => a + c ** 2)
-        - (asteroid.radius + this.radius) ** 2;
-      
-      const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
-      
-      if (isNaN(discriminant)) return false;
-      
-      const colTime = -(b + discriminant) / 2 / a;
-      
-      if (colTime < 0 || colTime > maxTime) return false;
-      
-      collision.time = colTime;
-      collision.index = i;
-      
-      return true;
-    }
-  }
-  
   move(dt) {
     for (let i = 0; i < this.position.length; i++) {
       this.position[i] += this.velocity[i] * dt;
@@ -131,19 +100,23 @@ class Asteroid {
   }
   
   tick(time) {
-    const collision = { time: null, i0: null, i1: null };
+    const collision = detectClosestCollision();
     
-    if (asteroids.some(asteroid => asteroid.detectCollision(time, collision))) {
-      for ()
-      asteroids[i0].move(collision.time);
-      asteroids[i1].move(collision.time);
+    if (collision.time < time) {
+      for (let [ asteroid, i ] of asteroids.entries()) {
+        if (i === collision.i || i === collision.j) {
+          // TODO handle collision
+        }
+        
+        asteroids[i0].move(collision.time);
+      }
       
       this.tick(time - collision.time);
       
       return;
     }
     
-    for (let asteroid of asteroids) this.move(time);
+    for (let asteroid of asteroids) asteroid.move(time);
   }
 }
 
