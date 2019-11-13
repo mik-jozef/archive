@@ -8,6 +8,8 @@ const startSpeedMax = 10; // In pixels per second
 
 const dimensions = 2; // 2 or 3
 
+const G = 10; // Gravitational constant in cubic pixels per kilogram per second squared
+
 // Utils
 function randNum(min, max) {
   max === undefined && ([ min, max ] = [ 0, min ]);
@@ -17,16 +19,14 @@ function randNum(min, max) {
 
 function randNumS(bound) { return randNum(1 - bound, bound); }
 
-function randHelper(f) {
-  return (...args) => {
-    const ret = [];
-    
-    for (let i = 0; i < dimensions; i++) {
-      ret.push(f(...args));
-    }
-    
-    return ret;
+const randHelper = (f) => (...args) => {
+  const ret = [];
+  
+  for (let i = 0; i < dimensions; i++) {
+    ret.push(f(...args));
   }
+  
+  return ret;
 }
 
 const [ rand, randS ] = [ randNum, randNumS ].map(randHelper);
@@ -54,7 +54,7 @@ function detectClosestCollision() {
       
       const colTime = detectCollision(a0, a1);
       
-      if (colTime !== null && colTime < time) {
+      if (0 <= colTime && colTime < time) {
         time = colTime;
         i = iMaybe;
         j = jMaybe;
@@ -76,11 +76,7 @@ function detectCollision(a0, a1) {
   
   const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
   
-  if (isNaN(discriminant)) return null;
-  
-  const colTime = -(b + discriminant) / 2 / a;
-  
-  return colTime < 0 ? null : colTime;
+  return -(b + discriminant) / 2 / a;
 }
 
 class Asteroid {
@@ -106,6 +102,10 @@ class Asteroid {
     return this.mass() * this.velocityAbs();
   }
   
+  updateVelocity() {
+    // TODO
+  }
+  
   move(dt) {
     for (let i = 0; i < this.position.length; i++) {
       this.position[i] += this.velocity[i] * dt;
@@ -113,6 +113,8 @@ class Asteroid {
   }
   
   tick(time) {
+    for (let asteroid of asteroids) asteroid.updateVelocity(time);
+    
     const collision = detectClosestCollision();
     const moveTime = Math.min(collision.time, time);
     
