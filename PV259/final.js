@@ -71,8 +71,7 @@ function detectCollision(a0, a1) {
   
   const a = vel.reduce((a, c) => a + c ** 2, 0);
   const b = 2 * pos.reduce((a, c, i) => a + c * vel[i], 0);
-  const c = pos.reduce((a, c) => a + c ** 2, 0) -
-    (a0.radius + a1.radius) ** 2;
+  const c = pos.reduce((a, c) => a + c ** 2, 0) - (a0.radius + a1.radius) ** 2;
   
   const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
   
@@ -86,20 +85,12 @@ class Asteroid {
     this.radius = r;
   }
   
-  velocityAbs() {
-    return Math.sqrt(this.velocity.map(a => a ** 2));
-  }
-  
   mass() {
     switch (dimensions) {
       case 2: return Math.PI * this.radius ** 2;
       case 3: return Math.PI * this.radius ** 3 * 4 / 3;
       default: throw new Error("Dimension must be 2 or 3");
     }
-  }
-  
-  momentum() {
-    return this.mass() * this.velocityAbs();
   }
   
   updateVelocity() {
@@ -128,7 +119,12 @@ class Asteroid {
       const bVel = b.velocity;
       
       for (let i = 0; i < dimensions; i++) {
-        [ a.velocity[i], b.velocity[i] ] = velocityAfterCollision(a.mass(), b.mass(), a.velocity[i], b.velocity[i])
+        [ a.velocity[i], b.velocity[i] ] = velocityAfterCollision(
+          a.mass(),
+          b.mass(),
+          a.velocity[i],
+          b.velocity[i]
+        );
       }
       
       this.tick(time - collision.time);
