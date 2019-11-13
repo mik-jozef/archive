@@ -1,14 +1,14 @@
+"use strict";
+
 // Settings
 const canvas = 400;
-
-const breakChange = 0.1;
-const breakChangeSpontaneous = 0.01;
-
+const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
+const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
 const dimensions = 2; // 2 or 3
 
-const G = 10; // Gravitational constant in cubic pixels per kilogram per second squared
+const G = 20; // Gravitational constant in cubic pixels per kilogram per second squared
 
 // Utils
 function randNum(min, max) {
@@ -93,8 +93,17 @@ class Asteroid {
     }
   }
   
-  updateVelocity() {
-    // TODO
+  updateVelocity(time) {
+    for (let asteroid of asteroids) {
+      if (this === asteroid) continue;
+      
+      const mass = asteroid.mass();
+      const rSquared = minus(asteroid.position, this.position).reduce((a, c) => a + c ** 2, 0);
+      
+      for (let i = 0; i < dimensions; i++) {
+        this.velocity[i] += Math.sign(asteroid.position[i] - this.position[i]) * time * G * mass / rSquared;
+      }
+    }
   }
   
   move(dt) {
@@ -135,8 +144,8 @@ class Asteroid {
 function setup() {
   createCanvas(400, 400);
   
-  for (let i = randNum(2, 10); i > 0; i--) {
-    const radius = randNum(5, 25);
+  for (let i = randNum(asteroidMin, asteroidMax); i > 0; i--) {
+    const radius = randNum(radiusMin, radiusMax);
     
     asteroids.push(new Asteroid(
       rand(radius, canvas - radius),
