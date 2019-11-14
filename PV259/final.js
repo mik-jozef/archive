@@ -2,7 +2,7 @@
 
 // Settings
 const canvas = 400;
-const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
+const [ asteroidMin, asteroidMax ] = [ 4, 5 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
@@ -95,7 +95,8 @@ class Asteroid {
   
   updateVelocity(time) {
     for (let asteroid of asteroids) {
-      if (this === asteroid) continue;
+      if (minus(this.position, asteroid.position).reduce((a, c) => a + c ** 2, 0)
+        < (this.radius + asteroid.radius) ** 2) continue;
       
       const mass = asteroid.mass();
       const rSquared = minus(asteroid.position, this.position).reduce((a, c) => a + c ** 2, 0);
