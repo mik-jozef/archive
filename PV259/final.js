@@ -113,6 +113,35 @@ class Asteroid {
     }
   }
   
+  handleCollision(a, b) {
+    const aVel = a.velocity;
+    const bVel = b.velocity;
+    
+    const v = (() => {
+      const v = minus(aVel, bVel);
+      const abs = Math.sqrt(v.reduce((a, c) => a + c ** 2, 0));
+      
+      return v.map(v => v / abs);
+    })();
+    
+    if (dimensions == 2) {
+      const mMatrix = [ v, [ -v[0], v[1] ] ];
+      const mInverse = [];
+    } else {
+      // TODO 3D case
+    }
+    const base = [ v ];
+    
+    for (let i = 0; i < dimensions; i++) {
+      [ a.velocity[i], b.velocity[i] ] = velocityAfterCollision(
+        a.mass(),
+        b.mass(),
+        a.velocity[i],
+        b.velocity[i],
+      );
+    }
+  }
+  
   tick(time) {
     for (let asteroid of asteroids) asteroid.updateVelocity(time);
     
@@ -122,20 +151,7 @@ class Asteroid {
     for (let asteroid of asteroids) asteroid.move(moveTime);
     
     if (collision.time < time) {
-      const a = asteroids[collision.i];
-      const b = asteroids[collision.j];
-      
-      const aVel = a.velocity;
-      const bVel = b.velocity;
-      
-      for (let i = 0; i < dimensions; i++) {
-        [ a.velocity[i], b.velocity[i] ] = velocityAfterCollision(
-          a.mass(),
-          b.mass(),
-          a.velocity[i],
-          b.velocity[i]
-        );
-      }
+      this.handleCollision(asteroids[collision.i], asteroids[collision.j]);
       
       this.tick(time - collision.time);
     }
