@@ -4,11 +4,12 @@ p5.disableFriendlyErrors = true;
 
 // Settings
 const canvas = 400;
-const [ asteroidMin, asteroidMax ] = [ 1, 2 ];
+const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
+const displayCircles = false;
 
-const G = 20; // Gravitational constant in cubic pixels per kilogram per second squared.
+const G = 30; // Gravitational constant in cubic pixels per kilogram per second squared.
 const L = 5; // Light-bending constant in whatever.
 
 const bgImagePath = "asdf.jpg";
@@ -220,7 +221,7 @@ function draw() {
   for (let asteroid of asteroids) {
     stroke(0, 0, 0);
     
-    circle(
+    displayCircles && circle(
       asteroid.position[0],
       asteroid.position[1],
       asteroid.radius * 2,
