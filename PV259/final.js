@@ -1,14 +1,17 @@
 "use strict";
 
+p5.disableFriendlyErrors = true;
+
 // Settings
 const canvas = 400;
 const [ asteroidMin, asteroidMax ] = [ 4, 5 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
-const dimensions = 2; // 2 or 3
-
 const G = 20; // Gravitational constant in cubic pixels per kilogram per second squared
+
+const bgImagePath = "https://upload.wikimedia.org/"
+  + "wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg";
 
 // Utils
 function randNum(min, max) {
@@ -19,17 +22,8 @@ function randNum(min, max) {
 
 function randNumS(bound) { return randNum(1 - bound, bound); }
 
-const randHelper = (f) => (...args) => {
-  const ret = [];
-  
-  for (let i = 0; i < dimensions; i++) {
-    ret.push(f(...args));
-  }
-  
-  return ret;
-}
-
-const [ rand, randS ] = [ randNum, randNumS ].map(randHelper);
+function rand(...args) { return [ randNum(...args), randNum(...args) ] }
+function randS(...args) { return [ randNumS(...args), randNumS(...args) ] }
 
 function plus(arr0, arr1) { return arr0.map((a, i) => a + arr1[i]) }
 function minus(arr0, arr1) { return arr0.map((a, i) => a - arr1[i]) }
@@ -42,6 +36,8 @@ function velocityAfterCollision(m0, m1, v0, v1) {
 
 // Program
 const asteroids = [];
+
+let bgImage;
 
 function detectClosestCollision() {
   let time = Infinity;
@@ -66,16 +62,31 @@ function detectClosestCollision() {
 }
 
 function detectCollision(a0, a1) {
-  const pos = minus(a0.position, a1.position)
-  const vel = minus(a0.velocity, a1.velocity);
+  const [ pos, vel ] = [ minus(a0.position, a1.position), minus(a0.velocity, a1.velocity) ];
   
-  const a = vel.reduce((a, c) => a + c ** 2, 0);
-  const b = 2 * pos.reduce((a, c, i) => a + c * vel[i], 0);
-  const c = pos.reduce((a, c) => a + c ** 2, 0) - (a0.radius + a1.radius) ** 2;
+  const a = vel[0] ** 2 + vel[1] ** 2;
+  const b = 2 * (vel[0] * pos[0] + vel[1] * pos[1]);
+  const c = pos[0] ** 2 + pos[1] ** 2 - (a0.radius + a1.radius) ** 2;
   
   const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
   
   return -(b + discriminant) / 2 / a;
+}
+
+function getGravityAt(x, y, time = 1, ignoreRadius = 0) {
+  const g = [ 0, 0 ];
+  
+  for (let asteroid of asteroids) {
+    const r = Math.sqrt((asteroid.position[0] - x) ** 2 + (asteroid.position[1] - y) ** 2);
+    
+    if (r <= ignoreRadius) continue;
+    
+    const mass = asteroid.mass();
+    
+    g.forEach((a, i) => g[i] += (asteroid.position[i] - [ x, y ][i]) * G * time * mass / r ** 3);
+  }
+  
+  return g;
 }
 
 class Asteroid {
@@ -85,26 +96,13 @@ class Asteroid {
     this.radius = r;
   }
   
-  mass() {
-    switch (dimensions) {
-      case 2: return Math.PI * this.radius ** 2;
-      case 3: return Math.PI * this.radius ** 3 * 4 / 3;
-      default: throw new Error("Dimension must be 2 or 3");
-    }
-  }
+  mass() { return Math.PI * this.radius ** 2 }
   
   updateVelocity(time) {
-    for (let asteroid of asteroids) {
-      if (minus(this.position, asteroid.position).reduce((a, c) => a + c ** 2, 0)
-        < (this.radius + asteroid.radius) ** 2) continue;
-      
-      const mass = asteroid.mass();
-      const rSquared = minus(asteroid.position, this.position).reduce((a, c) => a + c ** 2, 0);
-      
-      for (let i = 0; i < dimensions; i++) {
-        this.velocity[i] += Math.sign(asteroid.position[i] - this.position[i]) * time * G * mass / rSquared;
-      }
-    }
+    const g = getGravityAt(this.position[0], this.position[1], time, this.radius);
+    
+    this.velocity[0] += g[0];
+    this.velocity[1] += g[1];
   }
   
   move(dt) {
@@ -124,15 +122,12 @@ class Asteroid {
       return v.map(v => v / abs);
     })();
     
-    if (dimensions == 2) {
-      const mMatrix = [ v, [ -v[0], v[1] ] ];
-      const mInverse = [];
-    } else {
-      // TODO 3D case
-    }
+    const mMatrix = [ v, [ -v[0], v[1] ] ];
+    const mInverse = [];
+    
     const base = [ v ];
     
-    for (let i = 0; i < dimensions; i++) {
+    for (let i = 0; i < 2; i++) {
       [ a.velocity[i], b.velocity[i] ] = velocityAfterCollision(
         a.mass(),
         b.mass(),
@@ -158,6 +153,13 @@ class Asteroid {
   }
 }
 
+function preload() {
+  bgImage = loadImage(bgImagePath);
+  
+  bgImage.resize(canvas, canvas);
+  bgImage.loadPixels();
+}
+
 function setup() {
   createCanvas(400, 400);
   
@@ -173,9 +175,18 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  for (let x = 0; x < canvas; x++) {
+    for (let y = 0; y < canvas; y++) {
+      const g = getGravityAt(x, y);
+      
+      stroke(bgImage.pixels[y * canvas + x]);
+      point(x, y);
+    }
+  }
   
   for (let asteroid of asteroids) {
+    stroke(0, 0, 0);
+    
     circle(
       asteroid.position[0],
       asteroid.position[1],
