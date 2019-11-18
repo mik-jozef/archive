@@ -3,8 +3,8 @@
 p5.disableFriendlyErrors = true;
 
 // Settings
-const canvas = 200;
-const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
+const canvas = 400;
+const [ asteroidMin, asteroidMax ] = [ 2, 5 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
@@ -38,6 +38,7 @@ function velocityAfterCollision(m0, m1, v0, v1) {
 const asteroids = [];
 
 let bgImage;
+let distortedImage;
 
 function detectClosestCollision() {
   let time = Infinity;
@@ -97,6 +98,8 @@ class Asteroid {
   }
   
   mass() { return Math.PI * this.radius ** 2 }
+  
+  momentum() { return this.velocity.map(a => a * this.mass()) }
   
   updateVelocity(time) {
     const g = getGravityAt(this.position[0], this.position[1], time, this.radius);
@@ -159,35 +162,59 @@ function preload() {
 
 function setup() {
   createCanvas(canvas, canvas);
+  
   bgImage.resize(canvas, canvas);
   bgImage.loadPixels();
+  
+  distortedImage = createImage(canvas, canvas);
+  distortedImage.loadPixels();
+  
+  let momentum = [ 0, 0 ];
   
   for (let i = randNum(asteroidMin, asteroidMax); i > 0; i--) {
     const radius = randNum(radiusMin, radiusMax);
     
-    asteroids.push(new Asteroid(
-      rand(radius, canvas - radius),
-      randS(startSpeedMax),
-      radius,
-    ));
+    if (i == 1) {
+      asteroids.push(
+        new Asteroid(
+          rand(radius, canvas - radius),
+          momentum.map(a => -a / Math.PI / radius ** 2),
+          radius,
+        ),
+      );
+    } else {
+      const asteroid =
+        new Asteroid(rand(radius, canvas - radius), randS(startSpeedMax), radius);
+      
+      momentum = plus(momentum, asteroid.momentum());
+      
+      asteroids.push(asteroid);
+    }
   }
 }
 
 function draw() {
-  const step = 1;
-  
-  for (let x = 0; x < canvas; x += step) {
-    for (let y = 0; y < canvas; y += step) {
+  for (let x = 0; x < canvas; x += 1) {
+    for (let y = 0; y < canvas; y += 1) {
       const g = getGravityAt(x, y).map(a => Math.floor(a * L));
       const i = 4 * ((y + g[1]) * canvas + x + g[0]);
       
       if (0 <= i && i + 2 < bgImage.pixels.length) {
-        stroke(bgImage.pixels[i], bgImage.pixels[i + 1], bgImage.pixels[i + 2]);
-      } else stroke(0, 0, 0);
+        distortedImage.pixels[4 * (y * canvas + x)] = bgImage.pixels[i];
+        distortedImage.pixels[4 * (y * canvas + x) + 1] = bgImage.pixels[i + 1];
+        distortedImage.pixels[4 * (y * canvas + x) + 2] = bgImage.pixels[i + 2];
+      } else {
+        distortedImage.pixels[4 * (y * canvas + x)] =
+          distortedImage.pixels[4 * (y * canvas + x) + 1] =
+          distortedImage.pixels[4 * (y * canvas + x) + 2] = 0;
+      }
       
-      point(x, y);
+      distortedImage.pixels[4 * (y * canvas + x) + 3] = 255;
     }
   }
+  
+  distortedImage.updatePixels();
+  image(distortedImage, 0, 0);
   
   for (let asteroid of asteroids) {
     stroke(0, 0, 0);
