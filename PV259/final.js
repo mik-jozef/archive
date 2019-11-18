@@ -3,15 +3,15 @@
 p5.disableFriendlyErrors = true;
 
 // Settings
-const canvas = 400;
-const [ asteroidMin, asteroidMax ] = [ 4, 5 ];
+const canvas = 200;
+const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
-const G = 20; // Gravitational constant in cubic pixels per kilogram per second squared
+const G = 20; // Gravitational constant in cubic pixels per kilogram per second squared.
+const L = 5; // Light-bending constant in whatever.
 
-const bgImagePath = "https://upload.wikimedia.org/"
-  + "wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg";
+const bgImagePath = "asdf.jpg";
 
 // Utils
 function randNum(min, max) {
@@ -155,13 +155,12 @@ class Asteroid {
 
 function preload() {
   bgImage = loadImage(bgImagePath);
-  
-  bgImage.resize(canvas, canvas);
-  bgImage.loadPixels();
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(canvas, canvas);
+  bgImage.resize(canvas, canvas);
+  bgImage.loadPixels();
   
   for (let i = randNum(asteroidMin, asteroidMax); i > 0; i--) {
     const radius = randNum(radiusMin, radiusMax);
@@ -175,11 +174,17 @@ function setup() {
 }
 
 function draw() {
-  for (let x = 0; x < canvas; x++) {
-    for (let y = 0; y < canvas; y++) {
-      const g = getGravityAt(x, y);
+  const step = 1;
+  
+  for (let x = 0; x < canvas; x += step) {
+    for (let y = 0; y < canvas; y += step) {
+      const g = getGravityAt(x, y).map(a => Math.floor(a * L));
+      const i = 4 * ((y + g[1]) * canvas + x + g[0]);
       
-      stroke(bgImage.pixels[y * canvas + x]);
+      if (0 <= i && i + 2 < bgImage.pixels.length) {
+        stroke(bgImage.pixels[i], bgImage.pixels[i + 1], bgImage.pixels[i + 2]);
+      } else stroke(0, 0, 0);
+      
       point(x, y);
     }
   }
