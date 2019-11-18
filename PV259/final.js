@@ -4,7 +4,7 @@ p5.disableFriendlyErrors = true;
 
 // Settings
 const canvas = 400;
-const [ asteroidMin, asteroidMax ] = [ 2, 5 ];
+const [ asteroidMin, asteroidMax ] = [ 1, 2 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
@@ -199,7 +199,8 @@ function draw() {
       const g = getGravityAt(x, y).map(a => Math.floor(a * L));
       const i = 4 * ((y + g[1]) * canvas + x + g[0]);
       
-      if (0 <= i && i + 2 < bgImage.pixels.length) {
+      if (0 <= x + g[0] && x + g[0] < canvas
+          && 0 <= y + g[1] && y + g[1] < canvas) {
         distortedImage.pixels[4 * (y * canvas + x)] = bgImage.pixels[i];
         distortedImage.pixels[4 * (y * canvas + x) + 1] = bgImage.pixels[i + 1];
         distortedImage.pixels[4 * (y * canvas + x) + 2] = bgImage.pixels[i + 2];
