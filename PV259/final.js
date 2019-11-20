@@ -81,7 +81,7 @@ function getGravityAt(x, y, time = 1, ignoreRadius = 0) {
   for (let asteroid of asteroids) {
     const r = Math.sqrt((asteroid.position[0] - x) ** 2 + (asteroid.position[1] - y) ** 2);
     
-    if (r <= ignoreRadius) continue;
+    if (r <= (ignoreRadius ? ignoreRadius + asteroid.radius : 0)) continue;
     
     const mass = asteroid.mass();
     
