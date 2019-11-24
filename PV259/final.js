@@ -7,7 +7,7 @@ p5.disableFriendlyErrors = true;
 let displayCircles = true;
 
 const canvas = 400;
-const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
+const [ asteroidMin, asteroidMax ] = [ 2, 5 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
@@ -142,7 +142,7 @@ class Asteroid {
     const oB = dotProduct(minus(b.velocity, a.velocity), dPosB);
     
     const magSquared = dPosA[0] ** 2 + dPosA[1] ** 2;
-    console.log(massA, oA, magSquared, dPosA.map(a => a * massA * oA / magSquared))
+    
     a.velocity = minus(a.velocity, dPosA.map(a => a * massA * oA / magSquared));
     b.velocity = minus(b.velocity, dPosB.map(b => b * massB * oB / magSquared));
   }
