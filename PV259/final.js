@@ -2,12 +2,14 @@
 
 p5.disableFriendlyErrors = true;
 
+
 // Settings
+let displayCircles = true;
+
 const canvas = 400;
 const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
-const displayCircles = false;
 
 const G = 30; // Gravitational constant in cubic pixels per kilogram per second squared.
 const L = 5; // Light-bending constant in whatever.
@@ -116,29 +118,33 @@ class Asteroid {
   }
   
   handleCollision(a, b) {
-    const aVel = a.velocity;
-    const bVel = b.velocity;
-    
-    const v = (() => {
-      const v = minus(aVel, bVel);
-      const abs = Math.sqrt(v.reduce((a, c) => a + c ** 2, 0));
+    function dotProduct(a, b) {
+      let ret = 0;
       
-      return v.map(v => v / abs);
-    })();
-    
-    const mMatrix = [ v, [ -v[0], v[1] ] ];
-    const mInverse = [];
-    
-    const base = [ v ];
-    
-    for (let i = 0; i < 2; i++) {
-      [ a.velocity[i], b.velocity[i] ] = velocityAfterCollision(
-        a.mass(),
-        b.mass(),
-        a.velocity[i],
-        b.velocity[i],
-      );
+      for (let i = 0; i < a.length; i++) {
+        ret += a[i] * b[i];
+      }
+      
+      return ret;
     }
+    
+    // en.wikipedia.org/wiki/Elastic_collision#Two-dimensional
+    
+    const massTotal = a.mass() + b.mass();
+    
+    const dPosA = minus(a.position, b.position);
+    const dPosB = minus(b.position, a.position);
+    
+    const massA = 2 * b.mass() / massTotal;
+    const massB = 2 * a.mass() / massTotal;
+    
+    const oA = dotProduct(minus(a.velocity, b.velocity), dPosA);
+    const oB = dotProduct(minus(b.velocity, a.velocity), dPosB);
+    
+    const magSquared = dPosA[0] ** 2 + dPosA[1] ** 2;
+    console.log(massA, oA, magSquared, dPosA.map(a => a * massA * oA / magSquared))
+    a.velocity = minus(a.velocity, dPosA.map(a => a * massA * oA / magSquared));
+    b.velocity = minus(b.velocity, dPosB.map(b => b * massB * oB / magSquared));
   }
   
   tick(time) {
