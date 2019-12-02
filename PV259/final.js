@@ -7,14 +7,18 @@ p5.disableFriendlyErrors = true;
 let displayCircles = true;
 
 const canvas = 400;
-const [ asteroidMin, asteroidMax ] = [ 2, 5 ];
+
+const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
+
+const doCollisions = false;
 
 const G = 30; // Gravitational constant in cubic pixels per kilogram per second squared.
 const L = 5; // Light-bending constant in whatever.
 
 const bgImagePath = "asdf.jpg";
+const ignoreRadiusDefault = 10;
 
 // Utils
 function randNum(min, max) {
@@ -48,16 +52,18 @@ function detectClosestCollision() {
   let i = null;
   let j = null;
   
-  for (let [ iMaybe, a0 ] of asteroids.entries()) {
-    for (let [ jMaybe, a1 ] of asteroids.entries()) {
-      if (a0 === a1) break;
-      
-      const colTime = detectCollision(a0, a1);
-      
-      if (0 <= colTime && colTime < time) {
-        time = colTime;
-        i = iMaybe;
-        j = jMaybe;
+  if (doCollisions) {
+    for (let [ iMaybe, a0 ] of asteroids.entries()) {
+      for (let [ jMaybe, a1 ] of asteroids.entries()) {
+        if (a0 === a1) break;
+
+        const colTime = detectCollision(a0, a1);
+
+        if (0 <= colTime && colTime < time) {
+          time = colTime;
+          i = iMaybe;
+          j = jMaybe;
+        }
       }
     }
   }
@@ -77,13 +83,13 @@ function detectCollision(a0, a1) {
   return -(b + discriminant) / 2 / a;
 }
 
-function getGravityAt(x, y, time = 1, ignoreRadius = 0) {
+function getGravityAt(x, y, time = 1, ignoreRadius = ignoreRadiusDefault) {
   const g = [ 0, 0 ];
   
   for (let asteroid of asteroids) {
     const r = Math.sqrt((asteroid.position[0] - x) ** 2 + (asteroid.position[1] - y) ** 2);
     
-    if (r <= (ignoreRadius ? ignoreRadius + asteroid.radius : 0)) continue;
+    if (r <= (ignoreRadius === ignoreRadiusDefault ? ignoreRadiusDefault : ignoreRadius + asteroid.radius)) continue;
     
     const mass = asteroid.mass();
     
@@ -105,7 +111,7 @@ class Asteroid {
   momentum() { return this.velocity.map(a => a * this.mass()) }
   
   updateVelocity(time) {
-    const g = getGravityAt(this.position[0], this.position[1], time, this.radius);
+    const g = getGravityAt(this.position[0], this.position[1], time, doCollisions ? this.radius : ignoreRadiusDefault);
     
     this.velocity[0] += g[0];
     this.velocity[1] += g[1];
@@ -203,7 +209,7 @@ function setup() {
 function draw() {
   for (let x = 0; x < canvas; x += 1) {
     for (let y = 0; y < canvas; y += 1) {
-      const g = getGravityAt(x, y).map(a => Math.floor(a * L));
+      const g = getGravityAt(x, y).map(a => Math.floor(a * L), 0);
       const i = 4 * ((y + g[1]) * canvas + x + g[0]);
       
       if (0 <= x + g[0] && x + g[0] < canvas
