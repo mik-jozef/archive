@@ -94,7 +94,7 @@ function getGravityAt(x, y, time = 1, ignoreRadius = ignoreRadiusDefault) {
   for (let asteroid of asteroids) {
     const r = Math.sqrt((asteroid.position[0] - x) ** 2 + (asteroid.position[1] - y) ** 2);
     
-    if (r <= (ignoreRadius === ignoreRadiusDefault ? ignoreRadiusDefault : ignoreRadius + asteroid.radius)) continue;
+    if (r <= (ignoreRadius === ignoreRadiusDefault ? ignoreRadiusDefault : ignoreRadius)) continue;
     
     const mass = asteroid.mass();
     
@@ -218,7 +218,7 @@ function setup() {
 function draw() {
   for (let x = 0; x < canvasX; x += 1) {
     for (let y = 0; y < canvasY; y += 1) {
-      const g = getGravityAt(x, y).map(a => Math.floor(a * L), 0);
+      const g = getGravityAt(x, y, 1, 0).map(a => Math.floor(a * L), 0);
       const i = 4 * ((y + g[1]) * canvasY + x + g[0] - canvasDiff);
       
       if (canvasDiff <= x + g[0] && x + g[0] < canvasX - canvasDiff
