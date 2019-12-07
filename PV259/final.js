@@ -4,11 +4,12 @@ p5.disableFriendlyErrors = true;
 
 
 // Settings
-let displayCircles = true;
+let displayCircles = false;
 
-const canvas = 400;
+const canvasX = 1920;
+const canvasY = 1080;
 
-const [ asteroidMin, asteroidMax ] = [ 2, 3 ];
+const [ asteroidMin, asteroidMax ] = [ 3, 4 ];
 const [ radiusMin, radiusMax ] = [ 10, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
@@ -20,7 +21,11 @@ const L = 5; // Light-bending constant in whatever.
 const bgImagePath = "asdf.jpg";
 const ignoreRadiusDefault = 10;
 
+const dTime = 33;
+
 // Utils
+const canvasDiff = (canvasX - canvasY) / 2;
+
 function randNum(min, max) {
   max === undefined && ([ min, max ] = [ 0, min ]);
   
@@ -174,12 +179,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(canvas, canvas);
+  createCanvas(canvasX, canvasY);
   
-  bgImage.resize(canvas, canvas);
+  bgImage.resize(canvasY, canvasY);
   bgImage.loadPixels();
   
-  distortedImage = createImage(canvas, canvas);
+  distortedImage = createImage(canvasX, canvasY);
   distortedImage.loadPixels();
   
   let momentum = [ 0, 0 ];
@@ -190,14 +195,18 @@ function setup() {
     if (i == 1) {
       asteroids.push(
         new Asteroid(
-          rand(radius, canvas - radius),
+          [ randNum(radius + canvasDiff, canvasY + canvasDiff - radius), randNum(radius, canvasY - radius) ],
           momentum.map(a => -a / Math.PI / radius ** 2),
           radius,
         ),
       );
     } else {
       const asteroid =
-        new Asteroid(rand(radius, canvas - radius), randS(startSpeedMax), radius);
+        new Asteroid(
+          [ randNum(radius + canvasDiff, canvasX + canvasDiff - radius), randNum(radius, canvasY - radius) ],
+          randS(startSpeedMax),
+          radius,
+        );
       
       momentum = plus(momentum, asteroid.momentum());
       
@@ -207,23 +216,23 @@ function setup() {
 }
 
 function draw() {
-  for (let x = 0; x < canvas; x += 1) {
-    for (let y = 0; y < canvas; y += 1) {
+  for (let x = 0; x < canvasX; x += 1) {
+    for (let y = 0; y < canvasY; y += 1) {
       const g = getGravityAt(x, y).map(a => Math.floor(a * L), 0);
-      const i = 4 * ((y + g[1]) * canvas + x + g[0]);
+      const i = 4 * ((y + g[1]) * canvasY + x + g[0] - canvasDiff);
       
-      if (0 <= x + g[0] && x + g[0] < canvas
-          && 0 <= y + g[1] && y + g[1] < canvas) {
-        distortedImage.pixels[4 * (y * canvas + x)] = bgImage.pixels[i];
-        distortedImage.pixels[4 * (y * canvas + x) + 1] = bgImage.pixels[i + 1];
-        distortedImage.pixels[4 * (y * canvas + x) + 2] = bgImage.pixels[i + 2];
+      if (canvasDiff <= x + g[0] && x + g[0] < canvasX - canvasDiff
+          && 0 <= y + g[1] && y + g[1] < canvasY) {
+        distortedImage.pixels[4 * (y * canvasX + x)] = bgImage.pixels[i];
+        distortedImage.pixels[4 * (y * canvasX + x) + 1] = bgImage.pixels[i + 1];
+        distortedImage.pixels[4 * (y * canvasX + x) + 2] = bgImage.pixels[i + 2];
       } else {
-        distortedImage.pixels[4 * (y * canvas + x)] =
-          distortedImage.pixels[4 * (y * canvas + x) + 1] =
-          distortedImage.pixels[4 * (y * canvas + x) + 2] = 0;
+        distortedImage.pixels[4 * (y * canvasX + x)] =
+          distortedImage.pixels[4 * (y * canvasX + x) + 1] =
+          distortedImage.pixels[4 * (y * canvasX + x) + 2] = 0;
       }
       
-      distortedImage.pixels[4 * (y * canvas + x) + 3] = 255;
+      distortedImage.pixels[4 * (y * canvasX + x) + 3] = 255;
     }
   }
   
@@ -240,6 +249,6 @@ function draw() {
       color(100, 100, 100),
     );
     
-    asteroid.tick(deltaTime / 1000);
+    asteroid.tick((dTime || deltaTime) / 1000);
   }
 }
