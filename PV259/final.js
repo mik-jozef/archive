@@ -2,26 +2,29 @@
 
 p5.disableFriendlyErrors = true;
 
+let counter = 0;
 
 // Settings
 let displayCircles = false;
+let stop = false;
 
-const canvasX = 1920;
-const canvasY = 1080;
+const canvasX = 500;
+const canvasY = 500;
 
-const [ asteroidMin, asteroidMax ] = [ 3, 4 ];
-const [ radiusMin, radiusMax ] = [ 10, 15 ];
+const [ asteroidMin, asteroidMax ] = [ 2, 5 ];
+const [ radiusMin, radiusMax ] = [ 6, 15 ];
 const startSpeedMax = 10; // In pixels per second
 
 const doCollisions = false;
 
-const G = 30; // Gravitational constant in cubic pixels per kilogram per second squared.
-const L = 5; // Light-bending constant in whatever.
+const G = 100; // Gravitational constant in cubic pixels per kilogram per second squared.
+const L = 10; // Light-bending constant in whatever.
 
 const bgImagePath = "asdf.jpg";
 const ignoreRadiusDefault = 10;
 
-const dTime = 33;
+// Set a constant deltaTime for recording with a fixed framerate.
+const dTime = null;
 
 // Utils
 const canvasDiff = (canvasX - canvasY) / 2;
@@ -216,6 +219,8 @@ function setup() {
 }
 
 function draw() {
+  if (stop) noLoop();
+  
   for (let x = 0; x < canvasX; x += 1) {
     for (let y = 0; y < canvasY; y += 1) {
       const g = getGravityAt(x, y, 1, 0).map(a => Math.floor(a * L), 0);
@@ -251,4 +256,8 @@ function draw() {
     
     asteroid.tick((dTime || deltaTime) / 1000);
   }
+  
+  // Uncomment the next line to save frames.
+  //saveCanvas("frame" + counter, "png");
+  counter++;
 }
